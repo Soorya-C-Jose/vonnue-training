@@ -1,0 +1,118 @@
+/* body {
+    background:#eee;
+    color: #fffcfc;
+}
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+}
+#blocks {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+}
+#blocks div {
+    flex: 0 0 100px;
+    padding: 40px 0 ;
+    text-align: center;
+    background: #faa6a6;
+}
+    .one {order:4;}
+    .two{order:1;}
+    .three{order:3;}
+    .four{order:2;} */
+
+
+
+
+
+
+
+
+    /* CSS ANIMATION  */
+    body  {
+        background: rgb(248, 249, 250);
+        text-align: center;
+    }
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .circle {
+        width: 100px;
+        padding: 50px 0;
+        line-height: 0;
+        margin: 60px auto;
+        background: pink ;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        transition:  2s;
+    }
+    .circle:hover {
+        background: saddlebrown;
+        transform: rotate(360deg)
+    }
+
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    .grass , .sky, .road {
+        position: relative;
+    }
+    .sky {
+        height: 40%;
+        background: skyblue;
+    }
+    .grass {
+        height:30%;
+        background: seagreen;
+    }
+    .road {
+        height: 30%;
+        background-color: dimgray;
+        box-sizing: border-box;
+        border-top: 10px solid grey;
+        border-bottom: 10px solid grey;
+        width: 100%;
+    }
+    .lines {
+        box-sizing: border-box;
+        border: 5px dashed #fff ;
+        height: 0 px;
+        width: 100%;
+        position: absolute;
+        top: 85%;
+    } 
+    
+
+
+
+
+
+
+    /* ELEMENTS TO ANIMATE */
+    .mario {
+        position: absolute;
+        top: 66%;
+        left: 0px;
+        animation-name: run;
+        animation-duration: 10s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+        animation-iteration-count: 3;
+    }
+
+
+
+    /* KEYFRAMES */
+
+    @keyframes run {
+        from{transform: translateX(-200px)}
+        to{transform: translateX(1000px);}
+    }
