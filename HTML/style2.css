@@ -1,0 +1,142 @@
+ /* PICK A CARD */
+
+ body {
+    background: #333;
+    font-family: verdana;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+
+}
+h1 {
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    font-size: 48px;
+}
+.panels {
+    list-style-type: none;
+    padding: 0;
+}
+.panels li {
+    position: relative;
+    width: 25%;
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+}
+.panels li div {
+   width: 100%;
+   padding: 50px 0;
+   text-align: center;
+   color: #fff;
+   font-size: 20px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   line-height: 0;
+   cursor: pointer;
+}
+
+
+ /* ANIMATION STYLES */
+ .back{
+    transform: rotateY(90deg);
+}
+.front {
+    position: absolute;
+} 
+  li:hover .front {
+    animation: twirl 0.2s ease-in forwards;
+ }
+  li:hover .back {
+    animation: twirl 0.2s 0.2s ease-in forwards reverse;
+ }
+
+
+@keyframes twirl {
+0%{transform: rotateY(0deg);}
+100%{transform: rotateY(90deg);}
+} 
+
+
+
+
+/* MOBILE FIRST DESIGN */
+
+
+/* VARIABLES */
+:root {
+    --primary: #FFC636;
+    --secondary:#0A0B5B;
+}
+
+/* RESET */
+body,p,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ li  {
+    list-style-type: none;
+ }
+
+
+
+
+/* BASIC STYLES */
+
+body {
+    background: var(--secondary);
+    overflow-x: hidden;
+
+}
+.button {
+    background: none;
+    border: 2px solid var(-- primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    display: block;
+}
+.button {
+    color: #222;
+    background-color: var(--primary);
+}
+input,textarea {
+    background: rgba(255,255, 255, 0.05);
+    padding: 10px 16px;
+    border:2px solid #9893D8;
+    color: #F2F2F2;
+    
+}
+
+
+/* SMALL TABLET STYLES */
+@media screen and (min-width:620px){
+
+}
+
+
+
+
+/* LARGE TABLETS AND LAPTOPS */
+@media screen and (min-width:960px){
+
+}
+
+
+
+
+
+
+/* DESKTOP STYLES */
+@media screen and (min-width:1200px){
+
+}
+
+

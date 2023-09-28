@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS GRID</title>
+        <style>
+            body {
+                color: #fff;
+                font-family: sans-serif;
+                text-align: center;
+            }  
+            
+            #content {
+                display: grid;
+                margin: 0 auto;
+                max-width: 960px;
+                grid-gap: 10px;
+                grid-template-areas: 
+                "header header header header"
+                 "footer footer footer footer"
+                "aside. main main"
+                "nav. main main"
+                "section section section section"
+                "section section section section";
+            }
+        
+            #content >*{
+                background: #1df3b3;
+                padding: 30px;
+            }
+            .header {
+                grid-area: header;
+            }
+            main {
+                grid-area: main;
+            }
+            section {
+                grid-area: section;
+            }
+            aside {
+                grid-area:aside;
+            }
+            nav {
+                grid-area: nav;
+            }
+            footer {
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+      <div id="content">
+       <header>Header</header>
+       <main>Main</main>
+       <section>Section</section>
+       <aside>Aside</aside>
+       <nav>Nav</nav>
+       <footer>Footer</footer>
+      </div>
+    </body>
+</html>

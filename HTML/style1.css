@@ -30,7 +30,7 @@
 
 
     /* CSS ANIMATION  */
-    body  {
+    /* body  {
         background: rgb(248, 249, 250);
         text-align: center;
     }
@@ -92,12 +92,12 @@
     
 
 
-
+ */
 
 
 
     /* ELEMENTS TO ANIMATE */
-    .mario {
+    /* .mario {
         position: absolute;
         top: 66%;
         left: 0px;
@@ -105,14 +105,153 @@
         animation-duration: 10s;
         animation-fill-mode: both;
         animation-delay: 2s;
-        animation-iteration-count: 3;
+        animation-iteration-count: infinite;
+       animation: drive 3s both infinite linear,
+                   jump 0.3s 1.2s ease ;
     }
 
-
-
+    .luigi {
+        position: absolute;
+        top: 100;
+        left: 0px;
+        animation-name: run;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-direction: reverse;
+    }
+     
+    .cloud {
+        position: absolute;
+    }
+    .cloud :nth-child(1){
+        width: 200px;
+        top:120px;
+        opacity: 0.5;
+        animation:80s wind linear infinite reverse;
+    }
+    .cloud:nth-child(2) {
+        width: 300px;
+        top: 0;
+        animation:80s wind linear infinite reverse;
+     
+    }
+    
     /* KEYFRAMES */
 
-    @keyframes run {
-        from{transform: translateX(-200px)}
+    /* @keyframes run {
+        from{transform: translateX(200px)}
         to{transform: translateX(1000px);}
     }
+    @keyframes wind {
+        from{left: -300px}
+        to{left:100%}
+    }
+   @keyframes jump {
+    0%{top: -40%;}
+    50%{top: 100%;}
+    100%{top: -40%;}
+   }   */
+
+
+
+
+
+
+   /* POPUP BOX */
+
+    body{margin:0; position: relative;}
+   body.popup {background:#222;}
+
+   * {
+    font-family: calibri, sans serif;
+    font-weight: normal;
+    color: #333;
+   }
+   h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    text-align: center;
+   }
+   p {
+    margin-bottom: 40px;
+    color: #830404;
+    text-align: center;
+   }
+   #pop_up {
+    position: relative;
+    top: 200px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+   }
+    .container {
+    background: #f0e4d4;
+    padding: 30px;
+    position: absolute;
+    top: 150px;
+    left: 630px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    
+   }
+   input {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #333;
+    font-size: 18px;
+   }
+   button {
+    padding: 10px;
+    border: 0;
+    color: #fff;
+    background: #333;
+    margin-left: -5px;
+    margin-left: -5px;
+    border-radius:0 10px 10px 0;
+    border: 1px solid #333;
+    font-size: 18px;
+   }
+   .cross {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #555;
+    color: #ddd;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align:center;
+    border-radius: 11px;
+   } 
+
+
+   /* POPUP ANIMATION STYLES */
+
+    .container {
+    top: -400px;
+    transform-origin: 10px 10px;
+    animation: drop 0.5s ease forwards,
+               swing 3s 2s ease forwards;
+ }
+
+   @keyframes drop {
+    0%{}
+    70%{transform: translateY(700px);}
+    100%{transform: translateY(650px);opacity: 1;}
+   }
+    @keyframes swing{
+        0%{transform: translateY(650px) rotateZ(0deg)}
+        40%{transform: translateY(650px) rotateZ(90de)}
+        70%{transform: translateY(650px) rotateZ(70deg)}
+        100%{transform: translateY(650px) rotateZ(75deg)}
+    } 
+
+
+
+   
+
+
+   
