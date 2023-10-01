@@ -11,13 +11,14 @@
     background-color: rgb(247, 240, 240);
      border: 2px solid grey;
      border-radius: 30px;
-     padding: 1.5px;
      display:flex;
-     position: absolute;
+    justify-content:space-evenly;
+     position: fixed ;
      left:30px;
-     top: 20px;
+     top: 10px;
      height:85px;
      width: 600px;
+     padding: 30px;
 }
 h3 {
     font-size: 24px;
@@ -33,6 +34,7 @@ h4{
     height: 20px; */
     margin-left: 45px;
     margin-top: 23px;
+    justify-content: start;
     
 }
  /* .topbar img{
@@ -48,8 +50,42 @@ left: 10px;
 .logo img{
     height:50px;
     width: 50px;
-   margin-top: 45px;
+    position: fixed;
+    /* top: 10px; */
+   margin-top: 35px;
    margin-left: 800px;
    border: 2px solid grey;
    border-radius: 30px;
+}
+
+.images  {
+     display: flex;
+      /* height: 35px;
+    width: 35px;   */
+    margin-top: 80px;
+   margin-left: 80px; 
+   overflow: scroll;
+   float: left;  
+   width: 5.3;
+    
+}
+.short {
+    padding: 0 14px;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.short ::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.images h3{
+    font-size: 12px;
+    font-weight: none;
+    top: 100px;
+display: inline-block;
+white-space: nowrap;
+display: inline;
+margin: 0 4px 0 0;
 }
