@@ -52,20 +52,21 @@ left: 10px;
  flex: column; 
 }
 .logo img{
-    height:50px;
-    width: 50px;
+    height:40px;
+    width: 40px;
    margin-top: 35px;
    border: 1px solid grey;
    border-radius: 30px;
    float: right;
-   top: 10px;
+   top: 15px;
    margin: 0 10px;
    display: flex;
-   box-sizing: border-box; 
+   box-sizing: border-box;
+   padding: 10px; 
 }
 .images  {
      display: flex;
-   /* width: 5.3; */
+    /* width: 5.3;  */
    width: 100%;
    height: 100%;
    column-gap: 21.5px;
@@ -102,27 +103,77 @@ margin: 0 4px 0 0;
     opacity: 0.6425339366515838;
     justify-content: space-evenly;
 }
-
 .taxbar {
     border: 1px solid #ccc;
-    /* border-radius: 25px; */
     border-radius: 12px;
-    /* border-width: 1px; */
     cursor: pointer;
     padding: 14px 10px;
     padding-left: 10px;
     padding-right: 10%;
-    /* margin-top: 15px;
-    margin-bottom: 10px; */
+    position: relative;
     margin: 15px 15px;
-
+    display: flex;
+    justify-content: space-around;
+}
+.btn-holder{
+    width: 48px;
+    height: 32px ;
+    border-radius: 32px;
+    background: #ccc;
+    padding: 2px;
+    justify-content: end;
+}
+.button {
+    border-radius: 50px;
+    background: #fff;
+    height: 50%;
+    width: 50%;
+}
+.stay {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.spot {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+   overflow-x: scroll;
+   white-space: nowrap;
+   grid-column: span 4;
+}
+.spot::-webkit-scrollbar {
+    display: none;
 }
 .spot img{
-    display:grid;
+    max-width: 100%;
+    height:100%;
+    aspect-ratio: 20/19;
+    margin: 0px;
+}
+.stay{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.spot img {
     width: 100%;
     height: 100%;
     border-radius: 25px;
-    margin: 10px 0;
+}
+
+
+
+
+/* .radio-btn{
+    border-radius: 50px;
+    background: #101010;
+    height: 10%;
+    width: 10%;
+}  */
+.radio-btn{
+   position: relative;
+   width: 40%;
+ 
 }
 .place h3 {
  font-size: 100%;
@@ -143,10 +194,11 @@ margin: 0 4px 0 0;
     margin-left: 10px;
     font-weight: normal;
 }
- #villa {
+ /* #villa {
     overflow: scroll;
- }
- .wishlist{
+    display: grid;
+ } */
+ /* .wishlist{
     z-index:1;
     display: flex;
     flex: 1;
@@ -154,4 +206,106 @@ margin: 0 4px 0 0;
     top: 0;
     bottom: 0;
     overflow: hidden;
+ } */
+ section h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
  }
+ .radio-btn{
+
+ }
+ /* .button input {
+    border-radius: 12px ;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px; 
+    padding-right: 24px; 
+  border-width: 1px;
+    border-style: solid;
+    background: #333;
+    color: #fff;
+
+    display: flex;
+ } */
+ .button {
+    padding-left: 35%;
+    padding-top: 14px;
+    padding-right: 33%;
+    padding-bottom: 14px;
+ }
+ #footer h2{
+     font-size: 22px;
+     color: #333;
+     text-align: center;
+     padding-top: 10px;
+ }
+ #footer {
+    background: #f1f0f0;
+     padding: 15% 10px; 
+ }
+ .short h3 {
+    font-size: 14px;
+    font-weight: normal;
+ }
+ .short h3:hover {
+    color: black;
+ }
+ .short  {
+    display: flex;
+    overflow: scroll;
+    padding: 10px 12px 10px 12px;
+    box-shadow: none;
+    column-gap: 15px;
+    white-space: nowrap;
+ }
+ .short::-webkit-scrollbar {
+    display: none;
+}
+.foot-text {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.foot-text h3 {
+    font-size: 14px;
+    line-break: strict;
+}
+.foot-text p{
+    font-size: 14px;
+    font-weight: normal;
+}
+.drop img{
+    height: 12px;
+    width: 12px;
+    display: flex;
+}
+.sup-elements {
+    font-size: 14px;
+    line-break: strict;
+    line-height: 1.43;
+    color: #222;
+}
+.sup-elements p {
+ font-weight: normal ;
+}
+.host-elements {
+    font-size: 14px ;
+    line-break: strict;
+    line-height: 1.43;
+    color: #222;
+}
+.host-elements p{
+   font-weight:normal ;
+}
+.airbnb {
+    font-size: 14px ;
+    line-break: strict;
+    line-height: 1.43;
+    color: #222; 
+}
+.footer-bottom img,h3,h4 {
+    display: inline;
+}
