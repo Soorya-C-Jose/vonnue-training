@@ -4,8 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family:"cereal-bold";
+    src: url('Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2');
+}
+@font-face{
+     font-family: "cereal-book";
+    src: url('Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2');
+}
+@font-face {
+    font-family: "cereal-medium";
+    src: url('Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2');
+}
     body {
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    /* font-family:'cereal-bold'; */
     font-size: 14px;
     line-height: 1.43;
     color: #222;
@@ -17,6 +29,7 @@
     justify-content: space-around;
     padding: 19px 0px;
     padding-top: 12px;
+    margin-left: -9px;
 }
 #container-mobile{
     -webkit-box-align: center;
@@ -29,24 +42,25 @@
      top: 10px;
      border: 0.5px solid rgba(0,0,0,0.08);
      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-     width:73.5%;
+     width:72.5%;
      z-index: 1;
-     margin-left: 10px;
-     margin-top: 10px; 
+     margin-left: 22px;
+     margin-top: 5px; 
 }
 h3 {
     padding-top: 10px;
     padding-right: 14px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+     font-family: "cereal-bold";
     
 }
 h4{
     font-weight: normal;
-    /* color: var(--fo-jk-r-s); */
     display: flex;
     font-size: 12px;
+    font-family: "cereal-book";
     line-height: 16px;
 }
 #container-mobile {
@@ -92,14 +106,13 @@ left: 10px;
 }
 
 .short {
-    overflow: scroll;
-    padding-left: 10px; 
+    /* overflow: scroll; */
+     padding-left: 10px; 
     padding-top: 15px;
     padding-bottom: 11px;
     column-gap: 40px;
     margin-bottom: 14px;
     margin-top: -16px;
-    margin-right: -32px;
     box-shadow: 0 7px 10px rgba(0,0,0,0.1); 
 }
  .heading h2 {
@@ -109,6 +122,7 @@ left: 10px;
 .short h3 {
     font-size: 14px;
     font-weight: normal;
+    font-family: "cereal-book";
  }
  .short h3:hover {
     color: black;
@@ -149,6 +163,9 @@ margin: 0 4px 0 0;
     display: flex;
     justify-content: space-around;
 }
+.taxbar h3 {
+    font-family: "cereal-book";
+}
 .btn-holder{
     width: 48px;
     height: 32px ;
@@ -170,10 +187,6 @@ margin: 0 4px 0 0;
  .img-grid {
     grid-column: span 4;
  }
-/* .stay {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-} */
 .spot {
     position: relative;
     display: flex;
@@ -187,18 +200,19 @@ margin: 0 4px 0 0;
     display: none;
 }
 .spot img{
-    max-width: 96%;
     height:96%;
-    padding-left:18px;
-   padding-right: 0px; 
+    padding-left:10px;
+   padding-bottom: 6px;
+   padding-top: 8px;
+   padding-right: 15px;
     aspect-ratio: 20/19;
     margin: 0px;
 }
-.spot img {
-    width: 100%;
+ .spot img {
+    width: 94%;
     height: 100%; 
     margin-left: 11px;
-    border-radius: 37px;
+    border-radius: 29px;
 }
 .stay{
     position: relative;
@@ -232,20 +246,23 @@ margin: 0 4px 0 0;
     width: 25px;
     height: 26px;
 }
-.radio {
+ .radio {
     position: absolute;
-    bottom:20px;
+    bottom:31px;
     left: 47%;
     z-index: 1;
     height: 5%;
     width: 50%;
     cursor: pointer;
 } 
-.radio:hover {
-   color: #b25757;
+.radio input {
+    height: 10px;
 }
+.radio input:hover{
+    background-color:black;
+} 
 .text1 {
-    margin-left: 33px;
+    margin-left: 20px;
     margin-top: 0px;
     padding-bottom: 10px;
     white-space: nowrap;
@@ -253,20 +270,26 @@ margin: 0 4px 0 0;
 }
 .place h3 {
  font-size: 100%;
+ font-family: "cereal-bold";
  margin-left: 10px;
  padding-right: 10px;
- padding-top: 5px;
+ padding-top: 0px;
 }
 .km  h3{
     font-weight: normal;
     font-size: 100%;
+    font-family: "cereal-book";
     margin-left: 10px;
+    padding-top: 6px;
+    color: #686868;
     white-space: nowrap;
     line-height: 12px;
 }
 .date h3 {
     font-weight: normal;
+    font-family: "cereal-book";
     font-size:100%;
+    color: #686868;
     margin-left: 10px;
     line-height: 12px;
 }
@@ -281,35 +304,36 @@ margin: 0 4px 0 0;
     font-weight: bold;
 }
 .price p {
-    margin-left: 3px;
+    margin-left: -8px;
     margin-top: 3px;
-    font-weight: normal;
+    font-weight: normal; 
     font-size: 100%;
+    font-family: "cereal-book";
 }
 .star {
     position: absolute;
-     padding-left: 300px;
+     padding-left: 282px;
     padding-right: 20px;
-    padding-top: 10px;
     display: grid;
 }
 .star img {
-    /* width: 105%; */
-    height: 46%;
+    height: 44%;
 }
  .star h3 {
     position: absolute; 
-    padding-left: 322px;
+    padding-left: 301px;
     padding-right: 10px;
-    padding-top: 11px;
+    padding-top: 0px;
 } 
- section h2 {
-    text-align: center;
-    margin-top: 46px;
+
+ section p {
+   margin-top: 46px;
     font-size: 18px;
-    font-weight: 600;
+    font-family: "cereal-bold";
     line-height: 22px;
- }
+    white-space: nowrap;
+    padding-left: 36px;
+ } 
   .button input {
     border-radius: 12px ;
     padding-top: 14px;
@@ -317,6 +341,7 @@ margin: 0 4px 0 0;
     padding-left: 24px; 
     padding-right: 24px; 
     margin-top: 15px;
+    margin-left: -10px;
   border-width: 1px;
     border-style: solid;
     background: #333;
@@ -325,41 +350,58 @@ margin: 0 4px 0 0;
     font-size: 16px;
  } 
  .button {
-    padding-left: 33%;
+    padding-left: 38%;
     padding-top: 2px;
     padding-right: 33%;
     padding-bottom: 27px;
  }
 .heading h2{
      font-size: 22px;
-     color: #333;
+     font-family: "cereal-book";
      text-align: center;
      padding-top: 10px;
      margin: 0 0 14px;
  }
  #footer {
-    background: #f1f0f0;
+    background: #f4f4f5;
      padding: 8% 8px; 
  }
+ /* .......................................... */
+ .bottom{
+    position: relative;
+ }
+ .sidebar2 img {
+    position: relative;
+    top: 50%;
+    left: 0;
+ }
  
+
+ /* ........................................... */
  .sidebar2 img {
     display: block;
     height: 16px;
     width: 16px;
-    /* justify-content: end; */
+    white-space: nowrap;
  }
  .scrolling-ele h3 {
     overflow: scroll;
     padding-left: 26px; 
     padding-top: 15px;
+    padding-right: 15px;
     margin-right: 0px;
     column-gap: 40px;
     margin-bottom: 20px;
     margin-top: -16px;
+    font-size: 14px;
+ }
+ .scrolling-ele::-webkit-scrollbar{
+    display: none;
  }
  .scrolling-ele h3 {
     font-size: 14px;
-    font-weight: normal;
+    font-weight: normal; 
+    font-family: "cereal-book";
  }
  .scrolling-ele:hover {
     color: black;
@@ -369,29 +411,28 @@ margin: 0 4px 0 0;
     overflow: scroll;
      white-space: nowrap; 
  }
- /* .scrolling-ele::-webkit-scrollbar {
-    display: none;
-}  */
 .scrolling-ele {
     border-bottom: 1px solid #ccc;
 }
  .foot-text  {
     padding-top: 10px;
+    padding-bottom: 30px;
     padding-right: 10px;
     padding-left: 0px;
      margin-right: 6px; 
      line-height: 2;
-     /* line-height: 2.43; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
 .foot-text h3 , p {
     margin-left: 10px;
     font-size: 14px;
+    font-family: "cereal-book";
 }
 .foot-text p{
     font-size: 15px;
     font-weight: normal;
+    font-family: "cereal-book";
 } 
 .foot-text {
     border-bottom: 1px solid #ccc;
@@ -408,20 +449,22 @@ margin: 0 4px 0 0;
     color: #333;
     font-size: 15px;
     padding-top: 10px;
+    padding-bottom: 11px;
     display: grid;
     line-height: 2.43;
+    border-bottom: 1px solid #ccc;
 }
 .sup-elements h3 {
     padding-left: 10px;
+    font-family: "cereal-bold";
 }
 .sup-elements p {
  font-weight: normal ;
+ font-family: "cereal-book";
 } 
-.sup-elements {
-    border-bottom: 1px solid #ccc;
-}
 .host-elements {
     padding-top: 10px;
+    padding-bottom: 11px;
     font-size: 15px ;
     display: grid;
     line-break: strict;
@@ -431,13 +474,15 @@ margin: 0 4px 0 0;
 }
 .host-elements h3{
     padding-left: 10px ;
+    font-family: "cereal-bold";
 }
 .host-elements p{
-   font-weight:normal ;
+  font-family: "cereal-book";
 }
 
 .airbnb {
     padding-top: 10px;
+    padding-bottom: 11px;
     font-size: 15px ;
     display: grid;
     line-break: strict;
@@ -447,12 +492,17 @@ margin: 0 4px 0 0;
 }
 .airbnb h3 {
     padding-left: 10px;
+    font-family: "cereal-bold";
+}
+.airbnb p{
+    font-family: "cereal-book";
 }
 .first-foot {
     display: flex;
     column-gap: 10px;
     line-height: 2.43;
     font-size: 14px;
+    font-family: "cereal-bold";
     
 }
 .first-foot img {
@@ -476,6 +526,7 @@ margin: 0 4px 0 0;
 }
 .second-foot {
     line-height: 1.86;
+    font-family: "cereal-book";
 }
 .footer-bottom li {
     display: inline-flex;
@@ -491,10 +542,10 @@ margin: 0 4px 0 0;
     background: #333;
     border-width: 1px;
     border-style: solid;
-    height: 4%;
-    width: 23%;
+    height: 4.5%;
+    width: 24%;
     padding: 11px;
-    z-index: 1;
+    z-index: 1; 
 }
 .location span {
    color: #fff;
@@ -508,6 +559,46 @@ margin: 0 4px 0 0;
     color: #fff;
     
 }
+
+.option-feet {
+    display: flex;
+    padding-left: 37px;
+    margin-top: -2px;
+    
+}
+.explore img {
+    padding-left: 45px;
+    padding-top: 18px;
+    height: 43px;
+    margin-top: 0px;
+}
+.explore p {
+    font-size: 11px;
+    font-family: "cereal-book";
+    margin-bottom: 10px;
+}
+.wish img {
+    padding-left:45px ;
+    padding-top: 18px;
+    height: 43px;
+    margin-top: -3px;
+}
+.wish p {
+    font-size: 11px;
+    font-family: "cereal-book";
+}
+.login img {
+    padding-left: 45px;
+    padding-top: 18px;
+    height: 43px;
+    margin-top: -2px;
+}
+.login p {
+    font-size: 11px;
+    font-family: "cereal-book";
+}
+
+
 
 
 
@@ -571,6 +662,7 @@ margin: 0 4px 0 0;
 }
 .anywhere h3 {
     border-right: #222;
+    font-family: 'cereal-bold';
 }
 .language {
     margin-top: -13%;
