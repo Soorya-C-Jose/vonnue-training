@@ -17,7 +17,6 @@
     src: url('Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2');
 }
     body {
-    /* font-family:'cereal-bold'; */
     font-size: 14px;
     line-height: 1.43;
     color: #222;
@@ -25,33 +24,24 @@
 } 
 .topbar{
     display: flex;
-    width:101%;
+    width:100%;
     justify-content: space-around;
-    padding: 16px 0px;
-    padding-top: 12px;
-    padding-left: 10px;
-    margin-left: -9px;
+    padding-top: 11px;
 }
 #container-mobile{
-    -webkit-box-align: center;
      border: 2px solid grey;
       border-radius: 30px;
      display:flex; 
     justify-content:flex-start;
-    padding-left: 17px;
-     height:56px;
+    padding-top: 10px;
+    margin-left: 10px;
+    height: 100%;
      top: 10px;
      border: 0.5px solid rgba(0,0,0,0.08);
      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-     width:75.5%;
-     z-index: 1;
-     margin-left: 22px;
-     margin-top: 3px; 
+    width: 65%;
 }
 h3 {
-    padding-top: 8px;
-    padding-right: 14px;
-    margin-left: -3.5px;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
@@ -65,37 +55,33 @@ h3 {
     color: #686868;
     font-family: "cereal-book";
     line-height: 16px;
-    margin-left: -3px;
     word-spacing: .5px;
 }
 #container-mobile {
  column-gap: 15px;
+ display: flex;
 }
 .search  {
     cursor: pointer;
     display: block;
-    margin-left: -4px;
-    margin-top: 1px;
+
 }
- #container-mobile .search img {
-    width: 83%;
+   .search img { 
+    width: 67%;
    height: 77%;
-    padding-top: 15px;
-    padding-left: 8px;
-  margin-top: -3px;
+   padding: 15px;
 }
 .main h1,h2{
 left: 10px;
  flex: column; 
 }
 .logo {
-    padding-top: 10.5px;
-    padding-right: 10px;
+    padding-right: 28px;
+    padding-top: 10px;
 }
 .logo img{
-    height:40px;
-    width: 40px;
-   margin-top: 35px;
+    height:37px;
+    width: 37px;
    border: 1px solid grey;
    border-radius: 30px;
    float: right;
@@ -103,6 +89,7 @@ left: 10px;
    display: flex;
    box-sizing: border-box;
    padding: 11px; 
+   padding-right: 10px;
 }
 .images  {
      display: flex;
@@ -110,9 +97,9 @@ left: 10px;
    height: 90%;
    column-gap: 7.5px;
    padding-left: 13px;
+   padding-top: 10px;
 }
 .short {
-    /* overflow: scroll; */
      padding-left: 10px; 
     padding-top: 15px;
     padding-bottom: 11px;
@@ -156,7 +143,6 @@ display: inline;
     height: 24px;
     margin-bottom: -4px;
     opacity: 0.6425339366515838;
-    /* justify-content: space-evenly; */
 }
 .section2 img {
     margin-left: 20px;
@@ -291,10 +277,7 @@ display: inline;
     cursor: pointer;
     height: 69px;
     padding: 14px 10px;
-    padding-left: 10px;
-    padding-right: 10%;
     position: relative;
-    margin: 22px 15px;
     display: flex;
     justify-content: space-around;
 }
@@ -329,7 +312,6 @@ display: inline;
     column-gap: 13px;
    overflow-x: scroll;
    white-space: nowrap;
-   /* grid-column: span 4; */
 }
 .spot::-webkit-scrollbar {
     display: none;
@@ -370,9 +352,6 @@ display: inline;
 } 
 .wishlist {
     position: absolute;
-   padding-left: 303px; 
-    padding-right: 20px; 
-    padding-top: 33px;
     z-index: 1;
     border: none;
     margin: -8px 0 0;
@@ -407,7 +386,6 @@ display: inline;
  font-size: 100%;
  font-family: "cereal-bold";
  margin-left: 10px;
- /* padding-right: 10px; */
  padding-top: 0px;
 }
 .km  h3{
@@ -415,7 +393,7 @@ display: inline;
     font-size: 100%;
     font-family: "cereal-book";
     margin-left: 10px;
-    padding-top: 6px;
+    /* padding-top: 6px; */
     color: #686868;
     white-space: nowrap;
     line-height: 12px;
@@ -447,8 +425,8 @@ display: inline;
 }
 .star {
     position: absolute;
-     padding-left: 282px;
-    padding-right: 20px;
+     /* padding-left: 282px;
+    padding-right: 20px; */
     display: grid;
 }
 .star img {
@@ -456,8 +434,8 @@ display: inline;
 }
  .star h3 {
     position: absolute; 
-    padding-left: 303px;
-    padding-right: 10px;
+    /* padding-left: 303px;
+    padding-right: 10px; */
     padding-top: 0px;
     margin-top: -3px;
     font-size: 15px;
@@ -471,14 +449,14 @@ display: inline;
     font-family: "cereal-bold";
     line-height: 22px;
     white-space: nowrap;
-    padding-left: 36px;
+    /* padding-left: 36px; */
  } 
   .button input {
     border-radius: 12px ;
-    padding-top: 14px;
+    /* padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 24px; 
-    padding-right: 24px; 
+    padding-right: 24px;  */
     margin-top: 15px;
     margin-left: -10px;
   border-width: 1px;
@@ -488,38 +466,38 @@ display: inline;
     display: flex;
     font-size: 16px;
  } 
- .button {
+ /* .button {
     padding-left: 35%;
     padding-top: 2px;
     padding-right: 33%;
     padding-bottom: 27px;
- }
+ } */
 .heading h2{
      font-size: 22px;
      font-family: "cereal-book";
      text-align: center;
-     padding-top: 10px;
+     /* padding-top: 10px; */
      margin: 0 0 14px;
  }
  #footer {
     background: #f4f4f5;
-     padding: 8% 8px; 
+     /* padding: 8% 8px;  */
  }
  .bottom {
     position: relative;
  }
  .sidebar2 img {
     position:absolute;
-    padding-left: 10px;
-    padding-left: 342px;
+    /* padding-left: 10px;
+    padding-left: 342px; */
     margin-top: -42px;
     height: 21px;
  }
  .scrolling-ele h3 {
     overflow: scroll;
-    padding-left: 23px; 
+    /* padding-left: 23px; 
     padding-top: 15px;
-    padding-right: 6px;
+    padding-right: 6px; */
     margin-right: 0px;
     column-gap: 40px;
     margin-bottom: 20px;
@@ -547,11 +525,11 @@ display: inline;
     border-bottom: 1px solid #ccc;
 }
  .foot-text  {
-    padding-top: 10px;
+    /* padding-top: 10px;
     padding-bottom: 30px;
     padding-right: 10px;
     padding-left: 0px;
-     margin-right: 6px; 
+     margin-right: 6px;  */
      line-height: 2;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -581,14 +559,14 @@ display: inline;
 .sup-elements {
     color: #333;
     font-size: 15px;
-    padding-top: 10px;
-    padding-bottom: 11px;
+    /* padding-top: 10px;
+    padding-bottom: 11px; */
     display: grid;
     line-height: 2.43;
     border-bottom: 1px solid #ccc;
 }
 .sup-elements h3 {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     font-family: "cereal-bold";
 }
 .sup-elements p {
@@ -596,8 +574,8 @@ display: inline;
  font-family: "cereal-book";
 } 
 .host-elements {
-    padding-top: 10px;
-    padding-bottom: 11px;
+    /* padding-top: 10px;
+    padding-bottom: 11px; */
     font-size: 15px ;
     display: grid;
     line-break: strict;
@@ -606,7 +584,7 @@ display: inline;
     border-bottom: 1px solid #ccc;
 }
 .host-elements h3{
-    padding-left: 10px ;
+    /* padding-left: 10px ; */
     font-family: "cereal-bold";
 }
 .host-elements p{
@@ -614,8 +592,8 @@ display: inline;
 }
 
 .airbnb {
-    padding-top: 10px;
-    padding-bottom: 11px;
+    /* padding-top: 10px;
+    padding-bottom: 11px; */
     font-size: 15px ;
     display: grid;
     line-break: strict;
@@ -624,7 +602,7 @@ display: inline;
     border-bottom: 1px solid #ccc;
 }
 .airbnb h3 {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     font-family: "cereal-bold";
 }
 .airbnb p{
@@ -639,23 +617,22 @@ display: inline;
     
 }
 .first-foot img {
-    padding-top: 17px;
+    /* padding-top: 17px; */
     font-weight: 600;
 }
 .first-foot h3 {
-    padding-top: 17px;
+    /* padding-top: 17px; */
     font-weight: 600;
     font-size: 14px;
 }
 .first-foot h4{
-    padding-top: 9px;
+    /* padding-top: 9px; */
     font-size: 14px;
     font-family: "cereal-bold";
-    /* font-weight: 600; */
 }
 .footer-bottom {
     font-size: 15px;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     font-weight: normal;
 }
 .second-foot {
@@ -665,25 +642,25 @@ display: inline;
 .footer-bottom li {
     display: inline-flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 .location {
     display: flex;
    border-radius: 25px;
     position: fixed;
-    bottom: 10px;
+    bottom: 52px;
     left: 145px;
     background: #333;
     border-width: 1px;
     border-style: solid;
     height: 4.5%;
     width: 24%;
-    padding: 11px;
+    /* padding: 11px; */
     z-index: 1; 
 }
 .location span {
    color: #fff;
-   padding-left: 6px;
+   /* padding-left: 6px; */
 }
 .map img {
     width: 30px;
@@ -696,7 +673,7 @@ display: inline;
 
 .option {
     column-gap: 1px;
-    padding-right: opx;
+    /* padding-right: opx; */
 }
 .foot-img {
     display: flex;
@@ -709,17 +686,16 @@ display: inline;
     display: flex;
     justify-content: space-evenly;
     margin-top: -45px;
-    padding-right: 47px;
+    /* padding-right: 47px; */
 }
 .foot-caption p{
     font-size: 11px;
     font-family: "cereal-book";
 }
 
-#tab {
+/* #tab {
     display: flex;
-    border-bottom: 10px;
-}
+} */
 
 
 
@@ -731,13 +707,13 @@ display: inline;
      margin-top: 15px;
 }
 #container-tab {
-     width: 42%;
+     width: 44.75%;
       border-radius: 30px;
      display:flex; 
      padding-top: 6px;
      padding-left: 29px;
      margin-top:15px ;
-    margin-left: 3%;
+    margin-left: 3.10%;
    margin-bottom: 15px;
      height:48px;
      top: 10px;
@@ -748,19 +724,20 @@ display: inline;
 .find img {
     width: 93%;
     height: 88%;
+    padding: 0px;
+    margin-left: -1px;
 }
 .find {
-    border: 1px solid rgb(245, 77, 105);
     border-radius: 50%;
+    background: #FF385C;
     padding: 7px;
-    margin-top: 5px;
-    background: rgb(245, 77, 105);
-    padding-left: 10px ;
-    margin-top: 7px;
-    padding-top: 8px;
-    margin-left: 35px;
-    padding-left: 10px;
+    padding-left: 11px;
+    padding-top: 9px;
     padding-right: 8px;
+    margin-top: 2px;
+    margin-left:-3px;
+    margin-bottom: 6px;
+    margin-right: 3px;
 }
 .air-home {
     font-size: 9px;
@@ -769,19 +746,16 @@ display: inline;
 }
 .container-tab2{
     display: flex;
-    border: 0.5px solid rgba(0,0,0,0.08); 
+    border: 1px solid rgba(0,0,0,0.08); 
     border-radius: 25px;
     width: 57%;
-    padding-top: 6px;
+    height: 42px;
+    padding-top: 5px;
     padding-left: 13px;
     padding-right: 7px;
-    margin-top: -28%;
-    margin-left: 173%;
+   margin-top: -26.5%;
+  margin-left: 157.5%;
     column-gap: 3px;
-}
-.anywhere h3 {
-   border-right: #222;
-    font-family: "cereal-bold";
 }
 .top-right{
     padding-top: 1px;
@@ -790,24 +764,28 @@ display: inline;
  font-family: "cereal-book";
  font-size: 14px;
  white-space: nowrap;
- margin-left: 34%;
+ margin-left: 13.5%;
 }
 .language {
     margin-top: -13%;
 }
 .language img {
-    width: 12%;
+   width: 11.5%;
     height: 5%;
-   margin-left: 147%;
+  margin-left: 131%;
 }
+
 .toggi-menu img {
    width: 65%;
-    height: 92%;
+    padding-top: 7px;
+    margin-left: -1px;
 }
 .profile img {
-    width: 113%;
-    height: 90%;
+  width: 123%;
     padding-right: 4px;
+    padding-left: 1px;
+    margin-top: 0px;
+    margin-left: -1px;
 }
  .scroll-sidebar {
     width: 28px;
@@ -816,7 +794,7 @@ padding: 4px;
 } 
 .scroll-sidebar img {
     position: absolute;
-    margin-left: 49%;
+   margin-left: 47%;
     margin-top: -8%;
     width: 3%;
     height: 3%;
@@ -825,84 +803,111 @@ padding: 4px;
      box-shadow: 0 0px 0px rgba(0,0,0,0.1);
     border-radius: 50%; 
 }
-.filter {
+/* .filter {
     border: 0.5px solid rgba(204, 201, 201, 0.8);
     border-radius: 12px;
-    height: 45px;
+    height: 48px;
     width: 91px;
     padding: 4px;
-    margin-left: 55%;
-    margin-top: -12%;
+    padding-top: 1px;
+    margin-left: 52%;
+    margin-top: -11.5%;
     text-align: center;
 }
 .filter img{
-    padding: 11px;
+    padding: 12px;
+    margin-top: 1px;
+    padding-top: 14px;
 }
 .filter span {
     padding: 10px;
     font-size: 12px;
     margin-left: -10px;
-}
+   padding-left: 5px;
+    padding-top: 14px;
+} */
 .taxbar2{
     border: 1px solid #ccc;
     border-radius: 12px;
     width: 29%;
-    height: 45px;
+    height: 46px;
     cursor: pointer;
-    padding: 7px 10px;
-    margin-top: -5.5%;
-     margin-left:68% ; 
+    padding: 6px 10px;
+   margin-top: -6%;
+     margin-left: 65.75%; 
     position: relative;
     display: flex;
     justify-content: space-around;
 }
 .taxbar2 h3{
-    padding: 5px;
+    padding: 6px;
     font-size: 12px;
     font-family: "cereal-medium";
+    white-space: nowrap;
+   padding-left: 8.5px;
+}
+.btn-tab {
+   margin-right:7px;
 }
 .btn-holder2{
-    width: 41px;
-    height: 27px ;
+    width: 37px;
+   height: 24px;
     border-radius: 32px;
-    background: #ccc;
+    background: #bbb7b7;
     padding: 2px;
-    justify-content: end;
+    padding-right: 20px;
+    margin-top: 2.5px;
 }
 .button2 {
     border-radius: 50px;
     background: #fff;
+    padding: 10px 10px;
+    padding-bottom: 9px;
+    margin-top: 1px;
     height: 90%;
     width: 53%; 
 }
+/* .btn-tab {
+    padding-left: 10px;
+} */
 .location p {
     color: #fff;
 }
  #container-tab .addguest h3{
     font-size: 14px;
     font-weight: normal;
+    color: #686868;
+    padding-left: 5px;
 }
 .anywhere h3 {
     font-size: 14px;
-    border-right: 1px solid #ccc;
-    font-family: "cereal-bold";
+     border-right: 1px solid #ccc; 
+    padding-left: 0px;
+    
 }
  .anyweek h3 {
     font-size: 14px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
     font-family: "cereal-bold";
+   padding-left: 3px;
+    padding-right: 18px;
+    margin-left: -1px;
+    white-space: nowrap;
 }
 /* ////////////////////////// */
 
 
-/* @media screen and (min-width:325px){ */
-    .air-logo {
+ @media screen and (min-width:375px){ 
+    #tab {
+        display: none;
+    }
+    .air-logo{
         display: none;
     }
      #container-tab {
         display: none;
     } 
-    #tab {
+   div  #tab {
         display: none;
     }
     .scroll-sidebar {
@@ -918,7 +923,7 @@ padding: 4px;
         display: none;
     }
    
-/* } */
+}
 
 
 
@@ -974,6 +979,9 @@ padding: 4px;
 
 /* RESPONSIVE TABLET */
 @media screen and (min-width:768px){
+    #tab {
+        display: flex;
+    }
    #container-mobile {
     display: none;
   }
@@ -990,22 +998,58 @@ padding: 4px;
     display: flex;
   }
   .anywhere h3 {
-    font-family: "cereal-bold";
+     font-family: "cereal-bold";
+     padding-right: 22px;
+     margin-right: 14px;
+     margin-left: -5px;
+  }
+  .anyweek {
+    margin-right: 14px;
+  }
+  .any {
+    margin-right: 10px;
+    display: flex;
   }
   .addguest h3 {
     font-family: "cereal-book";
+    white-space: nowrap;
   }
   .short {
     margin-top: 5px;
   }
-  #tab {
+  filter {
+    border: 0.5px solid rgba(204, 201, 201, 0.8);
+    border-radius: 12px;
+    height: 48px;
+    width: 91px;
+    padding: 4px;
+    padding-top: 1px;
+    margin-left: 52%;
+    margin-top: -11.5%;
+    text-align: center;
+}
+.filter img{
+    padding: 12px;
+    margin-top: 1px;
+    padding-top: 14px;
+}
+.filter span {
+    padding: 10px;
+    font-size: 12px;
+    margin-left: -10px;
+   padding-left: 5px;
+    padding-top: 14px;
+}
+  /* #tab {
     display: flex;
-    border-bottom: 1px solid #ccc;
-  }
+    border-bottom: 1px solid #e1dfdf;
+    padding-bottom: 1.5px;
+  } */
    .short {
     width: 372px;
     position: relative;
     padding-top: 24px;
+    padding-left: 29px;
   } 
   .scroll-sidebar {
     display: block;
@@ -1029,20 +1073,20 @@ padding: 4px;
 }
 .taxbar2 h3{
     font-size: 12px;
-    font-family: "cereal-bold";
-}
+     font-family: "cereal-book";
+} 
 .spot {
-    padding-top: 43px;
+    padding-top: 17px;
 }
 .wishlist {
-    padding-top: 69px;
+    padding-top: 49px;
     padding-left: 323px;
 }
 .radio {
     left: 47%;
 }
 .location  {
-    height: 5%;
+    height: 6%;
     width: 17%;
     white-space: nowrap;
     margin-left: 157px;
@@ -1052,6 +1096,10 @@ padding: 4px;
 }
 .location p {
     display: block;
+    padding-top: 2px;
+}
+.map img {
+ margin-top: 4px;
 }
 .img-grid {
     grid-column: span 2;
@@ -1062,10 +1110,29 @@ padding: 4px;
  section p {
     display: flex;
     justify-content: center;
+    padding-left: 10px;
  }
  .button input {
 margin-left: 54px;
  }
  .images {
-    column-gap: 25.5px;
+   column-gap: 9.5%;
+ #footer {
+    padding: 5% 8px;
  }
+ .heading h2 {
+    padding-right: 54%;
+ }
+ .scrolling-ele { 
+   column-gap: 6px;
+ }
+ .sidebar2 img {
+    padding-left: 727px;
+ }
+}
+}
+
+
+
+
+
