@@ -160,7 +160,8 @@ display: inline;
     margin-bottom: -4px;
     opacity: 0.6425339366515838;
 }
-.section2 img {
+
+/* .section2 img {
     margin-left: 20px;
 }
 .section3 img {
@@ -285,6 +286,13 @@ display: inline;
 }
 .section44 img {
     margin-left: 5px;
+} */
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .taxbar {
@@ -341,19 +349,18 @@ display: inline;
     display: none;
 }
 .spot img{
-    height:96%;
     padding-left:10px;
-   padding-bottom: 6px;
-   padding-top: 8px;
-   padding-right: 9px;
+   /* padding-bottom: 6px;
+   padding-top: 8px; */
+   padding: 15px 20px;
     aspect-ratio: 20/19;
     margin: 0px;
 }
  .spot img {
-    width: 94%;
-    height: 100%; 
-    margin-left: 11px;
-    border-radius: 29px;
+     width: 100%;
+     height: 100%; 
+    /* margin-left: 11px; */
+  border-radius: 29px; 
 }
 .stay{
     position: relative;
@@ -420,10 +427,9 @@ display: inline;
     font-size: 100%;
     font-family: "cereal-book";
     margin-left: 10px;
-    /* padding-top: 6px; */
     color: #686868;
     white-space: nowrap;
-    line-height: 12px;
+    line-height: 9      px;
 }
 .date h3 {
     font-weight: normal;
@@ -458,7 +464,8 @@ display: inline;
      position: absolute;
     display: grid;
     white-space: nowrap;
-    right: 58px;
+    right: 49px;
+    top: 10px;
 }
 .star img {
    height: 42%;
@@ -466,7 +473,7 @@ display: inline;
  .star h3 {
     position: absolute; 
     left: 19px;
-    bottom: 6px;
+    bottom: 13px;
     font-size: 15px;
     font-family: "cereal-book";
     font-weight: normal;
@@ -673,14 +680,16 @@ display: inline;
 .first-foot h3 {
     font-weight: 600;
     font-size: 14px;
+    font-family: "cereal-book";
 }
 .first-foot h4{
     font-size: 14px;
-    font-family: "cereal-bold";
+   font-family: "cereal-book";
 }
 .footer-bottom {
     font-size: 15px;
     padding-top: 20px;
+    padding: 20px;
     font-weight: normal;
 }
 .second-foot {
@@ -731,7 +740,6 @@ display: inline;
 
 .option {
     column-gap: 1px;
-    /* padding-right: opx; */
 }
 .foot-img {
     display: flex;
@@ -744,16 +752,11 @@ display: inline;
     display: flex;
     justify-content: space-evenly;
     margin-top: -45px;
-    /* padding-right: 47px; */
 }
 .foot-caption p{
     font-size: 11px;
     font-family: "cereal-book";
 }
-
-/* #tab {
-    display: flex;
-} */
 
 
 
@@ -764,7 +767,7 @@ display: inline;
 /* ////////////////////////// */
 
 
- @media screen and (min-width:375px){ 
+  /* @media screen and (min-width:375px){   */
     #tab {
         display: none;
     }
@@ -789,8 +792,10 @@ display: inline;
     .location p {
         display: none;
     }
-   
-}
+    .social-media {
+       display: none;
+    }
+/* } */
 
 
 
@@ -820,9 +825,6 @@ display: inline;
     .taxbar2 {
         display: none;
     }
-    /* .wishlist {
-        padding-left: 355px;
-    } */
     .location {
         justify-content: center;
         left: 162px;
@@ -839,6 +841,9 @@ display: inline;
     .scrolling-ele {
         column-gap: 2.43px;
     }
+    .social-media {
+        display: none;
+    }
 
 }
 
@@ -846,6 +851,9 @@ display: inline;
 @media screen and (min-width:550px){
     .spot {
         grid-column:span 2;
+    }
+    .social-media {
+       display: none;
     }
 }
 
@@ -855,8 +863,16 @@ display: inline;
     #tab {
         display: flex;
         border-bottom: 1px solid #e1dfdf;
-        padding-bottom: 1.5px;
-      } 
+        padding-bottom: 0.5px;
+    }
+    /* #tab {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    nav {
+        margin-top: 10px;
+    } */
     #container-tab {
         width: 44.75%;
          border-radius: 30px;
@@ -908,17 +924,18 @@ display: inline;
    }
     .find img {
          width: 48%;
-          padding: 1px;
+        padding: 2px;
          margin-left: 8px;
+         margin-top: -1px;
    }
    .find {
        border-radius: 50%;
        background: #FF385C;
        padding-top: 9px;
-       margin-top: 2px;
-      margin-left: 16px;
-       margin-bottom: 6px;
-      margin-right: 2px;
+      margin-top: 1px;
+      margin-left: 12px;
+      margin-bottom: 7px;
+   margin-right: 7px;
    }
    .air-home {
        font-size: 9px;
@@ -943,9 +960,9 @@ display: inline;
    }
    .air-home h2 {
     font-family: "cereal-book";
-    font-size: 14px;
+   font-size: 14px;
     white-space: nowrap;
-    margin-left: 13.5%;
+    margin-left: 13%;
    }
    .language {
        margin-top: -13%;
@@ -970,11 +987,11 @@ display: inline;
    }
    .scroll-sidebar img {
        position: absolute;
-     left: 45%;
-      top: 15%;           
+    left: 45.75%;
+     top: 15.25%;          
        width: 3.5%;
        padding: 5px; 
-        border: 1px solid #333 ;
+        border: 1px solid #ccc;
         box-shadow: 0 0px 0px rgba(0,0,0,0.1);
        border-radius: 50%; 
    }
@@ -1005,10 +1022,10 @@ display: inline;
        border: 1px solid #ccc;
        border-radius: 12px;
        width: 29%;
-       height: 46px;
+       height: 46.5px;
        cursor: pointer;
        padding: 6px 10px;
-      margin-top: -6%;
+     margin-top: -6.25%;
         margin-left: 65.75%; 
        position: relative;
        top: 0px;
@@ -1016,22 +1033,22 @@ display: inline;
        justify-content: space-around;
    }
    .taxbar2 h3{
-       padding: 6px;
+       padding: 8px;
        font-size: 12px;
-       font-family: "cereal-medium";
+      font-family: "cereal-bold";
        white-space: nowrap;
       padding-left: 8.5px;
    }
    .btn-tab {
-      margin-right:7px;
+      margin-right: 10px;
+      margin-top: 1px;
    }
    .btn-holder2{
-       width: 37px;
+     width: 36px;
       height: 24px;
        border-radius: 32px;
        background: #bbb7b7;
        padding: 2px;
-       padding-right: 20px;
        margin-top: 2.5px;
    }
    .button2 {
@@ -1043,18 +1060,59 @@ display: inline;
        height: 90%;
        width: 53%; 
    }
-   .location p {
-       color: #fff;
-   }
    .wishlist {
     position: absolute;
-    right: 37px;
-   top: 59px;
+    right: 24px;
+    top: 49px;
    }
-   
+   #villa {
+    padding-left: 23px;
+    padding-right: 31px;
+    grid-gap: 0px;
+    margin-top: 5px;
+   }
+   .spot {
+    padding-top: 14px;
+   }
+   .spot img {
+     border-radius: 22px;
+     padding-bottom:15px ;
+   }
+   .text1 {
+    top: -9px;
+    left: -10px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+   }
+    .button input {
+   width: 20%;
+    padding: 18px;
+   } 
+   .social-media {
+    display: flex;
+   }
+   .social-media img {
+    width: 100%;
+    height: 43%;
+    padding-left: 26px;
+   }
+   .first-foot {
+    display: flex;
+    justify-content: center;
+   }
+   .second-foot div {
+    display: flex;
+    justify-content: center;
+   }
+   .second-foot ul {
+    display: flex;
+    justify-content: center;
+   }
 
 
   
+   
+   
    #container-mobile {
     display: none;
   }
@@ -1083,7 +1141,7 @@ display: inline;
     height: 48px;
     width: 91px;
     padding: 4px;
-    padding-top: 1px;
+    padding-top: 1px;               
     margin-left: 52%;
     margin-top: -11.5%;
     text-align: center;
@@ -1102,7 +1160,7 @@ display: inline;
 }
    
    .short {
-    width: 372px;
+    width: 46%;
     position: relative;
     padding-top: 24px;
     padding-left: 29px;
@@ -1121,48 +1179,44 @@ display: inline;
     font-size: 12px;
     font-family: "cereal-bold";
   }
-  .taxbar{
+   .taxbar{
     display: none;
-}
+} 
  .taxbar2 {
     display: flex;
 }
-.taxbar2 h3{
-    font-size: 12px;
-     font-family: "cereal-book";
-} 
-.spot {
-    padding-top: 17px;
-}
-/* .wishlist {
-    padding-top: 49px;
-    padding-left: 323px; 
-} */
 .radio {
     left: 47%;
+    bottom: 37px;
 }
 .location  {
     display: flex;
     justify-content: center;
     height: 6%;
     width: 17%;
-    left: 42%;
+   left: 41.5%;
     white-space: nowrap;
-    bottom: 44px;
+    bottom: 40px;
+    padding-left: 6px;
+    padding-top: 2px;
+    z-index: 2;
 }
 .location span {
     display: none;
 }
 .location p {
     display: flex;
+    color: #fff;
     font-size: 14px;
-    padding-top: 2px;
+   font-family: "cereal-bold";
 }
 .map img {
- margin-top: 4px;
+ margin-top: 6px;
+ padding-top: 1px;
 }
 .img-grid {
     grid-column: span 2;
+   
  }
  .rating{
     padding-left: 7px;
@@ -1172,12 +1226,10 @@ display: inline;
     justify-content: center;
     padding-left: 10px;
  }
- .button input {
-margin-left: 54px;
- }
  .images {
-   column-gap: 9.5%;
- #footer {
+ column-gap: 11.5%;
+ }
+#footer {
     padding: 5% 8px;
  }
  .heading h2 {
@@ -1189,10 +1241,130 @@ margin-left: 54px;
  .sidebar2 img {
     padding-left: 727px;
  }
-}
+ .anywhere h4{
+    display: none;
+ }
+ .anyweek h4 {
+    display: none;
+ }
+ .addguest h4 {
+    display: none;
+ }
 }
 
 
+
+
+
+/* RESPONSIVE LAPTOP */
+@media screen and (min-width:1024px){
+    #container-tab {
+        justify-content: center;
+        width: 33.75%;
+        margin-left: 26.25%;
+        padding-left: 29px;
+    }
+    #villa {
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+     }
+     .anywhere h3 {
+        display: none;
+     }
+     .anywhere h4 {
+        font-size: 14px;
+        font-family: "cereal-book";
+        padding-right: 26px;
+        padding-left: 10px;
+        padding-top: 8px;
+        margin-right: 14px;
+        margin-left: 3px;
+        border-right: 1px solid #ccc; 
+     } 
+     .anywhere h4 {
+        display: block;
+     }
+     .anyweek h3 {
+        display: none;
+     }
+     .anyweek h4 {
+        font-size: 14px;
+        font-family: "cereal-book";
+        border-right: 1px solid #ccc; 
+        padding-left: 2px;
+      padding-right: 21px;
+        padding-top: 8px;
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+    .anyweek h4 {
+       display: block;
+    }
+    #container-tab .addguest h3{
+        display: none;
+    }
+    .addguest h4 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #686868;
+        padding-left: 2px;
+        padding-top: 7px;
+        margin-left: -6px;
+        font-family: "cereal-book";
+        white-space: nowrap;
+    }
+    .addguest h4 {
+        display: block;
+    }
+     .img-grid{
+        grid-column: span 3;
+     }
+     .short {
+        width: 56%;
+     }
+     .taxbar2 {
+        width: 25%;
+     }
+     .spot {
+        padding-top: 54px;
+     }
+     .images {
+        column-gap: 33px;
+     }
+     .scroll-sidebar img{
+        left: 56.75%;
+        padding: 7px;
+     }
+     .filter {
+        margin-left: 62%;
+            width: 9%;
+         }
+     .taxbar2 {
+        margin-left: 72.75%;
+            top:34px;
+            width: 23%                                                                                                  ;
+     }
+     .wishlist {
+       top: 86px;
+     }
+     .location {
+        width: 13%;
+        left: 43.5%                         ;
+     }
+
+     .star {
+        right: 32px;
+     }
+     .text1 {
+        margin-bottom: -33px;
+     }
+
+     .sidebar2 img {
+        display: none;
+     }
+     
+     
+}
 
 
 
