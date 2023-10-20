@@ -51,7 +51,7 @@
     justify-content: center;
     align-items: center;
     padding-right: 18px;
-    column-gap: 32px;
+    column-gap: 32px
 }
 span {
     height: 16px;
@@ -302,7 +302,7 @@ article {
     font-family: m-fluent;
     font-size: 16px;
     position: absolute;
-    right: 0px;
+    right: 11px;
     top: 279%;
     border: 2px solid #333;
     border-radius: 25px;
@@ -459,7 +459,7 @@ article {
     content: "";
     font-family: m-fluent;
     position: absolute;
-    right: 0px;
+    right: 11px;
     top: 405%;
 }
 .products-services {
@@ -511,7 +511,9 @@ article {
 .azure-service-foot {
     display: flex;
     justify-content: start;
+    align-items: center;
     column-gap: 12px;
+    padding-bottom: 30px;
 }
 .azure-service-foot span::before {
     content: "";
@@ -528,9 +530,325 @@ article {
     height: 31px;
     width: 32px;
 }
-                            
-                        
-                    
-                
+.azure-service-foot p{
+    font-size: 15px;
+    font-family: latest-bold;
+    margin: 5px;
+}
+.resource-role {
+    /* padding: 40px 0px 0px;
+    margin: 0px 0px 24px; */
+    background-color: #f8f6f6;
+}
+.resource-transform {
+    line-height: 34px;
+    padding: 0px 16px 30px;
+}
+.resource-transform p{
+    font-size: 12px;
+    font-family: latest-bold;
+    color: #263E65;
+    word-spacing: 2px;
+}
+.resource-transform h2 {
+    font-size: 28px;
+    font-family: latest-bold;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+}
+.roles {
+    /* padding: 0px 16px; */
+    /* background: url("azure img/Desktop-Resources-background-v2.avif");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    position: relative; 
+}
+.roles-bg-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+}
+.roles-bg-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.role-scroll {
+    padding: 0px 16px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    box-shadow: 1px 2px 5px #ccc;
+    border-radius: 8px;
+    background: #fefefe;
+    margin:-12px 10px 0px 10px;
+    position: relative;
+}
+.role-scroll::-webkit-scrollbar{
+    display: none;
+}
+.role-scroll ul {
+    display: flex;
+    white-space: nowrap;
+    column-gap: 20px;
+}
+.role-scroll li {
+    list-style-type: none;
+    font-size: 14px;
+    font-family: latest-book;
+    padding: 12px 90px 12px 12px;
+    border-right: 1px solid #222;
+    
+}
+.role-scroll li p{
+    border-bottom: 2px solid #0078D4;
+    bottom: 0;
+    left: 0;
+    opacity: 1px;
+}
+ .roles span::after {
+        content: "";
+        font-family: m-fluent;
+        position: absolute;
+        right: 7px; 
+        bottom: 90%;
+        border: 2px solid #222;
+        border-radius: 20px;
+        padding: 10px;
+}   
+.optimize-and-btn {
+    padding: 30px 16px 48px;
+}
+.optimize-and-btn p{
+    display: flex; 
+    justify-content: center; 
+    font-size: 18px;
+    font-family: latest-bold;
+}
+.btn-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 27px 0px 0px;
+}
+.btn-text span::before{
+    content: "";
+    font-family: m-fluent;
+    color: #fff;
+}
+.btn-text span {
+    background: 1px solid transparent;
+    background-color: #0078D4;
+    border-radius: 6px;
+    height: 31px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-text p{
+    font-size: 15px;
+    color: #2a446f;
+    font-family: latest-bold;
+}
+.img {
+    margin: 24px 0px 0px;
+    padding: 16px;
+    border: 1px solid #dceef8e0;
+    border-radius: 6px;
+    background: #e8f0f4e0;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+
+}
+.azure-global {
+position: relative;
+height: 320px;
+}
+.azure-global-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.azure-global-bg img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.azure-global h2 {
+    font-size: 28px;
+    color: #fff;
+    font-family: latest-bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+.global-text p{
+    font-size: 17px;
+    word-spacing: -1px;
+    line-height: 13px;
+    font-family: latest-book;
+    margin: 12px 0px 0px;
+    color: #fff;
+    padding: 0px 4px;
+    display: flex;
+    justify-content: center;
+}
+.global-text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b3daf0;
+    background: #b3daf0;
+    width: 97%;
+    height: 47.5px;
+    border-radius: 7px;
+    margin: 20px 0px 30px 0px;
+    font-size: 15px;
+    font-family: latest-bold;
+}
+.cloud-investment{
+    position: relative;
+    height: 824px;
+    margin-top: -1px;
+}
+.cloud-investment-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.cloud-investment-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cloud-head {
+    padding: 40px 0px 0px;
+}
+.cloud-investment h2 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 28px;
+    font-family: latest-bold;
+    white-space: nowrap;
+}
+
+.packages{
+    border:1px solid transparent;
+    background: rgba(255, 255, 255, 0.1);
+    width: 94%;
+    height: 632px;
+    border-radius: 12px;
+    padding: 48px;
+    margin-top: 28px;
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    
+}                  
+ .package1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 13px;
+}
+.package2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 13px;
+}
+.package3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 13px;
+} 
+ .packages p{
+    font-size: 18px;
+    font-family: latest-bold;
+    color: #fff;
+    letter-spacing: 0px;
+    
+} 
+.customer-story{
+    padding: 48px 16px;
+}
+.customer-story-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+} 
+.customer-story-text p{
+    font-size: 12px;
+    font-family: latest-book;
+}    
+.customer-story-text h3 {
+    font-size: 24px;
+    font-family: latest-bold;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+}
+.img-text {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 20px;
+}   
+.img-text img {
+    width: 100%;
+    height: 143px;
+}    
+.fujitsu img {
+    width: 100%;
+    height: 75px;
+} 
+.fujitsu-img-text {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 21px;
+}   
+.fujitsu {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 59%;
+}
+.fujitsu-img-text h4{
+    font-size: 20px;
+    color: #dceef8;
+    line-height: 25px;
+    font-family: latest-bold;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.products p{
+    font-size: 13px;
+    font-family: latest-bold;
+}
+.aks {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.aks img {
+    height: 12px;
+    width: 12px;
+}
             
         
