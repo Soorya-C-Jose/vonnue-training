@@ -90,16 +90,10 @@ span {
     font-family: m-fluent;
     color: #fff;
 }
-/* .chat-sales span {
-    display: flex;
-    justify-content: center;
-} */
 .chat-sales p{
     font-size: 15px;
     font-family: latest-bold;
     color: #fff;
-    /* display: flex;
-    justify-content: center; */
 }
 .main-banner{
     height: 56vw;
