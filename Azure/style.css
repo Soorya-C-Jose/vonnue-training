@@ -1264,4 +1264,30 @@ height: 320px;
     font-family: m-fluent;
     padding: 0px 0px 0px 12px;
 }
- 
+.footer-nav {
+    /* margin: 36px 0px 0px; */
+    padding: 0px 18px;
+}
+.language {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.language p{
+    font-size: 16px;
+    font-family: latest-book;
+}
+.language-list {
+    border: 1px solid black;
+    background: #fff;
+    padding: 5px;
+    width: 59%;
+    height: 32px;
+}
+.language-list p{
+    font-size: 14px;
+    font-family: latest-book;
+}
+.language-list span::after{
+    
+}
