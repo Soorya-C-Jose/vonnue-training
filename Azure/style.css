@@ -40,46 +40,47 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    /* align-items: center; */
-
 }
  .azure-logo img {
-   padding-left: 19px;
+   padding-left: 17px;
+   display: flex;
+   align-items: center;
 } 
 .top-end {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 18px;
-    column-gap: 32px
+    column-gap: 35px;
 }
 span {
     height: 16px;
+    margin-right: -2px;
 }
 .top-end span::after{
     content:"";
     font-family: "m-fluent";
     font-size: 18px;
+    margin-left: -1.95px;
 }
 .top-end p {
    font-size: 14px;
-   font-family: "latest-book";
+   font-family: "latest-book";  
+   letter-spacing: -0.03em;
+   padding-right: 2px;
+   padding-bottom: 3px;
 }
- /* .chat-btn {
-    display: flex;
-    justify-content: center;
-}  */
 .chat-sales {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     column-gap: 7px;
     position: fixed;
     right: 16px;
-    top: 784px;
+    top: 810px;
     z-index: 100;
     height: 46px;
-    width: 38%;
+    width: 40%;
     border: 1px solid transparent;
     border-radius: 6px;
     background: #0067b8;
@@ -94,6 +95,9 @@ span {
     font-size: 15px;
     font-family: latest-bold;
     color: #fff;
+    letter-spacing: -0.03em;
+    word-spacing: 1px;
+    padding: 10px 14px 10px -1px;
 }
 .main-banner{
     height: 56vw;
@@ -106,7 +110,7 @@ span {
 .first-text
 {
     background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
-  padding: 34px 16px 25.5% 16px
+  padding: 31.5px 16px 25.5% 16px
 }
 .first-text h1 {
     display: flex;
@@ -114,8 +118,8 @@ span {
     font-size: 32px;
     font-family: latest-bold;
     color: #17243D;
-    letter-spacing: -2px;
-    word-spacing: 1px;
+    letter-spacing: -0.05em;
+    word-spacing: 0px;
     line-height: 40px;
 }
 .first-text p{
@@ -123,8 +127,9 @@ span {
     font-family: latest-book;
     color: #17243D;
     line-height: 28px;
-    margin-top: 10px;
-    word-spacing: -3px;
+    margin-top: 12px;
+    word-spacing: 0px;
+    letter-spacing: -0.03em;
 }
 .get-start span{
  display: flex;
@@ -133,16 +138,17 @@ span {
  font-family: latest-bold;
  padding: 2px 0px 0px;
  color: #fff;
- word-spacing: -1px;
+ letter-spacing: -0.03em;
+ word-spacing: 1px;
 }
 .get-start{
     border: 1px solid #0078d4;
     border-radius: 7px;
     background-color: #0078d4;
-    height: 47.5px;
+    height: 48.5px;
     width: 100%;
     padding: 10px 14px;
- margin-top: 24px;
+    margin-top: 24px;
 }
 .try-azure span {
     display: flex;
@@ -152,7 +158,8 @@ span {
     font-family: latest-bold;
     padding: 8px 0px 2px;
     color: #2a446f;
-    word-spacing: -1px;
+    word-spacing: 0.5px;
+    letter-spacing: -0.03em;
 }
 .try-azure {
     border: 2px solid #333;
@@ -173,7 +180,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px 16px;
+    padding: 12px 18px 16px;
     border: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     border-bottom: 10px;
@@ -181,20 +188,21 @@ span {
 }
 .featured-news p{
     font-size: 12px;
-    font-family: latest-book;
+    font-family: latest-bold;
+    letter-spacing: -0.5px;
+    padding-left: 1px;
+    margin-top: -1px;
+    color: #2a446f;
 }
 .featured-news::after{
     content: "";
     font-family: m-fluent;
+    margin-top: -5px;
 }
 .section-bg {
     position: relative;
     margin-top: -15px;
-    /* position: relative;
- padding: 45px 16px 35px 16px;
- background: url("azure img/Background-2.avif");
- background-repeat: no-repeat;
- background-size: cover;  */
+    margin-bottom: 77px;
 }
 .section-bg-img {
     position: absolute;
@@ -204,7 +212,7 @@ span {
 }
 .section-bg-img img {
     width: 100%;
-    height: 100%;
+    height: 1344.88px;
     object-fit: cover;
 }
 .section-cards {
@@ -215,21 +223,30 @@ span {
     font-family: latest-bold;
     color: #263E65;
     margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 .first-section {
-    font-size: 28px;
-    font-family: latest-bold;
     padding-top:53px ;
 }
-
+.first-section h2{
+    font-family: latest-bold;
+    font-size: 28px;
+    word-spacing: 0px;
+    letter-spacing: -0.05em;
+    line-height: 36px;
+    margin-top: 12px;
+}
+.cards {
+    padding: 0px 4px 0px 1px;
+}
 .card{
     padding: 7px;  
     padding-bottom: 0px; 
-   margin-top: 30px;
+    margin-top: 32px;
     border: 1px solid #fff ; 
     box-shadow: 1px 1px 14px 0px rgba(0,0,0,0.1);
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 15px;
     margin-bottom: -22px;
 }
 .card img{
@@ -237,18 +254,22 @@ span {
    border-radius: 6px;
 }
 .card-text {
-    padding: 13px 6px 13px 6px;
+   padding: 11px 4px 15px 7px;
 }
 .card-text h2{
     font-size: 18px;
     font-family: latest-bold;
+    word-spacing: 0px;
+    letter-spacing: -0.03em;
 }
 .card-text p{
     font-size: 16px;
     font-family: latest-book;
     line-height: 24px;
     padding-top: 15px;
-    letter-spacing: 0px;
+    letter-spacing: -0.03em;
+    word-spacing: 0px;
+    color: #17253d;
 }
 .card-footer{
     display: flex;
@@ -283,30 +304,35 @@ span {
 
 article {
     background: #F4FAFD;
-    padding: 70px 16px;
+    padding: 48px 16px;
 }
 .solutions{
     line-height: 45px;
+    display: flex;
+    flex-direction: column;
 }
 .solutions p{
    font-size: 12px;
    font-family: latest-bold;
    color: #263E65;
+   letter-spacing: 1px;
 }
 .solutions h3 {
     font-size: 23px;
     font-family: latest-bold;
-    line-height: 25px;
-    word-spacing: -3px;
+    line-height: 32px;
+    word-spacing: 0px;
+    letter-spacing: -0.03em;
+    margin-top: -2px;
 }
  .scroll-ele {
-    margin-top: 20px;
+    margin-top: 29px;
 }
  .scroll-ele ul {
  display:flex;
  white-space: nowrap;
  overflow: scroll;
- column-gap: 13px;
+ column-gap: 8px;
  }
  .scroll-ele ul::-webkit-scrollbar{
     display: none;
@@ -335,14 +361,15 @@ article {
     border-radius: 21px;
     background: #E6F2FB;
     padding: 8px 16px;
+    letter-spacing: -0.03em;
 }
 .scroll-ele span::after {
     content: "";
     font-family: m-fluent;
     font-size: 16px;
     position: absolute;
-    right: 11px;
-    top: 279%;
+    right: 16px;
+    top: 279.5%;
     border: 2px solid #333;
     border-radius: 25px;
     padding: 10px;
@@ -352,13 +379,15 @@ article {
     justify-content: space-between;
     padding: 25px 4px;
 }
-.drop-down span::after{
+.drop-down span::before {
     content: "";
     font-family: m-fluent;
+    font-size: 1em;
 }
 .drop-down p{
     font-size: 18px;
     font-family: latest-bold;
+    margin-left: -4px;
 }
 .build-deploy {
     line-height: 67px;
@@ -367,18 +396,22 @@ article {
    font-size: 16px;
    font-family: latest-book;
    letter-spacing: -1px;
-   word-spacing: 2px;
-   line-height: 25px;
+   word-spacing: 0px;
+   letter-spacing: -0.03em;
+   line-height: 24px;
 }
-.build-deploy span{
+.build-deploy h2{
     font-size: 15px;
     font-family: latest-bold;
     text-decoration: underline;
-    padding: 10px 0px;
+    /* padding: 10px 0px; */
+    letter-spacing: -0.03em;
+    word-spacing: 1px;
+    margin-top: 3px;
 }
 .build-deploy img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 .windows-server {
     display: flex;
@@ -391,7 +424,7 @@ article {
     font-size: 16px;
     font-family: latest-bold;
     color: #2a446f;
-    margin: 25px 0px;   
+    margin: 28px 0px;   
 }
 .windows-server span::before{
     content: "";
@@ -456,7 +489,7 @@ article {
     justify-content: start;
     align-items: center;
     margin: 25px 0px;
-    column-gap: 10px;
+    column-gap: 7px;
 }
 .all-solution span::before{
     content: "";
@@ -470,8 +503,8 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 31px;
-    width: 32px;
+    height: 30px;
+    width: 31px;
 }
 .all-solution p{
     font-size: 15px;
@@ -480,32 +513,34 @@ article {
 }
 .pro-service {
     background: #f4fafd;
-    padding: 0px 16px;
+    padding: 25px 16px;
 }
 .pro-service p{
     color: #263E65;
     font-size: 12px;
     font-family: latest-bold;
     margin: 0px 0px 12px;
+    letter-spacing: 1px ;
 }
 .pro-service h3 {
     font-size: 24px;
     font-family: latest-bold;
     color: #0E1726;
-    word-spacing: -2px;
+    word-spacing: 0px;
+    letter-spacing: -0.05em;
 }
 .second-scroll span::after{
     content: "";
     font-family: m-fluent;
     position: absolute;
     right: 11px;
-    top: 405%;
+    top: 409%;
 }
 .products-services {
     row-gap: 10px;
 }
 .azure-services {
-    padding: 20px 16px;
+    padding: 17px 15px;
     border: 1px solid transparent;
     box-shadow: 0px 0px 4px #ccc;
     border-radius: 16px;
@@ -517,7 +552,7 @@ article {
 }
 .top {
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,25 +568,31 @@ article {
 .center-text h4 {
     font-size: 20px;
     font-family: latest-bold;
+    letter-spacing: -0.05em;
+    word-spacing: 0px;
+    margin-top: 5px;
 }
 .center-text p{
     font-size: 16px;
     font-family: latest-book;
     line-height: 23px;
     color: #333;
+    letter-spacing: -0.03em;
+    word-spacing: 1px;
 }
 
-.azure-services span {
+.azure-services h3 {
     font-size: 15px;
     font-family: latest-bold;
     text-decoration: underline;
+    /* margin-top: 38px; */
 }
  
 .azure-service-foot {
     display: flex;
     justify-content: start;
     align-items: center;
-    column-gap: 12px;
+    column-gap: 5px;
     padding-bottom: 30px;
 }
 .azure-service-foot span::before {
@@ -573,27 +614,31 @@ article {
     font-size: 15px;
     font-family: latest-bold;
     margin: 5px;
+    letter-spacing: -0.03em;
 }
 .resource-role {
     background-color: #f8f6f6;
 }
 .resource-transform {
-    line-height: 34px;
-    padding: 20px 16px 61px;
+    padding: 16px 16px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
 }
 .resource-transform p{
     font-size: 12px;
     font-family: latest-bold;
     color: #263E65;
-    word-spacing: 1px;
+    word-spacing: 0px;
     letter-spacing: 1px;
-    padding-top: 15px;
+    padding-top: 10px;
+    margin-top: 20px;
 }
 .resource-transform h2 {
     font-size: 28px;
     font-family: latest-bold;
     white-space: nowrap;
-    letter-spacing: -1px;
+    letter-spacing: -0.05em;
     word-spacing: -1px;
 }
 .roles {
@@ -617,7 +662,7 @@ article {
     box-shadow: 1px 2px 5px #ccc;
     border-radius: 8px;
     background: #fefefe;
-    margin:-25px 10px 0px 10px;
+    margin:-25px 10px 0px 19px;
     position: relative;
 }
 .role-scroll::-webkit-scrollbar{
@@ -646,8 +691,8 @@ article {
         content: "";
         font-family: m-fluent;
         position: absolute;
-        right: 7px; 
-        bottom: 90%;
+        right: 17px;
+        bottom: 90.95%;
         border: 2px solid #222;
         border-radius: 20px;
         padding: 10px;
@@ -660,6 +705,8 @@ article {
     justify-content: center; 
     font-size: 18px;
     font-family: latest-bold;
+    letter-spacing: -0.03em;
+    word-spacing: 0px;
 }
 .btn-text{
     display: flex;
@@ -698,7 +745,7 @@ article {
 .img img {
     width: 100%;
     height: 100%;
-    border-radius: 6px;
+    border-radius: 15px;
 
 }
 .azure-global {
@@ -722,18 +769,21 @@ height: 320px;
     font-family: latest-bold;
     display: flex;
     justify-content: center;
-    padding-top: 70px;
+    padding-top: 88px;
+    letter-spacing: -0.05em;
 }
 .global-text p{
     font-size: 17px;
     word-spacing: -1px;
-    line-height: 13px;
+    line-height: 17px;
     font-family: latest-book;
     margin: 12px 0px 0px;
     color: #fff;
     padding: 0px 4px;
     display: flex;
     justify-content: center;
+    letter-spacing: -0.03em;
+    word-spacing: 2px;
 }
 .global-text span {
     display: flex;
@@ -744,9 +794,10 @@ height: 320px;
     width: 100%;
     height: 47.5px;
     border-radius: 7px;
-    margin: 20px 0px 30px 0px;
+    margin: 39px 0px 30px 0px;
     font-size: 15px;
     font-family: latest-bold;
+    letter-spacing: -0.03em;
 }
 .cloud-investment{
     position: relative;
@@ -773,6 +824,7 @@ height: 320px;
     font-size: 28px;
     font-family: latest-bold;
     white-space: nowrap;
+    letter-spacing: -0.03em;
 }
 
 .packages{
@@ -813,7 +865,7 @@ height: 320px;
     font-size: 18px;
     font-family: latest-bold;
     color: #fff;
-    letter-spacing: 0px;
+    letter-spacing: -0.05em;
     
 } 
 .customer-story{
@@ -828,12 +880,13 @@ height: 320px;
 .customer-story-text p{
     font-size: 12px;
     font-family: latest-book;
+    letter-spacing: 1px;
 }    
 .customer-story-text h3 {
     font-size: 24px;
     font-family: latest-bold;
     word-spacing: 0px;
-    letter-spacing: -1px;
+    letter-spacing: -0.05em;
 }
 .img-text {
     border: 1px solid #ccc;
@@ -865,9 +918,10 @@ height: 320px;
 }
 .fujitsu-img-text h4{
     font-size: 20px;
-    color: #dceef8;
-    line-height: 25px;
+    color: #17253d;
+    line-height: 30px;
     font-family: latest-book;
+    letter-spacing: -0.03em;
 }
 .products{
     display: flex;
@@ -1008,12 +1062,13 @@ height: 320px;
    justify-content: center;
    align-items: center;
    padding: 50px 0px 20px 0px;
+   letter-spacing: -0.05em;
 }
 .steps {
     padding: 0px 16px 45px;
     display: flex;
     flex-direction: column;
-    row-gap: 7px;
+    row-gap: 5px;
 }
 .step1 {
     padding: 16px;
@@ -1091,9 +1146,14 @@ height: 320px;
     line-height: 26px;
     font-size: 16px;
     font-family: latest-book;
+    letter-spacing: -0.03em;
+    word-spacing: 1px;
+}
+footer {
+    background: #f5f5f5;
 }
 .azure-mobile-app{
-    padding: 48px 0px 36px;
+    padding: 38px 0px 9px;
 }
 .app-and-social{
     padding: 0px 18px;
@@ -1129,7 +1189,7 @@ height: 320px;
     margin: 36px 0px 0px;
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 38px;
 }
 .explore-azure {
     display: flex;
@@ -1265,7 +1325,7 @@ height: 320px;
     padding: 0px 0px 0px 12px;
 }
 .footer-nav {
-    /* margin: 36px 0px 0px; */
+    margin: 36px 0px 0px; 
     padding: 0px 18px;
 }
 .language {
@@ -1276,6 +1336,7 @@ height: 320px;
 .language p{
     font-size: 16px;
     font-family: latest-book;
+    letter-spacing: -0.03em;
 }
 .language-list {
     border: 1px solid black;
@@ -1290,4 +1351,65 @@ height: 320px;
 }
 .language-list span::after{
     
+}
+.privacy-choices {
+    display: flex;
+    column-gap: 10px;
+    margin: 24px 0px 0px;
+}
+.privacy-choices p{
+    font-size: 12px;
+    font-family: latest-book
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 32px;
+}
+.footer-text p{
+    font-size: 12px;
+    font-family: latest-book;
+}
+ .footer1{
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+    white-space: nowrap;
+ }
+.footer2 {
+    display: flex;
+    justify-content: end;
+    white-space: nowrap;
+    column-gap: 10px;
+}
+.footer3{
+    display: flex;
+    justify-content: end;
+    white-space: nowrap;
+    column-gap: 10px;
+} 
+.footer-bottom{
+    font-size: 12px;
+    font-family: latest-book;
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* HEADER ON 768 */
+
+@media screen and(min-width:768px){
+    .toggi img{
+        display: none;
+    }
 }
