@@ -15,6 +15,9 @@
     font-family: "m-fluent";
     src: url('azure img/MWFFluentIcons.woff2');
 }
+.tab-header{
+    display: none;
+}
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -77,12 +80,12 @@ span {
     column-gap: 7px;
     position: fixed;
     right: 16px;
-    top: 810px;
-    z-index: 100;
+    top: 842px;
+    z-index: 200;
     height: 46px;
-    width: 40%;
+    width: 149px;
     border: 1px solid transparent;
-    border-radius: 6px;
+    border-radius: 9px;
     background: #0067b8;
 
 }
@@ -139,7 +142,7 @@ span {
  padding: 2px 0px 0px;
  color: #fff;
  letter-spacing: -0.03em;
- word-spacing: 1px;
+ word-spacing: 0px;
 }
 .get-start{
     border: 1px solid #0078d4;
@@ -158,8 +161,8 @@ span {
     font-family: latest-bold;
     padding: 8px 0px 2px;
     color: #2a446f;
-    word-spacing: 0.5px;
-    letter-spacing: -0.03em;
+    word-spacing: -1px;
+    letter-spacing: -0.03px;
 }
 .try-azure {
     border: 2px solid #333;
@@ -292,8 +295,8 @@ span {
     background-color: #0078d4;
     border-radius:6px;
     align-items: center;
-    height: 31px;
-    width: 32px; 
+    height: 30px;
+    width: 30px; 
     margin-top: 17px;
 }
 .card-footer p{
@@ -327,6 +330,7 @@ article {
 }
  .scroll-ele {
     margin-top: 29px;
+    position: relative;
 }
  .scroll-ele ul {
  display:flex;
@@ -368,8 +372,8 @@ article {
     font-family: m-fluent;
     font-size: 16px;
     position: absolute;
-    right: 16px;
-    top: 279.5%;
+    right: 0;
+    bottom: 14px;
     border: 2px solid #333;
     border-radius: 25px;
     padding: 10px;
@@ -404,7 +408,6 @@ article {
     font-size: 15px;
     font-family: latest-bold;
     text-decoration: underline;
-    /* padding: 10px 0px; */
     letter-spacing: -0.03em;
     word-spacing: 1px;
     margin-top: 3px;
@@ -533,8 +536,10 @@ article {
     content: "";
     font-family: m-fluent;
     position: absolute;
-    right: 11px;
-    top: 409%;
+    bottom: 26px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 10px;
 }
 .products-services {
     row-gap: 10px;
@@ -585,7 +590,6 @@ article {
     font-size: 15px;
     font-family: latest-bold;
     text-decoration: underline;
-    /* margin-top: 38px; */
 }
  
 .azure-service-foot {
@@ -692,7 +696,8 @@ article {
         font-family: m-fluent;
         position: absolute;
         right: 17px;
-        bottom: 90.95%;
+        top: 4px;
+        /* bottom: 90.95%; */
         border: 2px solid #222;
         border-radius: 20px;
         padding: 10px;
@@ -702,7 +707,8 @@ article {
 }
 .optimize-and-btn p{
     display: flex; 
-    justify-content: center; 
+    justify-content: center;
+    text-align: center; 
     font-size: 18px;
     font-family: latest-bold;
     letter-spacing: -0.03em;
@@ -775,13 +781,14 @@ height: 320px;
 .global-text p{
     font-size: 17px;
     word-spacing: -1px;
-    line-height: 17px;
+    line-height: 26px;
     font-family: latest-book;
     margin: 12px 0px 0px;
     color: #fff;
     padding: 0px 4px;
     display: flex;
     justify-content: center;
+    text-align: center;
     letter-spacing: -0.03em;
     word-spacing: 2px;
 }
@@ -825,8 +832,11 @@ height: 320px;
     font-family: latest-bold;
     white-space: nowrap;
     letter-spacing: -0.03em;
+    text-align: center;
 }
-
+.cloud-investment h3{
+    display: none;
+}
 .packages{
     border:1px solid transparent;
     background: rgba(255, 255, 255, 0.1);
@@ -866,8 +876,13 @@ height: 320px;
     font-family: latest-bold;
     color: #fff;
     letter-spacing: -0.05em;
+    word-spacing: 5px;
+    text-align: center;
     
 } 
+.packages  p sup{
+    text-decoration: underline;
+}
 .customer-story{
     padding: 48px 16px;
     background: #f4fafd;
@@ -907,7 +922,7 @@ height: 320px;
     padding: 16px;
     display: flex;
     flex-direction: column;
-    row-gap: 21px;
+    row-gap: 15px;
     background: #fff;
     border-radius: 12px;
 }   
@@ -918,15 +933,16 @@ height: 320px;
 }
 .fujitsu-img-text h4{
     font-size: 20px;
-    color: #17253d;
+    /* font-weight: bold; */
+    color: #17253d; 
     line-height: 30px;
-    font-family: latest-book;
+    font-family: latest-bold;
     letter-spacing: -0.03em;
 }
 .products{
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    row-gap: 16px;margin-top: 38px;
 }
 .products p{
     font-size: 13px;
@@ -993,6 +1009,7 @@ height: 320px;
     height: 50px;
     font-size: 15px;
     font-family: latest-bold;
+    margin-top: 15px;
 }  
  .left span::before {
     content: "";
@@ -1153,7 +1170,7 @@ footer {
     background: #f5f5f5;
 }
 .azure-mobile-app{
-    padding: 38px 0px 9px;
+    padding: 48px 0px 36px;
 }
 .app-and-social{
     padding: 0px 18px;
@@ -1326,32 +1343,25 @@ footer {
 }
 .footer-nav {
     margin: 36px 0px 0px; 
-    padding: 0px 18px;
+    padding: 0px 18px 42px;
 }
 .language {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
 }
-.language p{
-    font-size: 16px;
-    font-family: latest-book;
-    letter-spacing: -0.03em;
-}
-.language-list {
-    border: 1px solid black;
-    background: #fff;
+/* .language-choice {
+    display: none;
+} */
+select{
+    width: 63%;
+    height: 36px;
     padding: 5px;
-    width: 59%;
-    height: 32px;
-}
-.language-list p{
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-family: latest-book;
-}
-.language-list span::after{
-    
-}
+} 
 .privacy-choices {
     display: flex;
     column-gap: 10px;
@@ -1364,7 +1374,7 @@ footer {
 .footer-text{
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 28px;
     margin-top: 32px;
 }
 .footer-text p{
@@ -1391,25 +1401,340 @@ footer {
 } 
 .footer-bottom{
     font-size: 12px;
-    font-family: latest-book;
+    font-family: latest-bold;
     display: flex;
     justify-content: end;
-    margin-top: 15px;
+    margin-top: 25px;
 }
-
-
-
-
 
 
 
 
 /* MEDIA QUERIES */
 
-/* HEADER ON 768 */
 
-@media screen and(min-width:768px){
-    .toggi img{
+
+
+/* RESPONSIVE IN MOBILE LARGE SCREENS */
+@media screen and (min-width:425px){
+    .first-text{
+        padding: 32px 16px 22.5% 16px;
+    }
+    .card-text p{
+        letter-spacing: -0.05em;
+        word-spacing: 1px;
+    }
+    .section-bg{
+        margin-bottom: 0px;
+    }
+    article {
+        padding: 100px 16px 50px;
+    }
+
+    .tab-header{
         display: none;
     }
+}
+
+/* HEADER ON 768 */
+
+@media screen and (min-width:768px){
+    .top-bar {
+        display: none;
+    }
+    .tab-header{
+        display: flex;
+        flex-direction: row;
+        height: 56px;
+        width: 100%;
+    }
+     .left-section {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 12px;
+        column-gap: 10px;
+}
+    .logo-text{
+        display: flex;
+        align-items: center;
+    }
+    .logo-text img {
+       width: 24px;
+       height: 26.25px;
+       display: flex;
+       align-items: center;
+    }
+    .logo-text p{
+        font-size: 18px;
+        font-family: latest-bold;
+        font-weight: 600;
+        color: #1a1a1f;
+        letter-spacing: -0.5px;
+        margin-left: 12px;
+        margin-bottom: 3px;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        padding-left: 2px;
+        margin-bottom: 1.5px;
+    }
+    .menu p{
+        font-size: 13px;
+        font-family: latest-book;
+    }
+    .menu span::after{
+        content: '\e70d';
+        font-family: m-fluent;
+        margin: 2px 0px 0px 4px;
+        font-size: 9px;
+    }
+    .explore {
+        display: flex;
+        padding: 20px 8px;
+    }
+     .pro {
+        display: flex;
+        padding: 20px 9px;
+     }
+     .solu {
+        display: flex;
+        padding: 20px 8px;
+     }
+     .pricing {
+        display: flex;
+        padding: 20px 9px;
+     }
+     .partner{
+        display: flex;
+        padding: 20px 8px;
+     }
+     .resource {
+        display: flex;
+        padding: 20px 9px;
+     }
+    .right-section{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 7px;
+        margin: 0px 0px 0px 62.53px;
+    } 
+    .right-section span::after {
+        content:"";
+        font-family: m-fluent;
+        font-size: 14px;
+        padding: 1px 6px;
+    }
+    .right-section img {
+        width: 44px;
+        height: 54px;
+        padding: 15px 8px;
+        display: flex;
+        align-items: center;
+        margin-left: 4px;
+        margin-bottom: 2px;
+    }
+    .right-section p{
+        font-size: 13px;
+        font-family: latest-book;
+        margin-bottom: 2px;
+        letter-spacing: -0.03em;
+        word-spacing: 0.5px;
+    }
+    .main-banner {
+        height: 431.53px;
+    }
+    .first-text{
+        padding: 32px 64px 89px;
+        
+    }
+    .button-group{
+        display: flex;
+        align-items: baseline;
+        column-gap: 8px;
+    }
+    .get-start{
+        width: 104px;
+        height: 48.5px;
+    }
+    .try-azure{
+        width: 148px;
+        height: 48.5px;
+    }
+    .section-bg-img img{
+        height: 1595.31px;
+    }
+    .first-section{
+        padding-left: 45px;
+    }
+    .cards {
+        padding: 0px 50px;
+    }
+    article {
+        padding: 96px 64px 10px;
+    }
+    .drop-down {
+        position: relative;
+    }
+    .drop-down span{
+        position: absolute;
+        left: 23px;
+        top: 30px;
+    }
+    .windows-server{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+    .migration {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+    .devop{
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+    .cloud-scale {
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 10px;
+    }
+    .pro-service{
+        padding: 48px 64px;
+    }
+    .resource-transform{
+        padding: 16px 64px 43px;
+    }
+    .role-scroll{
+        width: 82%;
+        margin: -25px 10px 0px 55px;
+    }
+    .roles span::after{
+        right: 83px;
+        top: 4px;
+    }
+    .btn-text-span{
+        width: 30px;
+        height: 30px;
+    }
+    .optimize-and-btn{
+        padding: 30px 16px 48px;
+    }
+    .globe-explore {
+        display: flex;
+        justify-content: center;
+    }
+    .global-text span{
+        width: 20%;
+    }
+    .azure-global{
+        height: 292px;
+    }
+    .cloud-investment {
+        height: 668px;
+    }
+    .cloud-investment h2{
+        display: none;
+    }
+    .cloud-investment h3{
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        font-family: latest-bold;
+        color: #fff;
+        letter-spacing: -0.03em;
+    }
+.packages {
+    width: 80%;
+    height: 512px;
+    margin: 0px 74px;
+    padding: 28px;
+}
+.img-text img {
+    height: 298.66px;
+}
+.customer-story{
+    padding: 48px 64px;
+}
+.fujitsu-img-text img{
+    height: 75px;
+    width: 173px;
+}
+.fujitsu {
+    height: 78px;
+    width: 184px;
+    border-radius: 10px;
+}
+.aks {
+    column-gap: 5px;
+}
+.aks img {
+    width: 12px;
+    height: 12px;
+}
+.aks p{
+    display: flex;
+    white-space: nowrap;
+} 
+.devops {
+    column-gap: 5px;
+}
+.devops img {
+    width: 12px;
+    height: 12px;
+}
+.devops p{
+    display: flex;
+    white-space: nowrap;
+}
+.storage {
+    column-gap: 5px;
+}
+.storage img {
+    width: 12px;
+    height: 12px;
+}
+.storage p{
+    display: flex;
+    white-space: nowrap;
+}
+.product-link{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.case-study span{
+    width: 17%;
+    border-radius: 8px;
+}
+.next-steps{
+    height: 800px;
+}
+.steps{
+    row-gap: 8px;
+    padding: 15px 69px 0px;
+}
+.links {
+    padding: 56px 64px;
+}
+.app-and-social {
+    display: flex;
+    flex-direction: row;
+    column-gap: 51px;
+}
+.get-the-app{
+    width: 216px;
+    column-gap: 10px;
+}
+select{
+    width: 194px;
+}
+.language-choice{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
 }
