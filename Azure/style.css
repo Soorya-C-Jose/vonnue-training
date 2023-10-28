@@ -69,7 +69,7 @@ span {
 .top-end p {
    font-size: 14px;
    font-family: "latest-book";  
-   letter-spacing: -0.03em;
+   letter-spacing: -0.48px;
    padding-right: 2px;
    padding-bottom: 3px;
 }
@@ -94,12 +94,14 @@ span {
     font-family: m-fluent;
     color: #fff;
     font-size: 15px;
+    margin-left: -4px;
 }
 .chat-sales p{
     font-size: 15px;
     font-family: latest-bold;
     color: #fff;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.3px;
+    padding-left: 3.6525px;
     word-spacing: 0px;
     padding: 10px 14px 10px -1px;
 }
@@ -111,7 +113,7 @@ span {
     width: 100%;
     height: 100%;
 }
-.main-bg img {
+.laptop-bg img {
     display: none;
 }
 .first-text
@@ -145,8 +147,8 @@ span {
  font-family: latest-bold;
  padding: 2px 0px 0px;
  color: #fff;
- letter-spacing: -0.03em;
- word-spacing: 0px;
+ letter-spacing: -0.3px;
+ margin-left: -2px;
 }
 .get-start{
     border: 1px solid #0078d4;
@@ -165,8 +167,8 @@ span {
     font-family: latest-bold;
     padding: 8px 0px 2px;
     color: #2a446f;
-    word-spacing: -1px;
-    letter-spacing: -0.03px;
+    letter-spacing: -0.3px;
+    margin-left: -2px;
 }
 .try-azure {
     border: 2px solid #333;
@@ -189,7 +191,7 @@ span {
     align-items: center;
     padding: 12px 18px 16px;
     border: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.1);
     border-bottom: 10px;
     height: 60px;
 }
@@ -325,7 +327,7 @@ article {
    font-size: 12px;
    font-family: latest-bold;
    color: #263E65;
-   letter-spacing: 1px;
+   letter-spacing: 0.96px;
 }
 .solutions h3 {
     font-size: 23px;
@@ -333,7 +335,7 @@ article {
     line-height: 32px;
     word-spacing: 0px;
     letter-spacing: -0.03em;
-    margin-top: -2px;
+    margin-top: 1px;
 }
  .scroll-ele {
     margin-top: 29px;
@@ -675,6 +677,7 @@ article {
     background: #fefefe;
     margin:-25px 10px 0px 19px;
     position: relative;
+    height: 48px;
 }
 .role-scroll::-webkit-scrollbar{
     display: none;
@@ -694,7 +697,7 @@ article {
 }
 .role-scroll li p{
     border-bottom: 2px solid #0078D4;
-    bottom: 0;
+    padding-bottom: 10px;
     left: 0;
     opacity: 1px;
 }
@@ -970,6 +973,7 @@ height: 320px;
     font-size: 14px;
     color: #0067b8;
     font-family: latest-book;
+    line-height: 30px;
 }
 .devops {
     display: flex;
@@ -986,6 +990,7 @@ height: 320px;
     font-family: latest-book;
     text-decoration: underline;
     color: #0067b8;
+    line-height: 22px;
 }
 .storage {
     display: flex;
@@ -1002,6 +1007,7 @@ height: 320px;
     font-family: latest-book;
     text-decoration: underline;
     color: #0067b8;
+    line-height: 25px;
 }
 .case-study span {
     display: flex;
@@ -1182,8 +1188,8 @@ footer {
 .app-and-social{
     padding: 0px 18px;
     display: flex;
-    flex-direction: column;
-    row-gap: 15px;
+    flex-direction: row;
+    column-gap: 15px;
 }
 .get-the-app{
     padding: 12px;
@@ -1414,8 +1420,18 @@ select{
     justify-content: end;
     margin-top: 25px;
 }
-
-
+.tablet-bg{
+    display: none;
+}
+.foot1-tab{
+    display: none;
+}
+.foot2-tab {
+    display: none;
+}
+.build-deploy-img2{
+    display: none;
+}
 
 
 /* MEDIA QUERIES */
@@ -1425,7 +1441,7 @@ select{
 
 /* RESPONSIVE IN MOBILE LARGE SCREENS */
 @media screen and (min-width:425px){
-    .main-bg img {
+    .laptop-bg img {
         display: none;
     }
     .first-text{
@@ -1454,6 +1470,12 @@ select{
     .featured-news2{
         display: none;
     }
+    .tablet-bg{
+        display: none;
+    }
+    .build-deploy-img2{
+        display: none;
+    }
 }
 
 /* HEADER ON 768 */
@@ -1465,7 +1487,7 @@ select{
     .tab-header{
         display: flex;
         flex-direction: row;
-        height: 56px;
+        height: 55px;
         width: 100%;
     }
      .left-section {
@@ -1483,6 +1505,7 @@ select{
        height: 26.25px;
        display: flex;
        align-items: center;
+       margin-bottom: -1px ;
     }
     .logo-text p{
         font-size: 18px;
@@ -1491,13 +1514,13 @@ select{
         color: #1a1a1f;
         letter-spacing: -0.5px;
         margin-left: 12px;
-        margin-bottom: 3px;
+        margin-bottom: 2px;
     }
     .menu{
         display: flex;
         align-items: center;
         padding-left: 2px;
-        margin-bottom: 1.5px;
+        margin-bottom: 0.5px;
     }
     .menu p{
         font-size: 13px;
@@ -1559,12 +1582,22 @@ select{
     .right-section p{
         font-size: 13px;
         font-family: latest-book;
-        margin-bottom: 2px;
-        letter-spacing: -0.03em;
-        word-spacing: 0.5px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+        letter-spacing: -0.48px;
     }
     .main-banner {
-        height: 431.53px;
+        display: none;
+    }
+    .tablet-bg{
+        display: block;
+        height: 431.54px;
+        width: 100%;
+    }
+    .tablet-bg img{
+        width: 100%;
+        height: 431.54px;
+        object-fit: cover;
     }
     .first-text{
         padding: 32px 64px 95px;
@@ -1597,6 +1630,10 @@ select{
     }
     article {
         padding: 96px 64px 10px;
+    }
+    .azure-services h3{
+        line-height: 46px;
+        margin-bottom: -7pxs;
     }
     .drop-down {
         position: relative;
@@ -1633,11 +1670,11 @@ select{
         padding: 16px 64px 43px;
     }
     .role-scroll{
-        width: 82%;
-        margin: -25px 10px 0px 55px;
+        width: 83%;
+        margin: -25px 0px 0px 66px;
     }
     .roles span::after{
-        right: 83px;
+        right: 64px;
         top: 4px;
     }
     .btn-text-span{
@@ -1653,6 +1690,15 @@ select{
     }
     .global-text span{
         width: 20%;
+    }
+    .roles-bg-img img {
+        width: 100%;
+        height: 633.86px;
+    }
+    .img {
+        width: 640px;
+        height: 374.86px;
+        margin: 20px 44px 0px;
     }
     .azure-global{
         height: 292px;
@@ -1748,14 +1794,22 @@ select{
     padding: 56px 64px;
 }
 .app-and-social {
+     padding: 0px 18px;
     display: flex;
     flex-direction: row;
-    column-gap: 51px;
+    column-gap: 36px; 
 }
 .get-the-app{
-    width: 211px;
+    width: 211.59px;
     height: 48px;
     column-gap: 12px;
+}
+.social-media{
+    column-gap: 24px;
+}
+.get-the-app p{
+    font-family: latest-book;
+    letter-spacing: -0.48px;
 }
 select{
     width: 188px;
@@ -1779,6 +1833,9 @@ select{
 }
 .footer-bottom{
     display: none;
+}
+.privacy-choices{
+    margin: 46px 0px 0px;
 }
 .foot1-tab{
     display: flex;
@@ -1806,6 +1863,9 @@ select{
 .featured-news2{
     display: none;
 }
+.build-deploy-img2{
+    display: none;
+}
 }
 
 
@@ -1823,10 +1883,13 @@ select{
     .main-banner{
         display: none;
     }
+    .tablet-bg{
+        display: none;
+    }
     .first-main-sec {
         position: relative;
     }
-    .main-bg{
+     .laptop-bg{
         position: absolute;
         left: 0;
         top: 0;
@@ -1834,19 +1897,19 @@ select{
         height: 544px;
         width: 100%;
         z-index: -1;
-    }
-    .main-bg img{
+    } 
+    .laptop-bg img{
         display: block; 
         width: 100%;
         height: 544px;
-        object-fit: cover;
+        object-fit: cover; 
     }
     .first-main-txt{
         padding: 60px 0px 49px;
     }
     .first-text {
         background: transparent;
-        padding: 35px 56px 95px;
+        padding: 36px 56px 95px;
     }
     .first-text h1{
         font-size: 40px;
@@ -1925,6 +1988,8 @@ select{
         font-family: latest-bold;
         letter-spacing: -0.03em;
         word-spacing: 1px;
+        padding: 0px 11px 2px;
+        margin-bottom: 1px;
     }
     .featured-news ul li span{
         border-bottom: 4px solid #0067b8;
@@ -1944,7 +2009,7 @@ select{
     .cards {
         display: flex;
         flex-direction: row;
-        column-gap: 15px;
+        column-gap: 16px;
         height: 420.95px;
         width: 920px;
         padding: 0px;
@@ -1962,10 +2027,163 @@ select{
         width: 290.66px;
     }
     .card-text{
-        padding: 19px 12px;
+        padding: 19px 12px 19px 15px;
     }
     .card-text p{
-        line-height:27px;
-        padding-top: 20px;
+        line-height: 1.5rem;
+        padding-top: 24px;
+        letter-spacing: -0.48px;
+        word-spacing: 0px;
+        font-weight: 400;
+    }
+    .card-text h2{
+        letter-spacing: -0.03em;
+        word-spacing: 0px;
+        padding-right: 10px;
+     }
+    .card-footer{
+        column-gap: 8px;
+        margin-top: 30px;
+    } 
+    .card-footer p{
+        letter-spacing: -0.3px;
+    }
+    .chat-sales{
+        width: 156.67px;
+        padding-top: 2px;
+        border-radius: 7px;
+    }
+    .chat-sales p{
+        transform: translateY(-1px);
+    }
+    .chat-sales span::after{
+        margin-left: -14px;
+    }
+    article{
+        padding: 72px 56px;
+        height: 899px;
+    }
+    .solutions h3{
+        margin-right: 473px;
+        margin-top: 2px;
+        /* letter-spacing: -1.2px; */
+        word-spacing: -0.8px;
+    }
+    .solutions{
+        margin-top: -17px;
+    }
+    .solution p{
+        margin-top: -12px;
+    }
+    .scroll-ele {
+        margin-top: 29px;
+    }
+    .scroll-ele span::after{
+        display: none;
+    }
+    .scroll-ele ul{
+        column-gap: 12px;
+    }
+    .scroll-ele li p{
+        padding: 9px 28px;
+    }
+    .scroll-ele li h3{
+        padding: 9px 22px;
+    }
+    .solution-flex-right{
+        width: 60%;
+        padding-left: 175px;
+        margin-top: -1px;
+    }
+     .build-deploy img {
+        display: none;
+    }
+    .build-deploy-img2{
+        display: block;
+    }
+    .build-deploy-img2 img{
+        width: 452px;
+        height: 339px;
+        border-radius: 15px;
+        margin-top: 16px;
+    }
+    .solution-flex{
+        display: flex;
+        padding: 0px 8px;
+    }
+    .solution-flex-left{
+        height: 492px;
+        width: 30%;
+        overflow: scroll;
+    }
+    .solution-flex-left::-webkit-scrollbar{
+        display: none;
+    }
+    .drop-down {
+        margin-top: -11px;
+        margin-left: 41px;
+        letter-spacing: normal;
+        color: #263E65;
+    }
+    .build-deploy p{
+        margin-left: 41px;
+        margin-top: 8px;
+        line-height: 24px;
+    }
+    .build-deploy h2{
+        margin-bottom: 6px;
+        margin-left: 41px;
+        margin-top: 11px;
+        word-spacing: 0px;
+    }
+    .windows-server{
+        margin-left: 44px;
+        padding-top: 7px;
+        column-gap: 8px;
+    }
+    .windows-server p{
+        font-size: 17px;
+        margin: 32px 0px;
+        letter-spacing: -0.54px;
+    }
+    .migration{
+        margin-left: 44px;
+        line-height: 24px;
+        padding-top: 2px;
+    }
+    .migration p{
+        font-size: 17px;
+        margin: 32px 0px;
+    }
+    .devop{
+        margin-left: 44px;
+        column-gap: 7px;
+    }
+    .devop p{
+        font-size: 17px;
+        white-space: nowrap;
+        margin: 32px 0px;
+    }
+    .cloud-scale {
+        margin-left: 44px;
+    }
+    .cloud-scale p{
+        font-size: 17px;
+        margin: 32px 0px;
+    }
+    .solution-ai{
+        display: flex;
+    }
+    .indicator-line{
+        width: 0.45rem;
+        height: auto;
+        background: #0067b8;
+    }
+
+    .pro-service {
+        padding: 72px 56px;
+    }
+    .pro-service h3{
+        margin-top: 16px;
     }
 }
