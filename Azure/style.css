@@ -541,6 +541,56 @@ article {
     word-spacing: 0px;
     letter-spacing: -0.05em;
 }
+.scroll-ele2 {
+    margin-top: 29px;
+    position: relative;
+}
+ .scroll-ele2 ul {
+ display:flex;
+ white-space: nowrap;
+ overflow: scroll;
+ column-gap: 8px;
+ }
+ .scroll-ele2 ul::-webkit-scrollbar{
+    display: none;
+ }
+ .scroll-ele2 li{
+    position: relative;
+    font-size: 16px;
+    font-family: latest-book;
+    white-space: nowrap;
+    list-style-type: none;
+}
+.scroll-ele2 li h3{
+    border: 1px solid #005597;
+    border-radius: 21px;
+    background-color: #005597;
+    color: #fff;
+    font-size: 16px;
+    font-family: latest-bold;
+    padding: 8px 16px;
+}
+.scroll-ele2 li p {
+    font-size: 16px;
+    font-family: latest-bold;
+    color: #2a446f;
+    border: 1px solid #E6F2FB;
+    border-radius: 21px;
+    background: #E6F2FB;
+    padding: 8px 16px;
+    letter-spacing: -0.03em;
+}
+/* .scroll-ele span::after {
+    content: "";
+    font-family: m-fluent;
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 10px;
+} */
 .second-scroll span::after{
     content: "";
     font-family: m-fluent;
@@ -549,6 +599,7 @@ article {
     border: 2px solid #333;
     border-radius: 25px;
     padding: 10px;
+    right: 0px;
 }
 .products-services {
     row-gap: 10px;
@@ -2052,6 +2103,7 @@ select{
         width: 156.67px;
         padding-top: 2px;
         border-radius: 7px;
+        right: 17px;
     }
     .chat-sales p{
         transform: translateY(-1px);
@@ -2183,7 +2235,19 @@ select{
     .pro-service {
         padding: 72px 56px;
     }
-    .pro-service h3{
+    .pro-service p{
+        margin: 0px 0px 16px;
+    }
+    /* .pro-service h3{
         margin-top: 16px;
+    } */
+    .second-scroll span::after{
+        display: none;
+    }
+    .scroll-ele2 li h3{
+        padding: 9px 25px;
+    }
+    .scroll-ele2 li p{
+        padding: 8px 25px;
     }
 }
