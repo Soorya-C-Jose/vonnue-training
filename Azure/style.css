@@ -1820,7 +1820,7 @@ select{
    }
    .img-text img {
     height: 298.66px;
-   }
+   } 
     .customer-story{
     padding: 48px 64px;
    }
@@ -1832,6 +1832,10 @@ select{
     height: 78px;
     width: 184px;
     border-radius: 10px;
+ }
+ .fujitsu-img-text .fujitsu img{
+    width: 100%;
+    height: 75px;
  }
   .aks {
     column-gap: 5px;
@@ -2128,7 +2132,6 @@ select{
         column-gap: 165px;
     }
     .featured-news2 h3{
-        /* margin-left: 165px; */
         border: 1px solid transparent;
         border-radius: 8px;
         background: #89c402;
@@ -2221,7 +2224,6 @@ select{
     .solutions h3{
         margin-right: 473px;
         margin-top: 2px;
-        /* letter-spacing: -1.2px; */
         word-spacing: -0.8px;
     }
     .solutions{
@@ -2336,6 +2338,7 @@ select{
     }
 
     .pro-service {
+        height: 1440px;
         padding: 72px 56px;
     }
     .pro-service p{
@@ -2417,7 +2420,8 @@ select{
         margin-top: -1px;
     }
     .azure-cols{
-        margin-top: 390px;
+        transform: translateY(407px);
+        /* margin-top: 390px; */
         margin-left: 10px;
         padding-left: 8px;
         padding-right: 8px;
@@ -2436,6 +2440,9 @@ select{
         height: 324px;
         margin: 11px 0px;
         margin-right: 16px;
+    }
+    .azure-service-foot{
+        transform: translateY(415px);
     }
     .top{
         height: 64px ;
@@ -2465,6 +2472,13 @@ select{
     }
     .explore-text4{
         margin-top: -26px;
+    }
+    .microsoft h4{
+        line-height: 33px;
+        margin-bottom: 17px;
+    }
+    .micro-def h3{
+        transform: translateY(3px);
     }
     .azure-service-foot{
         padding-top: 12px;
@@ -2823,7 +2837,12 @@ select{
         display: flex;
         justify-content: end;
         column-gap: 16px;
-        transform: translateY(-76px);
+        transform: translateY(-88px);
+        margin-right: -410px;
+    }
+    .foot-lap{
+        display: flex;
+        justify-content: end;
     }
 
     .foot1-lap p{
@@ -2849,6 +2868,33 @@ select{
         font-size: 12px;
         font-family: latest-bold;
         letter-spacing: -0.48px;
+    }
+    .azure-foot-flex{
+        display: flex;
+    }
+    .explore-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-price-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .solution-support-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .partners-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .resources-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .cloud-computing-column{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -2977,10 +3023,10 @@ select{
         letter-spacing: -2.4px;
     }
     .first-text p{
-        margin-right: 645px;
+        margin-right: 700px;
         letter-spacing: -1.3px;
         word-spacing: 0px;
-        font-size: 17px;
+        font-size: 20px;
         line-height: 32px;
     }
 
@@ -2990,6 +3036,9 @@ select{
 
     .featured-news2{
         column-gap: 549px;
+    }
+    .chat-sales {
+        transform: translate(-10px , 153px);
     }
     /* .chat-sales{
         transform: translateY(155px);
@@ -3087,6 +3136,7 @@ select{
 
     .pro-service{
         padding: 72px 72px;
+        height: 1143px;
     }
 
     .pro-top p{
@@ -3130,6 +3180,7 @@ select{
     }
     .azure-cols{
         margin-top:0;
+        transform: translateX(10px);
     }
     .azure-services{
         height: 384px;
@@ -3155,14 +3206,16 @@ select{
         margin: -25px 0px 0px 165px;
     }
     .optimize-and-btn{
-        padding: 44px 56px 241px 63px;
+        padding: 44px 56px 117px 63px;
     }
     .optimize-and-btn p{
         letter-spacing: -0.6px;
     }
     .img{
-        transform: translateX(252px);
+        transform: translateX(128px);
         height: 100%;
+        width: 65%;
+        padding: 18px;
     }
     .roles-bg-img img{
         height: 836.86px;
@@ -3186,27 +3239,33 @@ select{
         width: 92%;
         height: 228px;
     }
+    .packages p{
+        font-size: 20px;
+    }
     .package1{
         display: flex;
         flex-direction: row;
+        column-gap: 15px;
+        margin-right: -39px;
     }
     .package1 p{
-        transform: translateY(24px);
+        transform: translateY(22px);
     }
     .package1 img{
         width: 21.34px;
         height: 27.09px;
+        transform: translateY(-4px);
     }
     .package2{
         display: flex;
         flex-direction: row;
-    }
-    .package2 p{
-        transform: translateY(15spx);
+        transform: translateY(19px);
+        column-gap: 15px;
     }
     .package2 img{
         width: 21.34px;
         height: 27.06px;
+        transform: translateY(-28px);
     }
     .package3{
         display: flex;
@@ -3218,6 +3277,100 @@ select{
         height: 27.06px;
     }
     .package3 p{
-        transform: translateY(16px);
+        transform: translateY(24px);
+    }
+    
+
+    .customer-story-text h3{
+        font-size: 32px;
+        letter-spacing: -1.6px;
+    }
+    .img-text{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 441px;
+        width: 100%;
+    }
+    .img-text img{
+        height: 439px;
+        width: 49%;
+        object-fit: cover;
+    }
+    .fujitsu-img-text{
+        padding: 32px;
+    }
+    .fujitsu-img-text h4{
+        padding-right: 29px;
+        font-size: 24px;
+        letter-spacing: -1.2px;
+        line-height: 32px;
+    }
+    .products p{
+        transform: translateY(10px);
+    }
+    .product-link{
+        transform: translateY(18px);
+    }
+    .product-link p{
+        transform: translateY(-1px);
+    }
+    .aks img{
+        width: 12px;
+        height: 12px;
+    }
+    .devops img{
+        width: 12px;
+        height: 12px;
+    }
+    .storage{
+        transform: translateX(-345px);
+    }
+    .storage img{
+        width: 12px;
+        height: 12px;
+        transform: translateY(34px);
+    }
+    .storage p{
+        transform: translateY(33px);
+    }
+    .case-study span{
+        transform: translateY(37px);
+        width: 118.02px;
+        height: 48px;
+    }
+    .carosal-indicators{
+        transform: translateX(193px);
+        height: 134px;
+    }
+    .step1{
+        width: 100%;
+        height: 327px;
+        border-radius: 25px;
+    }
+    .building-text h4{
+       font-size: 24px;
+    }
+    .person{
+        margin-top: 0px;
+        transform: translateY(75px);
+    }
+    .learning{
+        margin: 0px;
+        transform: translateY(47px);
+    }
+    .azure-foot-flex{
+        column-gap: 99px;
+    }
+    .privacy-choices br{
+        display: none;
+    }
+    .privacy-choices p{
+        transform: translateY(-4px);
+    }
+    .foot1-lap{
+        margin-right: -81px;
+    }
+    .foot2-lap p{
+        transform: translate(103px , -38px);
     }
 }
