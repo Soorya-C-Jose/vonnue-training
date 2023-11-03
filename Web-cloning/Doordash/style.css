@@ -1,0 +1,479 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+@font-face {
+    font-family: "norms-regular";
+    src: url("./Doordash-img/Norms-Regular");
+}
+
+@font-face {
+    font-family: "norms-medium";
+    src: url("./Doordash-img/Norms-Medium");
+}
+
+@font-face {
+    font-family: "norms-bold";
+    src: url("./Doordash-img/Norms-Bold");
+}
+
+.header-layer{
+    position: relative;
+    height: 549px;
+}
+
+.main-banner-bg {
+    position: absolute;
+    width: 100%;
+    height: 549px;
+    z-index: -1 ;
+}
+
+.main-banner-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-text{
+    padding: 0px 8px;
+}
+
+.sign-in-up{
+    display: flex;
+    justify-content: end;
+    column-gap: 8px;
+    transform: translate(-17px , 16px );
+}
+
+.sign-in-up p{
+   font-size: 16px;
+   font-family: norms-bold;
+   display: flex;
+   justify-content: center;
+   transform: translateY(3px);
+}
+
+.sign-in-btn{
+    width: 72.03px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 42px;
+    background: #eb1700;
+}
+
+.sign-in-btn p{
+    text-align: center;
+    color: #fff;
+    margin-top: 2px;
+    letter-spacing: -0.454401px;
+}
+
+.sign-up-btn{
+    width: 79.55px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: 42px;
+    background: #ffff;
+    text-align: center;
+}
+
+.sign-up-btn p{
+    margin-top: 2px;
+    letter-spacing: -0.454401px;
+}
+
+.center-text {
+    display: flex;
+    justify-content: center;
+    column-gap:8px;
+    transform: translateY(146px);
+}
+
+.text{
+    transform: translateY(165px);
+}
+
+.header-bottom h2{
+    color: #fff;
+    font-size: 22px;
+    font-family: norms-bold;
+    text-align: center;
+    line-height: 28px;
+}
+
+.delivery-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 324px;
+    height: 48px;
+    border: 1px solid transparent;
+    border-radius: 31px;
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 4px;
+    transform: translate(18px , 24px);
+}
+
+.search img{
+    margin-left: -1px;
+    margin-top: 5px;
+}
+
+.delivery-search p{
+    font-size: 16px;
+    font-family: norms-medium;
+    color: #615c5c;
+    transform: translate(-32px , -1px);
+}
+
+.arrow-right {
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.sign-in-profile{
+    display: flex;
+    justify-content: center;
+    column-gap: 4px;
+    margin-top: 41px;
+    text-align: center;
+    width: 88.81px;
+    height: 31px;
+    border: 1px solid #fff;
+    border-radius: 39px;
+    background: #fff;
+    transform: translateX(135px);
+}
+
+.sign-in-profile img{
+    height: 16px;
+    width: 16px;
+    transform: translateY(6px);
+}
+
+.sign-in-profile p{
+    font-size: 14px;
+    font-family: norms-bold;
+    transform: translateY(6px);
+}
+
+.download-app{
+    display: flex;
+    column-gap: 7px;
+    padding: 20px;
+    width: 335px;
+    height: 146px;
+    border: 1px solid #f7f7f7;
+    border-radius: 12px;
+    background: #f7f7f7;
+    margin: 22px 20px;
+    box-shadow: 0px 0px 3px #ccc;
+}
+
+.app-logo {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #f0eeee;
+    background: #fff;
+    border-radius: 14px;
+    margin-top: -1px;
+}
+
+.app-logo img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+.play-store{
+    line-height: 22px;
+    margin-top: -3px;
+}
+
+.play-store h2{
+   font-size: 18px;
+   font-family: norms-bold;
+   letter-spacing: -0.511197px;
+   margin-bottom: 4px;
+   margin-top: -3px;
+}
+
+.play-store h3{
+   font-size: 14px;
+   font-family: norms-medium;
+   font-weight: 500;
+   color: rgb(118,118,118);
+}
+
+.get-app-btn{
+    display: flex;
+    column-gap: 4px;
+    border: 1px solid #eb1700;
+    background: #eb1700;
+    border-radius: 24px;
+    width: 124.23px;
+    height: 32px;
+    margin-top: 8px;
+}
+
+.get-app-btn p{
+    font-size: 14px;
+    font-family: norms-bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.get-app-btn img{
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    transform: translateY(7px);
+}
+
+.first-section{
+    margin: 40px 0px;
+    padding: 8px;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dasher-partner-experience{
+    display: flex;
+    column-gap: 30px;
+    padding: 16px;
+}
+
+.left-img img{
+    width: 88px;
+    height: 88px;
+}
+
+.right-text h2 {
+   font-size: 32px;
+   font-family: norms-bold;
+   line-height: 40px;
+}
+
+.right-text h3{
+    font-size: 18px;
+    font-family: norms-medium;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.right-bottom {
+    display: flex;
+    column-gap: 4px;
+    margin: 12px 0px 0px;
+}
+
+.right-bottom p{
+    font-size: 14px;
+    font-family: norms-bold;
+    color: #eb1700;
+}
+
+.right-bottom img{
+   width: 16px;
+   height: 11px;
+   margin-top: 3px;
+}
+
+.resto-section{
+   position: relative; 
+   height: 890px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 731px;
+    background-color:#fef1ee;
+    z-index: -1;
+}
+
+.resto-dashpass{
+    padding: 20px;
+}
+
+.resto-img {
+    width: 100%;
+    height: 180px;
+}
+
+.resto-dashpass img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resto-section-txt h2{
+    font-size: 24px;
+    font-family: norms-bold;
+    letter-spacing: -0.170399px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 20px 0px 0px;
+}
+
+.resto-section-txt h4{
+    font-size: 18px;
+    font-family: norms-bold;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.resto-section-txt p{
+    font-size: 14px;
+    font-family: norms-medium;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.button{
+    width: fit-content;
+    padding: 2px 15px;
+    height: 32px;
+    border: 1px solid #eb1700;
+    background: #eb1700;
+    border-radius: 15px;
+    margin: 20px 0px 0px;
+}
+
+.button p{
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 14px;
+    font-family: norms-bold;
+}
+
+.grocery-section{
+    position: relative;
+    height: 350px;
+}
+
+.grocery-bg{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    z-index: 0;
+}
+
+.grocery-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    background-color: rgba(30,30,30,0.6);
+    z-index: 1;
+}
+
+.grocery-text{
+    position: absolute;
+    z-index: 2;
+    margin: 66px 0px;
+}
+
+.grocery-text h2{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: norms-bold;
+    letter-spacing: -0.170399px;
+    line-height: 32px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grocery-text h3{
+    font-size: 18px;
+    font-family:norms-bold;
+    font-weight: 700;
+    line-height: 22px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.grocery-text p{
+    font-size: 14px;
+    font-family: norms-medium;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.grocery p{
+    font-size: 14px;
+    font-family: norms-bold;
+    transform: translateY(-7px);
+}
+
+.grocery{
+    margin: 20px 121px 0px;
+}
+
+.convenient-store{
+    padding: 20px;
+}
+
+.convenient-img {
+    width: 100%;
+    height: 180px;
+}
+
+.convenient-store img {
+    width: 100%;
+    height: 100%;
+}
+
+.convenient-text h2{
+     font-size: 24px;
+     font-family: norms-bold;
+     letter-spacing: -0.170399px;
+     line-height: 32px;
+     margin-top: 20px;
+}
+
+.convenient-text p{
+    font-size: 14px;
+    font-family: norms-medium;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.convenient p{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: norms-bold;
+    margin-top: 3px;
+}
+
+
