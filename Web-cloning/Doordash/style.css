@@ -97,8 +97,12 @@
   transform: translateY(146px);
 }
 
+.doordash-text img{
+  transform: translateY(3px);
+}
+
 .text {
-  transform: translateY(165px);
+  transform: translateY(161px);
 }
 
 .header-bottom h2 {
@@ -120,7 +124,7 @@
   background: #fff;
   padding-left: 16px;
   padding-right: 4px;
-  transform: translate(0px, 24px);
+  transform: translate(18px, 24px);
 }
 
 .search img {
@@ -133,11 +137,13 @@
   font-family: norms-medium;
   color: #615c5c;
   transform: translate(-32px, -1px);
+  margin-left: 16px;
 }
 
 .arrow-right {
   margin-right: 7px;
   margin-top: 5px;
+  transform: translateX(30px);
 }
 
 .sign-in-profile {
@@ -292,6 +298,7 @@
   font-size: 14px;
   font-family: norms-bold;
   color: #eb1700;
+  letter-spacing: -0.397598px;
 }
 
 .right-bottom img {
@@ -332,6 +339,7 @@
 .resto-img-tab {
   display: none;
 }
+
 .resto-section-txt h2 {
   font-size: 24px;
   font-family: norms-bold;
@@ -804,9 +812,33 @@
   display: none;
 }
 
+.footer-list-tab {
+  display: none;
+}
+
+.sign-in-profile span {
+  display: none;
+}
+.alcohol-desktop img {
+  display: none;
+}
+
+.pet-supply-desktop img {
+  display: none;
+}
+
+.desktop-banner img {
+  display: none;
+}
+
 /* RESPONSIVE ON MOLILE(L) SCREEN*/
 
 @media screen and (min-width: 425px) {
+  
+  .main-banner-bg{
+    height: 550px;
+  }
+
   .header-bottom h2 {
     max-width: 350px;
     margin-left: auto;
@@ -814,7 +846,7 @@
   }
 
   .text {
-    transform: translateY(166px);
+    transform: translateY(161px);
   }
 
   .delivery-search {
@@ -824,7 +856,7 @@
   }
 
   .delivery-search p {
-    transform: translate(-46px, -1px);
+    transform: translate(-32px, -1px);
   }
 
   .location img {
@@ -832,19 +864,28 @@
   }
 
   .sign-in-profile {
-    max-width: 88.81px;
     margin-left: auto;
     margin-right: auto;
     transform: translateX(0px);
   }
 
   .download-app {
-    width: 359px;
+    width: 358px;
     height: 146px;
+  }
+   
+
+  .app-logo{
+    margin-left: -1px;
   }
 
   .app-download-btn {
     margin-top: 7px;
+  }
+  
+
+  .app-download-btn p{
+    margin-left: 11px;
   }
 
   .right-text h2 {
@@ -855,7 +896,10 @@
     margin-right: 8px;
     font-weight: 400;
   }
-
+   
+  .dasher-partner-experience{
+    transform: translate(4px , 1px);
+  }
   .resto-section {
     height: 852px;
   }
@@ -914,6 +958,26 @@
   .convenient-img-tab {
     display: none;
   }
+
+  .footer-list-tab {
+    display: none;
+  }
+
+  .sign-in-profile span {
+    display: none;
+  }
+
+  .alcohol-desktop img {
+    display: none;
+  }
+
+  .pet-supply-img {
+    display: none;
+  }
+
+  .desktop-banner img {
+    display: none;
+  }
 }
 
 /* TABLET RESPONSIVE */
@@ -947,7 +1011,7 @@
   }
 
   .text {
-    transform: translateY(208px);
+    transform: translateY(203px);
     max-width: 408px;
     margin-left: auto;
     margin-right: auto;
@@ -970,7 +1034,7 @@
   }
 
   .delivery-search p {
-    transform: translate(-53px, -1px);
+    transform: translate(-69px, -1px);
   }
 
   .arrow-right {
@@ -978,7 +1042,7 @@
     margin-top: 0px;
     display: flex;
     justify-content: end;
-    transform: translateX(64px);
+    transform: translateX(48px);
   }
 
   .download-app {
@@ -987,18 +1051,32 @@
 
   .first-section {
     height: 593px;
+    margin: 37px 0px 40px;
+    transform: translateY(-6px);
   }
 
   .dasher-partner-experience {
     max-width: 485px;
     margin-left: auto;
     margin-right: auto;
-    column-gap: 70px;
+    column-gap: 69px;
+  }
+   
+  .left-img {
+    transform: translateX(3px);
   }
 
   .left-img img {
     width: 124px;
     height: 124px;
+  }
+
+  .right-text{
+    transform: translateX(-2px);
+  }
+
+  .right-bottom{
+    margin: 14px 0px 0px;
   }
 
   .resto-section {
@@ -1039,7 +1117,7 @@
   }
 
   .resto-section-txt {
-    transform: translateY(150px);
+    transform: translateY(97px);
   }
 
   .resto-section-txt h2 {
@@ -1073,19 +1151,22 @@
     margin: 136px 0px;
     align-content: center;
     max-width: 550px;
-    transform: translateX(105px);
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translateX(105px); */
   }
 
   .grocery-text h2 {
     font-size: 40px;
     letter-spacing: -0.568px;
-    max-width: 495px;
+    /* max-width: 384px;  */
     line-height: 44px;
   }
 
   .grocery-text h3 {
     font-size: 24px;
     margin-top: 20px;
+    white-space: nowrap;
   }
 
   .grocery-text p {
@@ -1238,62 +1319,540 @@
   .item h3 {
     margin-top: 20px;
   }
-  
-  .foot-section{
+
+  .foot-section {
     padding: 32px 0px;
   }
 
-  .foot-item{
+  .foot-item {
     display: flex;
     flex-direction: column;
   }
-   
-  .cities{
+
+  .cities {
     display: flex;
     flex-direction: row;
-    column-gap: 170px;
+    column-gap: 128px;
   }
 
-  .cities h2{
-   white-space: nowrap;
+  .cities h2 {
+    white-space: nowrap;
   }
 
-  .cities p{
-    transform: translate(-241px , 32px);
+  .cities p {
+    transform: translate(-200px, 32px);
     white-space: nowrap;
     text-align: start;
   }
 
-  .cuisine{
+  .cuisine {
     display: flex;
     flex-direction: row;
-    column-gap: 180px;
+    column-gap: 171px;
   }
 
-  .cuisine p{
+  .cuisine p {
     text-align: start;
   }
 
-  .popular{
+  .popular {
     display: flex;
     flex-direction: row;
-    column-gap: 140px;
+    column-gap: 171px;
     white-space: nowrap;
     text-align: start;
   }
 
-  .footer-download{
+  .footer-download {
     padding: 0px 0px;
   }
 
-  .foot-section{
+  .foot-section {
     display: flex;
     flex-direction: row;
-    column-gap: 145px;
   }
 
-  .foot-section h2,p{
+  .foot-section h2,
+  .foot-section p {
+    text-align: start;
+    white-space: nowrap;
+  }
+
+  .popular {
+    column-gap: 58px;
+  }
+
+  .get-let {
+    padding: 32px 0px;
+    column-gap: 171px;
+  }
+
+  .get-know {
+    transform: translateY(35px);
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 7px;
+  }
+
+  .list-arrow {
+    right: 32px;
+  }
+
+  .list1,
+  .list2,
+  .list-2-mobile,
+  .list-3-mobile {
+    display: none;
+  }
+
+  .footer-list-tab {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-list-tab {
+    font-family: norms-regular;
+  }
+
+  .list1-tab {
+    display: flex;
+    column-gap: 9px;
+  }
+
+  .list2-tab {
+    display: flex;
+    column-gap: 15px;
     text-align: start;
   }
 
+  .social-media {
+    padding-top: 10px;
+  }
+
+  .sign-in-profile span {
+    display: none;
+  }
+
+  .alcohol-desktop img {
+    display: none;
+  }
+
+  .pet-supply-desktop img {
+    display: none;
+  }
+
+  .desktop-banner img {
+    display: none;
+  }
+}
+
+/* RESPONSIVE ON LAPTOP */
+
+@media screen and (min-width: 1024px) {
+  .center-text {
+    column-gap: 12px;
+  }
+
+  .doordash-logo img {
+    height: 24px;
+  }
+
+  .doordash-text img {
+    height: 18px;
+    transform: translateY(3px);
+  }
+
+  .text {
+    transform: translateY(214px);
+  }
+
+  .text h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    white-space: nowrap;
+    letter-spacing: -0.568px;
+  }
+
+  .delivery-search {
+    margin-top: 8px;
+  }
+
+  .sign-in-profile p {
+    display: none;
+  }
+
+  .sign-in-profile {
+    width: 203.75px;
+    height: 32px;
+    white-space: nowrap;
+  }
+
+  .sign-in-profile span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: norms-bold;
+  }
+
+  .first-section {
+    margin: 39px 0px 104px;
+    padding: 0px 8px 8px;
+    row-gap: 10px;
+  }
+
+  .dasher-partner-experience {
+    max-width: 486px;
+    column-gap: 72px;
+  }
+
+  .left-img img {
+    transform: translateX(8px);
+  }
+
+  .right-bottom {
+    margin: 15px 0px 0px;
+  }
+
+  .resto-section-txt h2 {
+    max-width: 360px;
+  }
+
+  .grocery-text {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .mobile img {
+    display: none;
+  }
+
+  .alcohol-desktop img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .alcohol-desktop {
+    width: 472px;
+    height: 472px;
+  }
+
+  .pet-supply-desktop img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .pet-supply-desktop {
+    width: 472px;
+    height: 472px;
+  }
+
+  .scrolling-ele {
+    column-gap: 137px;
+  }
+
+  .scroll-img {
+    height: 472px;
+    width: 472px;
+  }
+
+  .scroll-text {
+    transform: translateX(57px);
+  }
+
+  .scroll-text h2 {
+    margin-right: -43px;
+  }
+
+  .foot-item {
+    display: flex;
+    flex-direction: row;
+  }
+  .cities {
+    column-gap: 51px;
+  }
+
+  .cities p {
+    transform: translate(-118px, 32px);
+  }
+
+  .cuisine {
+    column-gap: 73px;
+    transform: translateX(-79px);
+  }
+
+  .cuisine .block1 {
+    transform: translateY(-30px);
+  }
+
+  .popular {
+    column-gap: 121px;
+  }
+
+  .popular .block1 {
+    transform: translate(-30px);
+  }
+
+  .footer-download {
+    align-items: end;
+  }
+
+  .get-let {
+    column-gap: 49px;
+    margin-top: -178px;
+  }
+
+  .footer-bottom {
+    column-gap: 0;
+  }
+
+  .footer-list-tab {
+    display: flex;
+    flex-direction: row;
+    column-gap: 14px;
+    white-space: nowrap;
+  }
+
+  .list1-tab {
+    column-gap: 22px;
+  }
+
+  .list1-tab img {
+    transform: translate(10px, -13px);
+  }
+  .list2-tab {
+    column-gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 22px;
+  }
+
+  .desktop-banner img {
+    display: none;
+  }
+}
+
+/* RESPONSIVE ON DESKTOP L*/
+
+@media screen and (min-width: 1440px) {
+  .main-banner-bg img {
+    display: none;
+  }
+
+  .desktop-banner {
+    width: 100%;
+    height: 100%;
+  }
+  .desktop-banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .arrow-right {
+    display: none;
+  }
+
+  .arrow-right-white {
+    display: flex;
+    border: 1px solid #eb1700;
+    border-radius: 25px;
+    background: #eb1700;
+    padding: 9px;
+    transform: translateX(56px);
+  }
+
+  .arrow-right-white img {
+    height: 20px;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row;
+    max-width: 1182px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 96px;
+    margin-top: 108px;
+    column-gap: 54px;
+    height: 450px;
+    transform: translateX(-52px);
+  }
+
+  .dasher-partner-experience {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 17px;
+  }
+
+  .left-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-img img {
+    width: 154px;
+    height: 154px;
+  }
+
+  .partner {
+    transform: translateX(-26px);
+  }
+
+  .exp {
+    transform: translateX(-14px);
+  }
+
+  .right-text {
+    transform: translateX(6px);
+  }
+  .right-text h2 {
+    text-align: center;
+  }
+
+  .right-text h3 {
+    text-align: center;
+    margin-top: 8px;
+    transform: translateX(-1px);
+  }
+  
+  .dasher-txt h3{
+    margin-right: 87px;
+    transform: translateX(39px);
+  }
+
+  .partner-txt h2{
+    margin-right: 29px;
+    transform: translateX(9px);
+  }
+
+  .right-bottom {
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-bottom p {
+    font-size: 18px;
+  }
+
+  .resto-dashpass{
+    max-width: 1155.02px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grocery-text{
+    max-width: 550px;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  .convenient-store {
+    max-width: 1155.02px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .convenient-text{
+    max-width: 399.53px;
+  }
+  
+  .scrolling-ele{
+    column-gap: 202px;
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 1184px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .scroll-img{
+    width: 552px;
+    height: 552px;
+  }
+
+  .alcohol-desktop{
+    width: 552px;
+    height: 552px;
+  }
+
+  .pet-supply-desktop{
+    width: 552px;
+    height: 552px;
+  }
+  
+  .scroll-text h4{
+    margin-right: -217px;
+    transform: translateX(-76px);
+  }
+
+  .item{
+    max-width: 1155.02px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cities{
+    column-gap: 156px;
+  }
+
+  .cities h2{
+    transform: translateX(110px);
+  }
+  
+  .foot-section{
+
+  }
+  .cuisine .block1{
+    transform: translateY(-32px);
+  }
+  
+  .foot-section{
+   justify-content: center;
+  }
+
+  .popular{
+    /* margin-left: 179px; */
+    column-gap: 186px;
+  }
+
+  .get-let{
+    /* margin-left: 151px; */
+    transform: translateX(-257px);
+    column-gap: 86px;
+  }
+
+  .footer-download{
+    transform: translateX(-178px);
+  }
+
+  .footer-bottom{
+    justify-content: center;
+    column-gap: 9px;
+  }
+
+  .foot-item{
+    justify-content: center;
+    column-gap: 100px;
+  }
+
+  .list2-tab{
+    column-gap: 28px;
+  }
+}
+
+
+/* RESPONSIVE ON 2560PX */
+@media screen and (min-width:2560px){
+   .footer-download{
+    transform: translateX(-550px);
+   }
 }
