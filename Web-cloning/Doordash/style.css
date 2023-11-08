@@ -819,6 +819,7 @@
 .sign-in-profile span {
   display: none;
 }
+
 .alcohol-desktop img {
   display: none;
 }
@@ -900,6 +901,7 @@
   .dasher-partner-experience{
     transform: translate(4px , 1px);
   }
+
   .resto-section {
     height: 852px;
   }
@@ -1153,13 +1155,11 @@
     max-width: 550px;
     left: 50%;
     transform: translateX(-50%);
-    /* transform: translateX(105px); */
   }
 
   .grocery-text h2 {
     font-size: 40px;
     letter-spacing: -0.568px;
-    /* max-width: 384px;  */
     line-height: 44px;
   }
 
@@ -1502,6 +1502,7 @@
     margin: 39px 0px 104px;
     padding: 0px 8px 8px;
     row-gap: 10px;
+    transform: translateY(0px);
   }
 
   .dasher-partner-experience {
@@ -1510,11 +1511,15 @@
   }
 
   .left-img img {
-    transform: translateX(8px);
+    transform: translateX(1px);
+  }
+
+  .right-text{
+    transform: translateX(-4px);
   }
 
   .right-bottom {
-    margin: 15px 0px 0px;
+    margin: 14px 0px 0px;
   }
 
   .resto-section-txt h2 {
@@ -1575,6 +1580,7 @@
     display: flex;
     flex-direction: row;
   }
+
   .cities {
     column-gap: 51px;
   }
@@ -1627,6 +1633,7 @@
   .list1-tab img {
     transform: translate(10px, -13px);
   }
+
   .list2-tab {
     column-gap: 0;
     display: flex;
@@ -1650,6 +1657,7 @@
     width: 100%;
     height: 100%;
   }
+
   .desktop-banner img {
     display: block;
     width: 100%;
@@ -1667,7 +1675,7 @@
     border-radius: 25px;
     background: #eb1700;
     padding: 9px;
-    transform: translateX(56px);
+    transform: translateX(40px);
   }
 
   .arrow-right-white img {
@@ -1707,13 +1715,22 @@
     transform: translateX(-26px);
   }
 
+  .partner img{
+    transform: translateX(5px);
+  }
+
   .exp {
     transform: translateX(-14px);
+  }
+
+  .exp img{
+    transform: translateX(5px);
   }
 
   .right-text {
     transform: translateX(6px);
   }
+
   .right-text h2 {
     text-align: center;
   }
@@ -1724,6 +1741,9 @@
     transform: translateX(-1px);
   }
   
+  .dasher-txt {
+    transform: translate(2px , -1px);
+  }
   .dasher-txt h3{
     margin-right: 87px;
     transform: translateX(39px);
@@ -1811,6 +1831,7 @@
   .foot-section{
 
   }
+
   .cuisine .block1{
     transform: translateY(-32px);
   }
@@ -1820,12 +1841,10 @@
   }
 
   .popular{
-    /* margin-left: 179px; */
     column-gap: 186px;
   }
 
   .get-let{
-    /* margin-left: 151px; */
     transform: translateX(-257px);
     column-gap: 86px;
   }

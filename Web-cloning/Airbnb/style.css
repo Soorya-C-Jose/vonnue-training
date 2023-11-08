@@ -1645,6 +1645,9 @@ display: inline;
      .images {
         padding-left: 50px;
      }
+     .scrolling-ele h3{
+        overflow: unset;
+     }
     .scroll-sidebar img {
         top: 38.25%;
       padding: 10px;

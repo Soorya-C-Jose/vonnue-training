@@ -1,5 +1,0 @@
-step 1:Start
-step 2: Get a number from the user and declare as num
-step 3: Iterate while loop until you find the nth prime number.
-step 4:increment the value by 1 when you find any prime number.
-step 5:stop
