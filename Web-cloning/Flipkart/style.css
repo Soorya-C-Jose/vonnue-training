@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "inter-book";
+    src: url("./flipkart-img/Inter-book");
+}
+
+@font-face {
+    font-family:"inter-regular";
+    src: url("./flipkart-img/inter-regular");
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+    border-bottom: 1px solid #eeecec;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    margin-left: 12px;
+}
+
+.left-arrow{
+    width: 19px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 23px;
+    width: 23px;
+    transform: translateY(4px);
+}
+
+.heading h1{
+    font-size: 16px;
+    font-family: inter-book;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    word-spacing: 0.05px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    margin-right: 26px;
+}
+
+.search img{
+    transform: translate(19px ,3px);
+}
+
+.cart img{
+    transform: translateY(3px);
+}
+
+.login span{
+    font-size: 16px;
+    font-family: inter-book;
+    display: flex;
+    align-items: center;
+    transform: translateY(-1px);
+    letter-spacing: -0.47px;
+}
+
+.sort-filter-section{
+    display: flex;
+    justify-content: space-around;
+    height: 48px;
+    border-bottom: 1px solid #eeecec;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.sort-filter-section p{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inter-book;
+    color: rgb(17,17,18);
+    letter-spacing: 0.1px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.deals-section{
+    display: flex;
+
+}
+
+.deals-section img{
+    height: 32px;
+    width: 32px;
+}
+
+.first-box {
+    display: flex;
+    align-items: center;
+}
