@@ -2679,7 +2679,8 @@ select {
     width: 30%;
     overflow-y: scroll;
   }
-/* 
+
+  /* 
   .solution-flex-left::-webkit-scrollbar {
     display: none;
   } */
@@ -2873,7 +2874,7 @@ select {
 
   .azure-services {
     width: 31%;
-    height: 324px;
+    height: 340px;
     margin: 11px 0px;
     margin-right: 16px;
   }
@@ -2973,7 +2974,8 @@ select {
     height: 48px;
     margin: -25px 0px 0px 57px;
   }
-/* 
+
+  /* 
   .role-scroll li {
     padding: 12px 98px 12px 12px;
   } */
@@ -3747,15 +3749,14 @@ select {
   }
 
   .azure-cols {
-    margin-top: 0;
+    margin-top: -12px;
     width: 63%;
     max-width: 63%;
     transform: translateX(10px);
   }
 
   .azure-services {
-    height: 384px;
-    max-height: 384px;
+    height: 358px;
   }
 
   .azure-service-foot {
@@ -3763,15 +3764,14 @@ select {
   }
 
   .azure-services h3 {
-    transform: translateY(61px);
+    /* transform: translateY(61px); */
+    margin-top: 47px;
   }
 
-  .explore-text3 {
-    transform: translateY(3px);
-  }
 
   .micro-def h3 {
-    transform: translateY(20px);
+    /* transform: translateY(20px); */
+    margin-top: -31px;
   }
 
   .resource-transform h2 {
@@ -3991,16 +3991,16 @@ select {
     column-gap: 95px;
   }
 
-  .azure-foot-flex p{
+  .azure-foot-flex p {
     white-space: nowrap;
   }
 
-  .product-price-column{
+  .product-price-column {
     margin-left: 34px;
   }
 
-  .solution-support-column br{
-     display: none;
+  .solution-support-column br {
+    display: none;
   }
 
   .partners-column {
@@ -4011,10 +4011,11 @@ select {
     margin-left: 46px;
   }
 
-  .resources-column br{
+  .resources-column br {
     display: none;
   }
-  .cloud-computing-column{
+
+  .cloud-computing-column {
     margin-left: -59px;
   }
 
@@ -4041,6 +4042,7 @@ select {
   .foot2-lap p {
     transform: translate(103px, -38px);
   }
+
   .first-text h1 br {
     display: none;
   }
@@ -4137,7 +4139,8 @@ select {
     width: 1120px;
     margin: -25px auto 0px auto;
   }
-/* 
+
+  /* 
   .role-scroll li {
     padding: 21px 97px 12px 12px;
   } */
@@ -4186,72 +4189,110 @@ select {
 
   .foot1-lap {
     margin-right: 31px;
-    transform: translate(116px , -66px);
+    transform: translate(116px, -66px);
   }
 
   .foot2-lap p {
-    transform: translate(104px , -46px);
+    transform: translate(104px, -46px);
   }
 
-  .foot2-lap h3{
+  .foot2-lap h3 {
     transform: translateY(-19px);
+  }
+
+  .link-text{
+    display: flex;
+    flex-direction: column;
   }
 }
 
 
 /* RESPONSIVE ON 1640PX */
 
-@media screen and (min-width:1640px){
-  
-  .first-section{
+@media screen and (min-width:1640px) {
+
+  .first-section {
     padding-left: 0px;
     max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .chat-sales{
+  .chat-sales {
     top: 94%;
   }
 
-  .img-text-img{
+  .img-text-img {
     padding: 7px;
     border-radius: 7px;
   }
 
-  .product-price-column{
+  .product-price-column {
     margin-left: 55px;
   }
 
-  .solution-support-column{
+  .solution-support-column {
     margin-left: 48px;
   }
 
-  .partners-column{
+  .partners-column {
     margin-left: 10px;
   }
 
-  .resource-column{
+  .resource-column {
     margin-left: 68px;
   }
 
-  .cloud-computing-column{
+  .cloud-computing-column {
     margin-left: -3pxs;
   }
 
-  .foot2-lap{
+  .foot2-lap {
     display: flex;
   }
 
-  .foot1-lap{
-    transform: translate(0px , -66px);
+  .foot1-lap {
+    transform: translate(0px, -66px);
   }
 
-  .foot2-lap p{
-    transform: translate(-8px , -46px);
+  .foot2-lap p {
+    transform: translate(-8px, -46px);
   }
 
-  .foot2-lap h3{
-    transform: translate(-11px , -46px);
+  .foot2-lap h3 {
+    transform: translate(-11px, -46px);
+  }
+}
+
+/* RESPONSIVE ON 2560PX */
+
+@media screen and (min-width:2560px){
+  .link-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 1423px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .steps{
+    max-width: 1423px;
+  }
+
+  .step1{
+    height: 301px;
+  }
+
+  .btn-and-try{
+    margin-top: 56px;
+  }
+
+  .person {
+    margin-top: -16px;
+  }
+
+  .learning {
+    margin-top: -16px;
   }
 }
