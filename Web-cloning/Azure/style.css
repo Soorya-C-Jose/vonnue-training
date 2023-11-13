@@ -3,26 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "latest-book";
   src: url("azure img/latest.woff2");
 }
+
 @font-face {
   font-family: "latest-bold";
   src: url("azure img/latest (1).woff2");
 }
+
 @font-face {
   font-family: "m-fluent";
   src: url("azure img/MWFFluentIcons.woff2");
 }
+
 .tab-header {
   display: none;
 }
+
 .top-bar {
   display: flex;
   justify-content: space-between;
   padding: 12px;
 }
+
 .toggi {
   display: flex;
   column-gap: 16px;
@@ -30,25 +36,30 @@
   align-items: center;
   margin: 5px 0px 0px 12px;
 }
+
 .toggi img {
   width: 20px;
   height: 45px;
 }
+
 .toggi p {
   font-size: 17px;
   font-family: latest-bold;
   padding-bottom: 7px;
 }
+
 .azure-logo {
   display: flex;
   text-align: center;
   justify-content: center;
 }
+
 .azure-logo img {
   padding-left: 17px;
   display: flex;
   align-items: center;
 }
+
 .top-end {
   display: flex;
   justify-content: center;
@@ -56,16 +67,19 @@
   padding-right: 18px;
   column-gap: 35px;
 }
+
 span {
   height: 16px;
   margin-right: -2px;
 }
+
 .top-end span::after {
   content: "";
   font-family: "m-fluent";
   font-size: 18px;
   margin-left: -1.95px;
 }
+
 .top-end p {
   font-size: 14px;
   font-family: "latest-book";
@@ -73,6 +87,7 @@ span {
   padding-right: 2px;
   padding-bottom: 3px;
 }
+
 .chat-sales {
   display: flex;
   align-items: center;
@@ -80,7 +95,7 @@ span {
   column-gap: 8px;
   position: fixed;
   right: 16px;
-  top: 95%;
+  top: 90%;
   z-index: 5;
   height: 46px;
   width: 149px;
@@ -111,17 +126,21 @@ span {
   height: 56vw;
   margin-top: -1px;
 }
+
 .main-banner img {
   width: 100%;
   height: 100%;
 }
+
 .laptop-bg img {
   display: none;
 }
+
 .first-text {
   background: linear-gradient(90deg, #ede8f6 0%, #f4fafd 49.99%, #dceef8 100%);
   padding: 31.5px 16px 25.5% 16px;
 }
+
 .first-text h1 {
   display: flex;
   justify-content: start;
@@ -132,6 +151,7 @@ span {
   word-spacing: 0px;
   line-height: 40px;
 }
+
 .first-text p {
   font-size: 18px;
   font-family: latest-book;
@@ -141,6 +161,7 @@ span {
   word-spacing: 0px;
   letter-spacing: -0.03em;
 }
+
 .get-start span {
   display: flex;
   justify-content: center;
@@ -151,6 +172,7 @@ span {
   letter-spacing: -0.3px;
   margin-left: -2px;
 }
+
 .get-start {
   border: 1px solid #0078d4;
   border-radius: 7px;
@@ -160,6 +182,7 @@ span {
   padding: 10px 14px;
   margin-top: 24px;
 }
+
 .try-azure span {
   display: flex;
   justify-content: center;
@@ -171,6 +194,7 @@ span {
   letter-spacing: -0.3px;
   margin-left: -2px;
 }
+
 .try-azure {
   border: 2px solid #333;
   border-radius: 7px;
@@ -180,6 +204,7 @@ span {
   padding: 10px 14px;
   margin-top: 8px;
 }
+
 .featured-news {
   position: sticky;
   top: 0;
@@ -196,6 +221,7 @@ span {
   border-bottom: 10px;
   height: 60px;
 }
+
 .featured-news p {
   font-size: 12px;
   font-family: latest-bold;
@@ -204,33 +230,40 @@ span {
   margin-top: -1px;
   color: #2a446f;
 }
+
 .featured-news::after {
   content: "";
   font-family: m-fluent;
   margin-top: -5px;
 }
+
 .featured-news2 {
   display: none;
 }
+
 .section-bg {
   position: relative;
   margin-top: -15px;
   margin-bottom: 77px;
 }
+
 .section-bg-img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .section-bg-img img {
   width: 100%;
   height: 1344.88px;
   object-fit: cover;
 }
+
 .section-cards {
   margin: 16px;
 }
+
 .first-section p {
   font-size: 12px;
   font-family: latest-bold;
@@ -238,9 +271,11 @@ span {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
 .first-section {
   padding-top: 53px;
 }
+
 .first-section h2 {
   font-family: latest-bold;
   font-size: 28px;
@@ -249,9 +284,11 @@ span {
   line-height: 36px;
   margin-top: 12px;
 }
+
 .cards {
   padding: 0px 4px 0px 1px;
 }
+
 .card {
   padding: 7px;
   padding-bottom: 0px;
@@ -262,19 +299,23 @@ span {
   border-radius: 15px;
   margin-bottom: -22px;
 }
+
 .card img {
   width: 100%;
   border-radius: 6px;
 }
+
 .card-text {
   padding: 11px 4px 15px 7px;
 }
+
 .card-text h2 {
   font-size: 18px;
   font-family: latest-bold;
   word-spacing: 0px;
   letter-spacing: -0.03em;
 }
+
 .card-text p {
   font-size: 16px;
   font-family: latest-book;
@@ -284,6 +325,7 @@ span {
   word-spacing: 0px;
   color: #17253d;
 }
+
 .card-footer {
   display: flex;
   align-items: center;
@@ -291,6 +333,7 @@ span {
   column-gap: 10px;
   margin-top: 14px;
 }
+
 .card-footer span::before {
   content: "";
   font-family: "m-fluent";
@@ -300,6 +343,7 @@ span {
   justify-content: center;
   height: 26px;
 }
+
 .card-footer span {
   border: 1px solid transparent;
   background-color: #0078d4;
@@ -309,6 +353,7 @@ span {
   width: 30px;
   margin-top: 17px;
 }
+
 .card-footer p {
   font-size: 15px;
   font-family: latest-bold;
@@ -319,17 +364,20 @@ article {
   background: #f4fafd;
   padding: 48px 16px;
 }
+
 .solutions {
   line-height: 45px;
   display: flex;
   flex-direction: column;
 }
+
 .solutions p {
   font-size: 12px;
   font-family: latest-bold;
   color: #263e65;
   letter-spacing: 0.96px;
 }
+
 .solutions h3 {
   font-size: 23px;
   font-family: latest-bold;
@@ -338,19 +386,23 @@ article {
   letter-spacing: -0.03em;
   margin-top: 1px;
 }
+
 .scroll-ele {
   margin-top: 29px;
   position: relative;
 }
+
 .scroll-ele ul {
   display: flex;
   white-space: nowrap;
   overflow: scroll;
   column-gap: 8px;
 }
+
 .scroll-ele ul::-webkit-scrollbar {
   display: none;
 }
+
 .scroll-ele li {
   position: relative;
   font-size: 16px;
@@ -358,6 +410,7 @@ article {
   white-space: nowrap;
   list-style-type: none;
 }
+
 .scroll-ele li h3 {
   border: 1px solid #005597;
   border-radius: 21px;
@@ -367,6 +420,7 @@ article {
   font-family: latest-bold;
   padding: 8px 16px;
 }
+
 .scroll-ele li p {
   font-size: 16px;
   font-family: latest-bold;
@@ -377,6 +431,7 @@ article {
   padding: 8px 16px;
   letter-spacing: -0.03em;
 }
+
 .scroll-ele span::after {
   content: "";
   font-family: m-fluent;
@@ -388,24 +443,29 @@ article {
   border-radius: 25px;
   padding: 10px;
 }
+
 .drop-down {
   display: flex;
   justify-content: space-between;
   padding: 25px 4px;
 }
+
 .drop-down span::before {
   content: "";
   font-family: m-fluent;
   font-size: 1em;
 }
+
 .drop-down p {
   font-size: 18px;
   font-family: latest-bold;
   margin-left: -4px;
 }
+
 .build-deploy {
   line-height: 67px;
 }
+
 .build-deploy p {
   font-size: 16px;
   font-family: latest-book;
@@ -414,6 +474,7 @@ article {
   letter-spacing: -0.03em;
   line-height: 24px;
 }
+
 .build-deploy h2 {
   font-size: 15px;
   font-family: latest-bold;
@@ -422,10 +483,12 @@ article {
   word-spacing: 1px;
   margin-top: 3px;
 }
+
 .build-deploy img {
   width: 100%;
   border-radius: 15px;
 }
+
 .windows-server {
   display: flex;
   justify-content: space-between;
@@ -433,46 +496,54 @@ article {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
+
 .windows-server p {
   font-size: 16px;
   font-family: latest-bold;
   color: #2a446f;
   margin: 28px 0px;
 }
+
 .windows-server span::before {
   content: "";
   font-size: 16px;
   font-family: m-fluent;
 }
+
 .migration {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
+
 .migration p {
   font-size: 16px;
   font-family: latest-bold;
   color: #2a446f;
   margin: 25px 0px;
 }
+
 .migration span::before {
   content: "";
   font-size: 16px;
   font-family: m-fluent;
 }
+
 .devop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
+
 .devop p {
   font-size: 16px;
   font-family: latest-bold;
   color: #2a446f;
   margin: 25px 0px;
 }
+
 .devop span::before {
   content: "";
   font-size: 16px;
@@ -480,23 +551,27 @@ article {
   display: flex;
   align-items: center;
 }
+
 .cloud-scale {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
+
 .cloud-scale p {
   font-size: 16px;
   font-family: latest-bold;
   color: #2a446f;
   margin: 25px 0px;
 }
+
 .cloud-scale span::before {
   content: "";
   font-size: 16px;
   font-family: m-fluent;
 }
+
 .all-solution {
   display: flex;
   justify-content: start;
@@ -504,11 +579,13 @@ article {
   margin: 25px 0px;
   column-gap: 7px;
 }
+
 .all-solution span::before {
   content: "";
   font-family: m-fluent;
   color: #fff;
 }
+
 .all-solution span {
   border: 1px solid transparent;
   background-color: #0078d4;
@@ -519,15 +596,18 @@ article {
   height: 30px;
   width: 31px;
 }
+
 .all-solution p {
   font-size: 15px;
   font-family: latest-bold;
   color: #2a446f;
 }
+
 .pro-service {
   background: #f4fafd;
   padding: 25px 16px;
 }
+
 .pro-service p {
   color: #263e65;
   font-size: 12px;
@@ -535,6 +615,7 @@ article {
   margin: 0px 0px 12px;
   letter-spacing: 1px;
 }
+
 .pro-service h3 {
   font-size: 24px;
   font-family: latest-bold;
@@ -542,19 +623,23 @@ article {
   word-spacing: 0px;
   letter-spacing: -0.05em;
 }
+
 .scroll-ele2 {
   margin-top: 29px;
   position: relative;
 }
+
 .scroll-ele2 ul {
   display: flex;
   white-space: nowrap;
   overflow: scroll;
   column-gap: 8px;
 }
+
 .scroll-ele2 ul::-webkit-scrollbar {
   display: none;
 }
+
 .scroll-ele2 li {
   position: relative;
   font-size: 16px;
@@ -562,6 +647,7 @@ article {
   white-space: nowrap;
   list-style-type: none;
 }
+
 .scroll-ele2 li h3 {
   border: 1px solid #005597;
   border-radius: 21px;
@@ -571,6 +657,7 @@ article {
   font-family: latest-bold;
   padding: 8px 16px;
 }
+
 .scroll-ele2 li p {
   font-size: 16px;
   font-family: latest-bold;
@@ -592,9 +679,11 @@ article {
   padding: 10px;
   right: 0px;
 }
+
 .products-services {
   row-gap: 10px;
 }
+
 .azure-services {
   padding: 17px 15px;
   border: 1px solid transparent;
@@ -603,9 +692,11 @@ article {
   background-color: #fff;
   margin: 15px 0px;
 }
+
 .top {
   line-height: 28px;
 }
+
 .top {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -615,12 +706,15 @@ article {
   width: 48px;
   height: 46px;
 }
+
 .top img {
   height: 24px;
 }
+
 .center-text {
   line-height: 50px;
 }
+
 .center-text h4 {
   font-size: 20px;
   font-family: latest-bold;
@@ -628,6 +722,7 @@ article {
   word-spacing: 0px;
   margin-top: 5px;
 }
+
 .center-text p {
   font-size: 16px;
   font-family: latest-book;
@@ -650,11 +745,13 @@ article {
   column-gap: 5px;
   padding-bottom: 30px;
 }
+
 .azure-service-foot span::before {
   content: "";
   font-family: m-fluent;
   color: white;
 }
+
 .azure-service-foot span {
   border: 1px solid transparent;
   background-color: #0078d4;
@@ -665,21 +762,25 @@ article {
   height: 31px;
   width: 32px;
 }
+
 .azure-service-foot p {
   font-size: 15px;
   font-family: latest-bold;
   margin: 5px;
   letter-spacing: -0.03em;
 }
+
 .resource-role {
   background-color: #f8f6f6;
 }
+
 .resource-transform {
   padding: 16px 16px 40px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
 }
+
 .resource-transform p {
   font-size: 12px;
   font-family: latest-bold;
@@ -689,6 +790,7 @@ article {
   padding-top: 10px;
   margin-top: 20px;
 }
+
 .resource-transform h2 {
   font-size: 28px;
   font-family: latest-bold;
@@ -696,22 +798,26 @@ article {
   letter-spacing: -0.05em;
   word-spacing: -1px;
 }
+
 .roles {
   position: relative;
 }
+
 .roles-bg-img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .roles-bg-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .role-scroll {
-  padding: 0px 16px;
+  /* padding: 0px 16px; */
   overflow: scroll;
   border: 1px solid #ccc;
   box-shadow: 1px 2px 5px #ccc;
@@ -721,27 +827,39 @@ article {
   position: relative;
   height: 48px;
 }
+
 .role-scroll::-webkit-scrollbar {
   display: none;
 }
+
 .role-scroll ul {
   display: flex;
   white-space: nowrap;
   column-gap: 20px;
 }
+
 .role-scroll li {
   list-style-type: none;
   font-size: 14px;
   font-family: latest-book;
-  padding: 12px 90px 12px 12px;
+  width: 220.33px;
+  height: 47px;
+  padding: 12px 24px 12px;
   border-right: 1px solid #222;
 }
+
 .role-scroll li p {
   border-bottom: 6px solid #0078d4;
   padding-bottom: 10px;
   left: 0;
   opacity: 1px;
 }
+
+.role-scroll li div {
+  color: #0067b8;
+  width: 220.33px;
+}
+
 .roles span::after {
   content: "";
   font-family: m-fluent;
@@ -752,9 +870,11 @@ article {
   border-radius: 20px;
   padding: 10px;
 }
+
 .optimize-and-btn {
   padding: 30px 16px 48px;
 }
+
 .optimize-and-btn p {
   display: flex;
   justify-content: center;
@@ -764,6 +884,7 @@ article {
   letter-spacing: -0.03em;
   word-spacing: 0px;
 }
+
 .btn-text {
   display: flex;
   justify-content: center;
@@ -771,11 +892,13 @@ article {
   column-gap: 10px;
   padding: 27px 0px 0px;
 }
+
 .btn-text span::before {
   content: "";
   font-family: m-fluent;
   color: #fff;
 }
+
 .btn-text span {
   background: 1px solid transparent;
   background-color: #0078d4;
@@ -786,11 +909,13 @@ article {
   justify-content: center;
   align-items: center;
 }
+
 .btn-text p {
   font-size: 15px;
   color: #2a446f;
   font-family: latest-bold;
 }
+
 .img {
   margin: 24px 0px 0px;
   padding: 16px;
@@ -798,26 +923,31 @@ article {
   border-radius: 6px;
   background: #e8f0f4e0;
 }
+
 .img img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
 }
+
 .azure-global {
   position: relative;
   height: 320px;
 }
+
 .azure-global-bg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .azure-global-bg img {
   width: 100%;
   object-fit: cover;
   height: 100%;
 }
+
 .azure-global h2 {
   font-size: 28px;
   color: #fff;
@@ -827,6 +957,7 @@ article {
   padding-top: 88px;
   letter-spacing: -0.05em;
 }
+
 .global-text p {
   font-size: 17px;
   word-spacing: -1px;
@@ -841,6 +972,7 @@ article {
   letter-spacing: -0.03em;
   word-spacing: 2px;
 }
+
 .global-text span {
   display: flex;
   justify-content: center;
@@ -855,24 +987,29 @@ article {
   font-family: latest-bold;
   letter-spacing: -0.03em;
 }
+
 .cloud-investment {
   position: relative;
   height: 795px;
 }
+
 .cloud-investment-bg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .cloud-investment-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .cloud-head {
   padding: 40px 0px 20px;
 }
+
 .cloud-investment h2 {
   display: flex;
   justify-content: center;
@@ -883,9 +1020,11 @@ article {
   letter-spacing: -0.03em;
   text-align: center;
 }
+
 .cloud-investment h3 {
   display: none;
 }
+
 .packages {
   border: 1px solid transparent;
   background: rgba(255, 255, 255, 0.1);
@@ -898,6 +1037,7 @@ article {
   flex-direction: column;
   row-gap: 50px;
 }
+
 .package1 {
   display: flex;
   flex-direction: column;
@@ -905,6 +1045,7 @@ article {
   align-items: center;
   row-gap: 13px;
 }
+
 .package2 {
   display: flex;
   flex-direction: column;
@@ -912,6 +1053,7 @@ article {
   align-items: center;
   row-gap: 13px;
 }
+
 .package3 {
   display: flex;
   flex-direction: column;
@@ -919,6 +1061,7 @@ article {
   align-items: center;
   row-gap: 13px;
 }
+
 .packages p {
   font-size: 18px;
   font-family: latest-bold;
@@ -927,44 +1070,53 @@ article {
   word-spacing: 5px;
   text-align: center;
 }
+
 .packages p sup {
   text-decoration: underline;
 }
+
 .customer-story {
   padding: 48px 16px;
   background: #f4fafd;
 }
+
 .customer-story-text {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
+
 .customer-story-text p {
   font-size: 12px;
   font-family: latest-book;
   letter-spacing: 1px;
 }
+
 .customer-story-text h3 {
   font-size: 24px;
   font-family: latest-bold;
   word-spacing: 0px;
   letter-spacing: -0.05em;
 }
+
 .img-text {
   border: 1px solid #ccc;
   box-shadow: 0px 0px 6px #ccc;
   border-radius: 12px;
   margin-top: 20px;
 }
+
 .img-text img {
   width: 100%;
   height: 143px;
   border-radius: 8px;
 }
+
 .fujitsu img {
   width: 100%;
   height: 75px;
 }
+
 .fujitsu-img-text {
   padding: 16px;
   display: flex;
@@ -973,11 +1125,13 @@ article {
   background: #fff;
   border-radius: 12px;
 }
+
 .fujitsu {
   border: 1px solid #ccc;
   border-radius: 12px;
   width: 59%;
 }
+
 .fujitsu-img-text h4 {
   font-size: 20px;
   color: #17253d;
@@ -985,26 +1139,31 @@ article {
   font-family: latest-bold;
   letter-spacing: -0.03em;
 }
+
 .products {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
   margin-top: 38px;
 }
+
 .products p {
   font-size: 13px;
   font-family: latest-bold;
 }
+
 .aks {
   display: flex;
   column-gap: 10px;
   justify-content: start;
   align-items: center;
 }
+
 .aks img {
   height: 12px;
   width: 12px;
 }
+
 .aks p {
   text-decoration: underline;
   font-size: 14px;
@@ -1012,16 +1171,19 @@ article {
   font-family: latest-book;
   line-height: 30px;
 }
+
 .devops {
   display: flex;
   column-gap: 10px;
   justify-content: start;
   align-items: center;
 }
+
 .devops img {
   height: 12px;
   width: 12px;
 }
+
 .devops p {
   font-size: 14px;
   font-family: latest-book;
@@ -1029,16 +1191,19 @@ article {
   color: #0067b8;
   line-height: 22px;
 }
+
 .storage {
   display: flex;
   justify-content: start;
   align-items: center;
   column-gap: 10px;
 }
+
 .storage img {
   width: 12px;
   height: 12px;
 }
+
 .storage p {
   font-size: 14px;
   font-family: latest-book;
@@ -1046,6 +1211,7 @@ article {
   color: #0067b8;
   line-height: 25px;
 }
+
 .case-study span {
   display: flex;
   justify-content: center;
@@ -1061,6 +1227,7 @@ article {
   font-family: latest-bold;
   margin-top: 15px;
 }
+
 .left span::before {
   content: "";
   font-family: m-fluent;
@@ -1077,20 +1244,24 @@ article {
   border-radius: 25px;
   padding: 15px;
 }
+
 .left-right {
   display: flex;
   column-gap: 8px;
   margin: 40px 0px;
 }
+
 .all-story {
   display: flex;
   column-gap: 10px;
 }
+
 .all-story span::before {
   content: "";
   font-family: m-fluent;
   color: #fff;
 }
+
 .all-story span {
   border: 1px solid transparent;
   border-radius: 6px;
@@ -1101,6 +1272,7 @@ article {
   justify-content: center;
   align-items: center;
 }
+
 .all-story p {
   font-size: 15px;
   font-family: latest-bold;
@@ -1108,20 +1280,24 @@ article {
   display: flex;
   align-items: center;
 }
+
 .next-steps {
   position: relative;
 }
+
 .next-steps-bg {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
+
 .next-steps-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .next-steps h2 {
   font-size: 28px;
   font-family: latest-bold;
@@ -1131,12 +1307,14 @@ article {
   padding: 50px 0px 20px 0px;
   letter-spacing: -0.05em;
 }
+
 .steps {
   padding: 0px 16px 45px;
   display: flex;
   flex-direction: column;
   row-gap: 5px;
 }
+
 .step1 {
   padding: 16px;
   border: 1px solid #ccc;
@@ -1144,11 +1322,13 @@ article {
   box-shadow: 0px 0px 6px #ccc;
   background: #fff;
 }
+
 .keyboard-text {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
+
 .badge {
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -1158,36 +1338,43 @@ article {
   justify-content: center;
   align-items: center;
 }
+
 .badge img {
   width: 24px;
   height: 24px;
 }
+
 .building-text {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
 }
+
 .building-text h4 {
   font-size: 20px;
   font-family: latest-bold;
   word-spacing: -2px;
 }
+
 .building-text p {
   font-size: 16px;
   font-family: latest-book;
   line-height: 21px;
 }
+
 .btn-and-try {
   display: flex;
   justify-content: start;
   margin-top: 20px;
   column-gap: 10px;
 }
+
 .btn-and-try span::before {
   content: "";
   font-family: m-fluent;
   color: #fff;
 }
+
 .btn-and-try span {
   border: 1px solid transparent;
   border-radius: 6px;
@@ -1198,16 +1385,19 @@ article {
   justify-content: center;
   align-items: center;
 }
+
 .btn-and-try p {
   display: flex;
   align-items: center;
 }
+
 .links {
   display: flex;
   flex-direction: column;
   padding: 56px 16px;
   background: #f4fafd;
 }
+
 .links a {
   color: #0067b8;
   line-height: 26px;
@@ -1216,18 +1406,22 @@ article {
   letter-spacing: -0.03em;
   word-spacing: 1px;
 }
+
 footer {
   background: #f5f5f5;
 }
+
 .azure-mobile-app {
   padding: 48px 0px 36px;
 }
+
 .app-and-social {
   padding: 0px 18px;
   display: flex;
   flex-direction: row;
   column-gap: 15px;
 }
+
 .get-the-app {
   padding: 12px;
   display: flex;
@@ -1238,18 +1432,22 @@ footer {
   background: #eaebec;
   width: 60%;
 }
+
 .get-the-app img {
   width: 24px;
   height: 24px;
 }
+
 .get-the-app p {
   white-space: nowrap;
   font-size: 14px;
 }
+
 .social-media {
   display: flex;
   column-gap: 27px;
 }
+
 .footer-row {
   padding: 0px 18px;
   margin: 36px 0px 0px;
@@ -1257,6 +1455,7 @@ footer {
   flex-direction: column;
   row-gap: 38px;
 }
+
 .explore-azure {
   display: flex;
   justify-content: space-between;
@@ -1266,21 +1465,25 @@ footer {
   height: 46px;
   padding: 12px 24px;
 }
+
 .explore-azure p {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: latest-bold;
 }
+
 .explore-azure span::after {
   content: "\002B";
   font-family: m-fluent;
   padding: 0px 0px 0px 12px;
 }
+
 .explore-azure span {
   width: 23.41px;
   height: 20px;
 }
+
 .product-price {
   display: flex;
   justify-content: space-between;
@@ -1291,21 +1494,25 @@ footer {
   height: 46px;
   padding: 12px 24px;
 }
+
 .product-price p {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: latest-bold;
 }
+
 .product-price span::after {
   content: "\002B";
   font-family: m-fluent;
   padding: 0px 0px 0px 12px;
 }
+
 .product-price span {
   width: 23.41px;
   height: 20px;
 }
+
 .solution-support {
   display: flex;
   justify-content: space-between;
@@ -1316,17 +1523,20 @@ footer {
   height: 46px;
   padding: 12px 24px;
 }
+
 .solution-support p {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: latest-bold;
 }
+
 .solution-support span::after {
   content: "\002B";
   font-family: m-fluent;
   padding: 0px 0px 0px 12px;
 }
+
 .partners {
   display: flex;
   justify-content: space-between;
@@ -1337,17 +1547,20 @@ footer {
   height: 46px;
   padding: 12px 24px;
 }
+
 .partners p {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: latest-bold;
 }
+
 .partners span::after {
   content: "\002B";
   font-family: m-fluent;
   padding: 0px 0px 0px 12px;
 }
+
 .resources {
   display: flex;
   justify-content: space-between;
@@ -1358,17 +1571,20 @@ footer {
   height: 46px;
   padding: 12px 24px;
 }
+
 .resources p {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: latest-bold;
 }
+
 .resources span::after {
   content: "\002B";
   font-family: -m-fluent;
   padding: 0px 0px 0px 12px;
 }
+
 .cloud-computing {
   display: flex;
   justify-content: space-between;
@@ -1379,30 +1595,36 @@ footer {
   height: 46px;
   padding: 12px 24px;
 }
+
 .cloud-computing p {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-family: latest-bold;
 }
+
 .cloud-computing span::after {
   content: "\002B";
   font-family: m-fluent;
   padding: 0px 0px 0px 12px;
 }
+
 .footer-nav {
   margin: 36px 0px 0px;
   padding: 0px 18px 42px;
 }
+
 .language {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
 }
+
 .language p {
   font-family: latest-book;
   font-size: 16px;
 }
+
 select {
   width: 63%;
   height: 36px;
@@ -1412,82 +1634,101 @@ select {
   font-size: 14px;
   font-family: latest-book;
 }
+
 .privacy-choices {
   display: flex;
   column-gap: 10px;
   margin: 24px 0px 0px;
 }
+
 .privacy-choices p {
   font-size: 12px;
   font-family: latest-book;
 }
+
 .footer-text {
   display: flex;
   flex-direction: column;
   row-gap: 28px;
   margin-top: 32px;
 }
+
 .footer-text p {
   font-size: 12px;
   font-family: latest-book;
 }
+
 .footer1 {
   display: flex;
   justify-content: end;
   column-gap: 10px;
   white-space: nowrap;
 }
+
 .footer2 {
   display: flex;
   justify-content: end;
   white-space: nowrap;
   column-gap: 10px;
 }
+
 .footer3 {
   display: flex;
   justify-content: end;
   white-space: nowrap;
   column-gap: 10px;
 }
+
 .footer-bottom {
   font-size: 12px;
   font-family: latest-bold;
   display: flex;
   justify-content: end;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
+
 .tablet-bg {
   display: none;
 }
+
 .foot1-tab {
   display: none;
 }
+
 .foot2-tab {
   display: none;
 }
+
 .build-deploy-img2 {
   display: none;
 }
+
 .promo {
   display: none;
 }
+
 .carosal-indicators {
   display: none;
 }
+
 .azure-foot-flex {
   display: none;
 }
+
 .privacy-choices br {
   display: none;
 }
+
 .laptop-large-bg {
   display: none;
 }
+
 .first-text h1 br {
   display: none;
 }
-.foot-lap{
-display: none;
+
+.foot-lap {
+  display: none;
 }
 
 /* MEDIA QUERIES */
@@ -1497,16 +1738,20 @@ display: none;
   .laptop-bg img {
     display: none;
   }
+
   .first-text {
     padding: 32px 16px 22.5% 16px;
   }
+
   .card-text p {
     letter-spacing: -0.05em;
     word-spacing: 1px;
   }
+
   .section-bg {
     margin-bottom: 0px;
   }
+
   article {
     padding: 100px 16px 50px;
   }
@@ -1514,46 +1759,60 @@ display: none;
   .tab-header {
     display: none;
   }
+
   .foot1-tab {
     display: none;
   }
+
   .foot2-tab {
     display: none;
   }
+
   .featured-news2 {
     display: none;
   }
+
   .tablet-bg {
     display: none;
   }
+
   .laptop-large-bg {
     display: none;
   }
+
   .build-deploy-img2 {
     display: none;
   }
+
   .promo {
     display: none;
   }
+
   .carosal-indicators {
     display: none;
   }
+
   .azure-foot-flex {
     display: none;
   }
+
   .privacy-choices br {
     display: none;
   }
+
   .carosal-indicators {
     display: none;
   }
+
   .right-section-lap {
     display: none;
   }
+
   .first-text h1 br {
     display: none;
   }
-  .foot-lap{
+
+  .foot-lap {
     display: none;
   }
 }
@@ -1564,22 +1823,26 @@ display: none;
   .top-bar {
     display: none;
   }
+
   .tab-header {
     display: flex;
     flex-direction: row;
     height: 55px;
     width: 100%;
   }
+
   .left-section {
     display: flex;
     flex-direction: row;
     padding: 0px 12px;
     column-gap: 10px;
   }
+
   .logo-text {
     display: flex;
     align-items: center;
   }
+
   .logo-text img {
     width: 24px;
     height: 26.25px;
@@ -1587,6 +1850,7 @@ display: none;
     align-items: center;
     margin-bottom: -1px;
   }
+
   .logo-text p {
     font-size: 18px;
     font-family: latest-bold;
@@ -1596,16 +1860,19 @@ display: none;
     margin-left: 12px;
     margin-bottom: 2px;
   }
+
   .menu {
     display: flex;
     align-items: center;
     padding-left: 2px;
     margin-bottom: 0.5px;
   }
+
   .menu p {
     font-size: 13px;
     font-family: latest-book;
   }
+
   .menu span::after {
     content: "\e70d";
     font-family: m-fluent;
@@ -1613,30 +1880,37 @@ display: none;
     font-size: 9px;
     padding-top: 4px;
   }
+
   .explore {
     display: flex;
     padding: 20px 8px;
   }
+
   .pro {
     display: flex;
     padding: 20px 9px;
   }
+
   .solu {
     display: flex;
     padding: 20px 8px;
   }
+
   .pricing {
     display: flex;
     padding: 20px 9px;
   }
+
   .partner {
     display: flex;
     padding: 20px 8px;
   }
+
   .resource {
     display: flex;
     padding: 20px 9px;
   }
+
   .right-section {
     display: flex;
     justify-content: end;
@@ -1644,12 +1918,14 @@ display: none;
     column-gap: 7px;
     margin: 0px 0px 0px 62.53px;
   }
+
   .right-section span::after {
     content: "";
     font-family: m-fluent;
     font-size: 14px;
     padding: 1px 6px;
   }
+
   .right-section img {
     width: 44px;
     height: 54px;
@@ -1659,6 +1935,7 @@ display: none;
     margin-left: 4px;
     margin-bottom: 2px;
   }
+
   .right-section p {
     font-size: 13px;
     font-family: latest-book;
@@ -1666,134 +1943,169 @@ display: none;
     margin-left: 1px;
     letter-spacing: -0.48px;
   }
+
   .right-section-lap {
     display: none;
   }
+
   .main-banner {
     display: none;
   }
+
   .laptop-large-bg {
     display: none;
   }
+
   .tablet-bg {
     display: block;
     height: 431.54px;
     width: 100%;
   }
+
   .tablet-bg img {
     width: 100%;
     height: 431.54px;
     object-fit: cover;
   }
+
   .first-text {
     padding: 32px 64px 95px;
   }
+
   .first-text h1 {
     margin-right: 10px;
   }
+
   .button-group {
     display: flex;
     align-items: baseline;
     column-gap: 8px;
   }
+
   .get-start {
     width: 104px;
     height: 48.5px;
   }
+
   .try-azure {
     width: 146px;
     height: 48.5px;
   }
+
   .section-bg-img img {
     height: 1595.31px;
   }
+
   .first-section {
     padding-left: 45px;
   }
+
   .cards {
     padding: 0px 50px;
   }
+
   article {
     padding: 96px 64px 10px;
   }
+
   .azure-services h3 {
     line-height: 46px;
     margin-bottom: -7px;
   }
+
   .drop-down {
     position: relative;
   }
+
   .drop-down span {
     position: absolute;
     left: 23px;
     top: 30px;
   }
+
   .windows-server {
     display: flex;
     justify-content: flex-start;
     column-gap: 10px;
   }
+
   .migration {
     display: flex;
     justify-content: flex-start;
     column-gap: 10px;
   }
+
   .devop {
     display: flex;
     justify-content: flex-start;
     column-gap: 10px;
   }
+
   .cloud-scale {
     display: flex;
     justify-content: flex-start;
     column-gap: 10px;
   }
+
   .pro-service {
     padding: 48px 64px;
   }
+
   .resource-transform {
     padding: 16px 64px 43px;
   }
+
   .role-scroll {
     width: 83%;
     margin: -25px 0px 0px 66px;
   }
+
   .roles span::after {
     right: 64px;
     top: 4px;
   }
+
   .btn-text-span {
     width: 30px;
     height: 30px;
   }
+
   .optimize-and-btn {
     padding: 30px 16px 48px;
   }
+
   .globe-explore {
     display: flex;
     justify-content: center;
   }
+
   .global-text span {
     width: 20%;
   }
+
   .roles-bg-img img {
     width: 100%;
     height: 633.86px;
   }
+
   .img {
     width: 640px;
     height: 374.86px;
     margin: 20px 44px 0px;
   }
+
   .azure-global {
     height: 292px;
   }
+
   .cloud-investment {
     height: 668px;
   }
+
   .cloud-investment h2 {
     display: none;
   }
+
   .cloud-investment h3 {
     display: flex;
     justify-content: center;
@@ -1802,121 +2114,152 @@ display: none;
     color: #fff;
     letter-spacing: -0.03em;
   }
+
   .scroll-ele ul {
     column-gap: 16px;
   }
+
   .packages {
     width: 80%;
     height: 512px;
     margin: 0px 74px;
     padding: 28px;
   }
+
   .img-text img {
     height: 298.66px;
   }
+
   .customer-story {
     padding: 48px 64px;
   }
+
   .fujitsu-img-text img {
     height: 75px;
     width: 173px;
   }
+
   .fujitsu {
     height: 78px;
     width: 184px;
     border-radius: 10px;
   }
+
   .fujitsu-img-text .fujitsu img {
     width: 100%;
     height: 75px;
   }
+
   .aks {
     column-gap: 5px;
   }
+
   .aks img {
     width: 12px;
     height: 12px;
   }
+
   .aks p {
     display: flex;
     white-space: nowrap;
   }
+
   .devops {
     column-gap: 5px;
   }
+
   .devops img {
     width: 12px;
     height: 12px;
   }
+
   .devops p {
     display: flex;
     white-space: nowrap;
   }
+
   .storage {
     column-gap: 5px;
   }
+
   .storage img {
     width: 12px;
     height: 12px;
   }
+
   .storage p {
     display: flex;
     white-space: nowrap;
   }
+
   .product-link {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
   }
+
   .case-study span {
     width: 17%;
     border-radius: 8px;
   }
+
   .next-steps {
     height: 800px;
   }
+
   .steps {
     row-gap: 8px;
     padding: 15px 69px 0px;
   }
+
   .links {
     padding: 56px 64px;
   }
+
   .app-and-social {
     padding: 0px 18px;
     display: flex;
     flex-direction: row;
     column-gap: 36px;
   }
+
   .get-the-app {
     width: 211.59px;
     height: 48px;
     column-gap: 12px;
   }
+
   .social-media {
     column-gap: 24px;
   }
+
   .get-the-app p {
     font-family: latest-book;
     letter-spacing: -0.48px;
   }
+
   select {
     width: 188px;
   }
+
   .language-choice {
     display: flex;
     column-gap: 20px;
     align-items: center;
   }
+
   .footer-nav {
     margin: 3px 0px 0px;
   }
+
   .foot-text {
     row-gap: 24px;
   }
+
   .footer-row {
     row-gap: 37px;
   }
+
   .footer1,
   .footer2,
   .footer3 {
@@ -1926,6 +2269,7 @@ display: none;
   .footer-bottom {
     display: none;
   }
+
   .privacy-choices {
     margin: 46px 0px 0px;
   }
@@ -1944,6 +2288,7 @@ display: none;
     letter-spacing: -0.03em;
     column-gap: 15px;
   }
+
   .foot2-tab {
     display: flex;
     justify-content: end;
@@ -1952,6 +2297,7 @@ display: none;
     column-gap: 13px;
     letter-spacing: -0.03em;
   }
+
   .foot2-tab h3 {
     font-family: latest-bold;
     font-size: 12px;
@@ -1961,21 +2307,27 @@ display: none;
   .featured-news2 {
     display: none;
   }
+
   .build-deploy-img2 {
     display: none;
   }
+
   .promo {
     display: none;
   }
+
   .carosal-indicators {
     display: none;
   }
+
   .azure-foot-flex {
     display: none;
   }
+
   .explore-column {
     display: none;
   }
+
   .product-price-column {
     display: none;
   }
@@ -1995,6 +2347,7 @@ display: none;
   .cloud-computing-column {
     display: none;
   }
+
   .privacy-choices br {
     display: none;
   }
@@ -2002,6 +2355,7 @@ display: none;
   .foot-lap {
     display: none;
   }
+
   .first-text h1 br {
     display: none;
   }
@@ -2015,28 +2369,36 @@ display: none;
     justify-content: flex-end;
     margin: 0px 0px 0px 319px;
   }
+
   .menu span {
     transform: translateY(2px);
   }
+
   .right-section p {
     word-spacing: 0;
     letter-spacing: -0.48px;
   }
+
   .right-section-lap {
     display: none;
   }
+
   .main-banner {
     display: none;
   }
+
   .tablet-bg {
     display: none;
   }
+
   .laptop-large-bg {
     display: none;
   }
+
   .first-main-sec {
     position: relative;
   }
+
   .laptop-bg {
     position: absolute;
     left: 0;
@@ -2047,52 +2409,64 @@ display: none;
     z-index: -1;
     margin-top: 55px;
   }
+
   .laptop-bg img {
     display: block;
     width: 100%;
     height: 544px;
     object-fit: cover;
   }
+
   .first-main-txt {
     padding: 60px 0px 49px;
   }
+
   .first-text {
     background: transparent;
     padding: 36px 56px 29px;
   }
+
   .first-text h1 {
     font-size: 40px;
     margin-right: 434px;
     line-height: 48px;
   }
+
   .first-text p {
     margin-right: 470px;
     margin-top: 16px;
   }
+
   .button-group {
     padding-top: 8px;
   }
+
   .get-start {
     width: 120px;
     height: 48px;
   }
+
   .get-start span {
     letter-spacing: -0.03em;
     word-spacing: 0.75px;
     margin-left: -2px;
   }
+
   .try-azure {
     width: 162px;
     height: 48px;
   }
+
   .try-azure span {
     letter-spacing: -0.03em;
     word-spacing: 0.85px;
     margin-left: -1px;
   }
+
   .sticky-news {
     position: relative;
   }
+
   .featured-news {
     padding: 0px;
     justify-content: start;
@@ -2100,9 +2474,11 @@ display: none;
     height: 56px;
     top: -1px;
   }
+
   .featured-news p {
     display: none;
   }
+
   .featured-news ul {
     display: flex;
     align-items: center;
@@ -2111,6 +2487,7 @@ display: none;
     padding-bottom: 6px;
     padding-left: 3px;
   }
+
   .featured-news ul li {
     font-size: 14px;
     font-family: latest-book;
@@ -2122,11 +2499,13 @@ display: none;
   .featured-news::after {
     display: none;
   }
+
   .featured-news2 {
     display: flex;
     padding: 0px 56px;
     column-gap: 165px;
   }
+
   .featured-news2 h3 {
     border: 1px solid transparent;
     border-radius: 8px;
@@ -2144,21 +2523,26 @@ display: none;
     padding: 0px 11px 2px;
     margin-bottom: 1px;
   }
+
   .featured-news ul li span {
     border-bottom: 4px solid #0067b8;
     padding-bottom: 17px;
   }
+
   .first-section {
     padding-top: 95px;
     padding-left: 40px;
   }
+
   .first-section p {
     letter-spacing: 1px;
   }
+
   .first-section h2 {
     margin-top: 16px;
     font-size: 30px;
   }
+
   .cards {
     display: flex;
     flex-direction: row;
@@ -2168,20 +2552,25 @@ display: none;
     padding: 0px;
     margin: 48px 41px 40px;
   }
+
   .section-bg {
     height: 728.95px;
   }
+
   .section-bg-img {
     object-position: 28% -15%;
   }
+
   .card {
     margin-top: 0px;
     margin-bottom: 0px;
     width: 290.66px;
   }
+
   .card-text {
     padding: 19px 12px 19px 15px;
   }
+
   .card-text p {
     line-height: 1.5rem;
     padding-top: 24px;
@@ -2189,144 +2578,179 @@ display: none;
     word-spacing: 0px;
     font-weight: 400;
   }
+
   .card-text h2 {
     letter-spacing: -0.03em;
     word-spacing: 0px;
     padding-right: 10px;
   }
+
   .card-footer {
     column-gap: 8px;
     margin-top: 30px;
   }
+
   .card-footer p {
     letter-spacing: -0.3px;
   }
+
   .chat-sales {
     width: 156.67px;
     padding-top: 2px;
     border-radius: 7px;
     right: 17px;
   }
+
   .chat-sales p {
     transform: translateY(-1px);
   }
+
   .chat-sales span::after {
     margin-left: -14px;
   }
+
   article {
     padding: 72px 56px;
     height: 899px;
   }
+
   .solutions h3 {
     margin-right: 473px;
     margin-top: 2px;
     word-spacing: -0.8px;
   }
+
   .solutions {
     margin-top: -17px;
   }
+
   .solution p {
     margin-top: -12px;
   }
+
   .scroll-ele {
     margin-top: 29px;
   }
+
   .scroll-ele span::after {
     display: none;
   }
+
   .scroll-ele ul {
     column-gap: 12px;
   }
+
   .scroll-ele li p {
     padding: 9px 28px;
   }
+
   .scroll-ele li h3 {
     padding: 9px 22px;
   }
+
   .solution-flex-right {
     width: 60%;
     padding-left: 175px;
     margin-top: -1px;
   }
+
   .build-deploy img {
     display: none;
   }
+
   .build-deploy-img2 {
     display: block;
   }
+
   .build-deploy-img2 img {
     width: 452px;
     height: 339px;
     border-radius: 23px;
     margin-top: 16px;
   }
+
   .solution-flex {
     display: flex;
     padding: 0px 8px;
   }
+
   .solution-flex-left {
     height: 492px;
     width: 30%;
-    overflow: scroll;
+    overflow-y: scroll;
   }
+/* 
   .solution-flex-left::-webkit-scrollbar {
     display: none;
-  }
+  } */
+
   .drop-down {
     margin-top: -11px;
     margin-left: 41px;
     letter-spacing: normal;
     color: #263e65;
   }
+
   .build-deploy p {
     margin-left: 41px;
     margin-top: 8px;
     line-height: 24px;
   }
+
   .build-deploy h2 {
     margin-bottom: 6px;
     margin-left: 41px;
     margin-top: 11px;
     word-spacing: 0px;
   }
+
   .windows-server {
     margin-left: 44px;
     padding-top: 7px;
     column-gap: 8px;
   }
+
   .windows-server p {
     font-size: 17px;
     margin: 32px 0px;
     letter-spacing: -0.54px;
   }
+
   .migration {
     margin-left: 44px;
     line-height: 24px;
     padding-top: 2px;
   }
+
   .migration p {
     font-size: 17px;
     margin: 32px 0px;
   }
+
   .devop {
     margin-left: 44px;
     column-gap: 7px;
   }
+
   .devop p {
     font-size: 17px;
     white-space: nowrap;
     margin: 32px 0px;
   }
+
   .cloud-scale {
     margin-left: 44px;
   }
+
   .cloud-scale p {
     font-size: 17px;
     margin: 32px 0px;
   }
+
   .solution-ai {
     display: flex;
   }
+
   .indicator-line {
     width: 0.45rem;
     height: auto;
@@ -2337,26 +2761,33 @@ display: none;
     height: 1440px;
     padding: 72px 56px;
   }
+
   .pro-service p {
     margin: 0px 0px 16px;
   }
+
   .second-scroll span::after {
     display: none;
   }
+
   .scroll-ele2 li h3 {
     padding: 9px 25px;
   }
+
   .scroll-ele2 li p {
     padding: 8px 25px;
   }
+
   .promo {
     display: block;
     padding: 0px 8px 0px 0px;
   }
+
   .promo-img {
     position: relative;
     border-radius: 15px;
   }
+
   .promo-color-bg {
     position: absolute;
     top: 0;
@@ -2365,12 +2796,14 @@ display: none;
     height: 387.42;
     z-index: 3;
   }
+
   .promo-color-bg img {
     width: 100%;
     height: 387.42px;
     object-fit: cover;
     border-radius: 15px;
   }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -2381,21 +2814,25 @@ display: none;
     z-index: 4;
     border-radius: 15px;
   }
+
   .promo-text {
     position: absolute;
     top: 176px;
     z-index: 5;
     padding: 32px 48px 32px 32px;
   }
+
   .promo-text h2 {
     font-size: 24px;
     font-family: latest-bold;
     color: #fff;
     letter-spacing: -1.2px;
   }
+
   .promo-text-bottom {
     margin-top: 26px;
   }
+
   .promo-text-bottom p {
     font-size: 18px;
     letter-spacing: -0.54px;
@@ -2403,6 +2840,7 @@ display: none;
     font-family: latest-book;
     margin-bottom: 18px;
   }
+
   .promo-text-btn span {
     padding: 13px 0px;
     font-size: 15px;
@@ -2415,6 +2853,7 @@ display: none;
     margin-right: 0px;
     margin-top: -1px;
   }
+
   .azure-cols {
     transform: translateY(407px);
     margin-left: 10px;
@@ -2423,6 +2862,7 @@ display: none;
     display: flex;
     flex-wrap: wrap;
   }
+
   .promo-text-btn {
     border: 1px solid transparent;
     background: #b3daf0;
@@ -2430,68 +2870,86 @@ display: none;
     height: 48px;
     border-radius: 10px;
   }
+
   .azure-services {
     width: 31%;
     height: 324px;
     margin: 11px 0px;
     margin-right: 16px;
   }
+
   .azure-service-foot {
     transform: translateY(415px);
   }
+
   .top {
     height: 64px;
     width: 64px;
   }
+
   .top img {
     height: 32px;
   }
+
   .center-text h4 {
     margin-top: 19px;
   }
+
   .azure-services h3 {
     line-height: 147px;
   }
+
   .explore-text {
     margin-top: -24px;
   }
+
   .center-intelligence {
     line-height: 32px;
     margin-bottom: 21px;
   }
+
   .explore-text2 {
     margin-top: -34px;
   }
+
   .explore-text3 {
     margin-top: -24px;
   }
+
   .explore-text4 {
     margin-top: -26px;
   }
+
   .microsoft h4 {
     line-height: 33px;
     margin-bottom: 17px;
   }
+
   .micro-def h3 {
     transform: translateY(3px);
   }
+
   .azure-service-foot {
     padding-top: 12px;
     padding-bottom: 15px;
     column-gap: 11px;
   }
+
   .azure-service-foot p {
     margin-top: 14px;
     letter-spacing: -0.3px;
   }
+
   .azure-service-foot span {
     width: 30.7px;
     height: 31px;
     border-radius: 9px;
   }
+
   .resource-transform {
     padding: 16px 64px 54px;
   }
+
   .resource-transform p {
     display: flex;
     justify-content: center;
@@ -2500,6 +2958,7 @@ display: none;
     margin-top: 45px;
     color: #263e65;
   }
+
   .resource-transform h2 {
     display: flex;
     justify-content: center;
@@ -2508,53 +2967,68 @@ display: none;
     word-spacing: 0px;
     margin-top: -2px;
   }
+
   .role-scroll {
     width: 89.5%;
     height: 48px;
     margin: -25px 0px 0px 57px;
   }
+/* 
   .role-scroll li {
     padding: 12px 98px 12px 12px;
-  }
+  } */
+
   .roles span::after {
     right: 51px;
   }
+
   .optimize-and-btn {
     padding: 39px 56px 49px 56px;
   }
+
   .optimize-and-btn p {
     margin-top: 2px;
   }
+
   .btn-text {
     padding: 42px 0px 0px;
   }
+
   .btn-text span {
     width: 30.7px;
     height: 31px;
     border-radius: 10px;
   }
+
   .btn-text p {
     letter-spacing: -0.3px;
   }
+
   .img {
     border-radius: 17px;
     margin: 24px 113px 0px;
   }
+
   .azure-global {
     height: 400px;
   }
+
   .global-text {
     padding-top: 57px;
   }
+
   .global-text span {
     width: 162.91px;
   }
+
   .cloud-investment {
     height: 525px;
   }
+
   .cloud-head {
     padding: 70px 0px 29px;
   }
+
   .packages {
     width: 904px;
     height: 313px;
@@ -2564,57 +3038,73 @@ display: none;
     padding: 72px;
     margin: 0px 59px;
   }
+
   .packages p {
     letter-spacing: -0.54px;
     word-spacing: 0px;
   }
+
   .package1 {
     margin-right: -19px;
     row-gap: 24px;
   }
+
   .package2 {
     row-gap: 24px;
     margin-top: 5px;
   }
+
   .package3 {
     row-gap: 24px;
   }
+
   .package3 {
     margin-right: 21px;
   }
+
   .customer-story-text p {
     letter-spacing: 0.96px;
     color: #263e65;
     font-family: latest-bold;
   }
+
   .customer-story-text h3 {
     letter-spacing: -1ss2px;
   }
+
   .img-text img {
     height: 384.84px;
   }
+
   .fujitsu img {
     width: 173px;
     height: 75px;
   }
+
   .fujitsu-img-text {
     padding: 20px 16px;
   }
+
   .products {
     margin-top: 4px;
   }
+
   .product-link {
     height: 12px;
   }
+
   .case-study {
     margin-top: 10px;
   }
+
   .left span {
     display: none;
   }
+
   .right span {
     display: none;
   }
+
   .carosal-indicators {
     display: flex;
     border: 1px solid transparent;
@@ -2626,10 +3116,12 @@ display: none;
     background: #fff;
     margin-top: -47px;
   }
+
   .carosal-indicators img {
     width: 132.8px;
     height: 56.91px;
   }
+
   .fuji {
     display: flex;
     align-items: center;
@@ -2637,18 +3129,21 @@ display: none;
     border-right: 1px solid #ccc;
     border-bottom: 8px solid #0078d4;
   }
+
   .nhs {
     display: flex;
     align-items: center;
     padding: 24px;
     border-right: 1px solid #ccc;
   }
+
   .nba {
     display: flex;
     align-items: center;
     padding: 24px;
     border-right: 1px solid #ccc;
   }
+
   .hr-block {
     display: flex;
     align-items: center;
@@ -2665,39 +3160,48 @@ display: none;
   .all-story {
     margin-top: 31px;
   }
+
   .next-steps {
     height: 619px;
   }
+
   .next-steps-bg {
     height: 619px;
   }
+
   .next-steps h2 {
     padding: 99px 0px 20px 0px;
     font-size: 30px;
     letter-spacing: -1.5px;
   }
+
   .steps {
     display: flex;
     flex-direction: row;
     column-gap: 15px;
   }
+
   .step1 {
     width: 290.66px;
     height: 343px;
     padding: 24px;
   }
+
   .badge img {
     width: 32px;
     height: 32px;
   }
+
   .badge {
     width: 64px;
     height: 64px;
   }
+
   .building-text h4 {
     word-spacing: 0px;
     letter-spacing: -1px;
   }
+
   .sales-specialist h4 {
     white-space: nowrap;
   }
@@ -2726,6 +3230,7 @@ display: none;
   .links {
     padding: 96px 56px;
   }
+
   .azure-mobile-app {
     padding: 48px 0px 0px;
   }
@@ -2733,9 +3238,11 @@ display: none;
   .get-the-app p {
     word-spacing: 1px;
   }
+
   .footer-row {
     display: none;
   }
+
   .azure-foot-flex {
     display: flex;
     column-gap: 24px;
@@ -2743,11 +3250,13 @@ display: none;
     margin: 31px 0px 0px;
     padding: 0px 18px;
   }
+
   .azure-foot-flex h2 {
     font-size: 14px;
     letter-spacing: -0.7px;
     font-family: latest-bold;
   }
+
   .azure-foot-flex p {
     padding: 2px 0px;
     font-size: 12px;
@@ -2757,6 +3266,7 @@ display: none;
     letter-spacing: -0.48px;
     transform: translateY(-3px);
   }
+
   .explore-column {
     line-height: 24px;
   }
@@ -2790,6 +3300,7 @@ display: none;
     row-gap: 6px;
     margin-top: 3px;
   }
+
   .language p {
     letter-spacing: -0.48px;
   }
@@ -2802,9 +3313,11 @@ display: none;
     column-gap: 24px;
     margin-top: 25px;
   }
+
   .privacy-choices {
     column-gap: 12px;
   }
+
   .privacy-choices p {
     transform: translateY(-14px);
     line-height: 24px;
@@ -2822,14 +3335,17 @@ display: none;
   .footer-nav {
     padding: 0px 18px 2px;
   }
+
   .footer1,
   .footer2,
   .footer3 {
     display: none;
   }
+
   .foot-tab {
     display: none;
   }
+
   .foot1-lap {
     display: flex;
     justify-content: end;
@@ -2837,6 +3353,7 @@ display: none;
     transform: translateY(-88px);
     margin-right: -410px;
   }
+
   .foot-lap {
     display: flex;
     justify-content: end;
@@ -2866,29 +3383,36 @@ display: none;
     font-family: latest-bold;
     letter-spacing: -0.48px;
   }
+
   .azure-foot-flex {
     display: flex;
   }
+
   .explore-column {
     display: flex;
     flex-direction: column;
   }
+
   .product-price-column {
     display: flex;
     flex-direction: column;
   }
+
   .solution-support-column {
     display: flex;
     flex-direction: column;
   }
+
   .partners-column {
     display: flex;
     flex-direction: column;
   }
+
   .resources-column {
     display: flex;
     flex-direction: column;
   }
+
   .cloud-computing-column {
     display: flex;
     flex-direction: column;
@@ -2906,7 +3430,7 @@ display: none;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .logo-text p {
     margin-left: 24px;
     margin-bottom: 1px;
@@ -3027,7 +3551,7 @@ display: none;
     object-fit: cover;
   }
 
-  .first-main-txt{
+  .first-main-txt {
     display: flex;
     max-width: 1296px;
     margin-left: auto;
@@ -3056,7 +3580,7 @@ display: none;
 
   .featured-news ul {
     padding-left: 19px;
-    transform: translate(17px , 1px);
+    transform: translate(17px, 1px);
   }
 
   .featured-news2 {
@@ -3079,7 +3603,7 @@ display: none;
     letter-spacing: -2px;
     margin-top: 22px;
   }
-  
+
   .cards {
     width: 1320px;
     max-width: 1320px;
@@ -3287,6 +3811,7 @@ display: none;
     margin-right: auto;
     margin-left: auto;
   }
+
   .roles-bg-img img {
     height: 836.86px;
   }
@@ -3463,15 +3988,34 @@ display: none;
   }
 
   .azure-foot-flex {
-    column-gap: 108px;
+    column-gap: 95px;
   }
 
-  .partners-column{
-    margin-left: 18px;
+  .azure-foot-flex p{
+    white-space: nowrap;
   }
 
-  .resources-column{
+  .product-price-column{
+    margin-left: 34px;
+  }
+
+  .solution-support-column br{
+     display: none;
+  }
+
+  .partners-column {
+    margin-left: -20px;
+  }
+
+  .resources-column {
     margin-left: 46px;
+  }
+
+  .resources-column br{
+    display: none;
+  }
+  .cloud-computing-column{
+    margin-left: -59px;
   }
 
   .footer-nav {
@@ -3488,21 +4032,19 @@ display: none;
 
   .foot1-lap {
     margin-right: -81px;
-    transform: translateY(-54px);
   }
 
-  .foot2-lap{
+  .foot2-lap {
     transform: translateY(-20px);
   }
 
   .foot2-lap p {
     transform: translate(103px, -38px);
   }
-
   .first-text h1 br {
     display: none;
   }
-  /* } */
+
 
   /* AZURE RESPONSIVE ON 2560PX */
 
@@ -3524,14 +4066,15 @@ display: none;
     letter-spacing: -0.6px;
     transform: translateX(-7px);
   }
+
   .button-group {
     max-width: 656px;
     margin: 0px auto;
   }
 
-   .featured-news2 h3 {
+  .featured-news2 h3 {
     transform: translate(-31px, 1px);
-  } 
+  }
 
   .solutions {
     max-width: 1330px;
@@ -3591,13 +4134,13 @@ display: none;
   }
 
   .role-scroll {
-    width: 78%;
+    width: 1120px;
     margin: -25px auto 0px auto;
   }
-
+/* 
   .role-scroll li {
     padding: 21px 97px 12px 12px;
-  }
+  } */
 
   .roles-bg-img img {
     height: 854.86px;
@@ -3625,11 +4168,6 @@ display: none;
     margin: auto;
   }
 
-  .links a {
-    max-width: 1320px;
-    margin: auto;
-  }
-
   .app-and-social {
     max-width: 1600px;
     margin: auto;
@@ -3648,13 +4186,72 @@ display: none;
 
   .foot1-lap {
     margin-right: 31px;
+    transform: translate(116px , -66px);
   }
 
   .foot2-lap p {
-    transform: translate(-10px, -38px);
+    transform: translate(104px , -46px);
   }
 
-  .foot2-lap h3 {
-    transform: translateY(-37px);
+  .foot2-lap h3{
+    transform: translateY(-19px);
+  }
+}
+
+
+/* RESPONSIVE ON 1640PX */
+
+@media screen and (min-width:1640px){
+  
+  .first-section{
+    padding-left: 0px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .chat-sales{
+    top: 94%;
+  }
+
+  .img-text-img{
+    padding: 7px;
+    border-radius: 7px;
+  }
+
+  .product-price-column{
+    margin-left: 55px;
+  }
+
+  .solution-support-column{
+    margin-left: 48px;
+  }
+
+  .partners-column{
+    margin-left: 10px;
+  }
+
+  .resource-column{
+    margin-left: 68px;
+  }
+
+  .cloud-computing-column{
+    margin-left: -3pxs;
+  }
+
+  .foot2-lap{
+    display: flex;
+  }
+
+  .foot1-lap{
+    transform: translate(0px , -66px);
+  }
+
+  .foot2-lap p{
+    transform: translate(-8px , -46px);
+  }
+
+  .foot2-lap h3{
+    transform: translate(-11px , -46px);
   }
 }
