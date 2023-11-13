@@ -90,7 +90,7 @@ body {
   display: flex;
   overflow: scroll;
   margin-top: 20px;
-  column-gap: 40px;
+  column-gap: 16px;
 }
 
 .scroll-ele::-webkit-scrollbar {
@@ -98,7 +98,7 @@ body {
 }
 
 .category {
-  max-width: 168px;
+  max-width: 168px; 
 }
 
 .category img {
@@ -131,7 +131,11 @@ body {
   display: none;
 }
 
-.category span{
+.category span {
+  display: none;
+}
+
+.footer-section{
   display: none;
 }
 
@@ -155,6 +159,10 @@ body {
   }
 
   .category span {
+    display: none;
+  }
+
+  .footer-section{
     display: none;
   }
 }
@@ -290,7 +298,9 @@ body {
   }
 
   .left-bottom {
-    transform: translateY(149px);
+    /* transform: translateY(117px); */
+    position: fixed;
+    bottom: 146px;
   }
 
   .left-bottom span {
@@ -329,7 +339,7 @@ body {
   }
 
   .body-right {
-    width: 58%;
+    width: 70%;
   }
 
   .body-right-top {
@@ -342,12 +352,12 @@ body {
     display: flex;
     column-gap: 24px;
     margin-top: -30px;
-    transform: translate(8px, -0px);
+    transform: translate(16px, -0px);
   }
 
   .sign-log {
     display: flex;
-    transform: translateX(-5px);
+    transform: translateX(-9px);
   }
 
   .sign-log span {
@@ -355,7 +365,8 @@ body {
     padding: 8px 32px 8px 8px;
     transform: translate(27px, -5px);
     color: #b3b3b3;
-    margin-right: 26px;
+    margin-right: 9px;
+    margin-top: -5px;
     letter-spacing: 1px;
   }
 
@@ -395,30 +406,55 @@ body {
     font-size: 14px;
     transform: translate(-4px, 2px);
   }
-  
+
+  .body-section span{
+   transform: translateX(8px);
+  }
+
   .scroll-ele {
     overflow: hidden;
     width: 100%;
     margin-top: 38px;
-    padding-left: 16px;
-    column-gap: 48px;
+    column-gap: 5px;
+    transform: translateX(3px);
   }
 
   .category {
     max-width: calc(100% / 3);
-    height: 252.78px;
+    height: 189.78px;
     flex-shrink: 0;
+    /* width: 180.89px; */
+    height: 263.05px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 8vw; */
+    /* margin-right: 41px; */
+  }
+
+  .cate-img {
+    width: 144px;
+    height: 145px;
   }
 
   .category img {
-    width: 138px;
-    height: 139px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
   .category p {
-    margin-top: 11px;
+    margin-top: 16px;
+    transform: translateX(-19px);
     font-family: circular-bold;
+  }
+
+  .top p {
+    transform: translateX(-9px);
+  }
+
+  .rap p {
+    transform: translateX(-31px);
   }
 
   .category span {
@@ -427,7 +463,96 @@ body {
     font-weight: 400;
     font-family: circular-book;
     color: #b3b3b3;
+    margin-right: 44px;
+    transform: translateX(23px);
     margin-top: 4px;
-    margin-right: 39px;
+  }
+
+  .footer-section {
+    display: flex;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    height: 66px;
+    margin: 0px 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 24px 7px 15px;
+  }
+
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-2px);
+  }
+
+  .footer-left p {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    font-family: circular-book;
+    color: white;
+  }
+
+  .footer-left span {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: circular-book;
+    color: #fff;
+  }
+
+  .footer-right {
+    width: 178.86px;
+    height: 48px;
+    padding: 8px 32px;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 25px;
+  }
+
+  .footer-right span {
+    display: flex;
+    transform: translateY(4px);
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-family: circular-bold;
+    white-space: nowrap;
+    justify-content: center;
+  }
+}
+
+
+/* RESPONSIVE ON 1440 */
+
+@media screen and (min-width:1440px){
+  .category{
+    margin-right: 10px;
+  }
+}
+
+/* RESPONSIE ON 2560 */
+
+@media screen and (min-width:2560px){
+  .body-right{
+   width: 84%;
+  }
+
+  .category{
+    width: 200.89px;
+  }
+
+  .playlist-and-all p{
+    display: none;
+  }
+
+  .cate-img{
+    width: 162px;
+    height: 162px;
+  }
+
+  .category p{
+    transform: translateX(-23px);
   }
 }
