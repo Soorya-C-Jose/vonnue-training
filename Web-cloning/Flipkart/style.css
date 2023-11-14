@@ -73,6 +73,7 @@
     align-items: center;
     transform: translateY(-1px);
     letter-spacing: -0.47px;
+    color: black;
 }
 
 .sort-filter-section {
@@ -161,6 +162,7 @@
 
 .second-box span {
     transform: translateY(1px);
+    color: black;
 }
 
 .third-box {
@@ -170,11 +172,12 @@
 
 .third-box span {
     font-family: inter-regular;
+    color: black;
 }
- 
-.products{
-    border-bottom: 1px solid #eeecec ;
-} 
+
+.products {
+    border-bottom: 1px solid #eeecec;
+}
 
 .top-section {
     display: flex;
@@ -268,9 +271,15 @@
     color: rgb(17, 17, 18);
 }
 
+span{
+    font-size: 12px;
+    color: rgb(38,165,65);
+    font-family: inter-bold;
+}
+
 .discount-box {
-    border: 1px solid rgb(223, 222, 225);
-    background: #E9DEFF;
+    border: 1px solid #e7e8ec;
+    background: rgb(231, 248, 236);
     width: 127.14px;
     height: 23px;
     padding: 4px;
@@ -283,7 +292,7 @@
     justify-content: center;
     align-items: center;
     font-family: inter-bold;
-    color: rgb(112, 72, 198);
+    color: rgb(38, 165, 65);
     white-space: nowrap;
     transform: translateY(-1px);
 }
@@ -308,7 +317,7 @@
     right: 12px;
 }
 
-.bottom-section{
+.bottom-section {
     padding: 0px 8px;
     display: inline-block;
     transform: translateX(3px);
@@ -316,33 +325,44 @@
     padding-bottom: 8px;
 }
 
-.boxes{
+.boxes {
     border: 1px solid rgba(229, 229, 231, 0.938);
     height: 26px;
     width: fit-content;
-    max-width:351PX;
+    max-width: 351PX;
     margin: 4px 8px;
     display: inline-block;
     transform: translateX(-7px);
 }
 
-.boxes span{
+.boxes span {
     font-size: 13px;
     font-family: inter-regular;
     font-weight: 400;
-    color: rgb(113,116,120);
+    color: rgb(113, 116, 120);
     padding: 4px 8px;
     display: flex;
 }
 
- .third {
+.third {
     transform: translateX(-20px);
 }
 
-.fifth{
+.fifth {
     transform: translateX(-18px);
 }
 
-.two{
+.two {
     margin-top: -7px;
+}
+
+.more {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+
+.more p{
+    font-size: 14px;
+    font-family: inter-book;
 }
