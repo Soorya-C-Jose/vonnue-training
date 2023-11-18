@@ -398,7 +398,7 @@ span {
     display: none;
 }
 
-.lap-products{
+.lap-products {
     display: none;
 }
 
@@ -583,7 +583,7 @@ span {
 
     .nav-ele span {
         font-size: 14px;
-       font-family: roboto-medium;
+        font-family: roboto-medium;
         font-weight: 500;
         color: rgb(0, 0, 0);
         letter-spacing: -0.1px;
@@ -616,7 +616,7 @@ span {
 
     .main {
         display: flex;
-        padding: 8px;
+        padding: 8px 8px 30px;
         background: #eee;
         height: 100%;
     }
@@ -1370,7 +1370,7 @@ span {
 
     .rating-and-review {
         display: flex;
-        padding-top: 9px;
+        padding-top: 3px;
         column-gap: 8px;
     }
 
@@ -1488,7 +1488,7 @@ span {
         margin-bottom: 3px;
     }
 
-    .bank span{
+    .bank span {
         margin-top: 9px;
         font-size: 14px;
         letter-spacing: -0.32px;
@@ -1499,17 +1499,317 @@ span {
         width: 93.58px;
     }
 
-     .second{
+    .second {
         width: 200px;
-    } 
-    
-    .last p{
+    }
+
+    .last p {
         line-height: 20px;
     }
 
-    .main-right-sec-foot{
+    .main-right-sec-foot {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-top: 2px solid rgb(240, 240, 240);
+    }
+
+    .main-right-sec-foot p {
+        font-size: 14px;
+        font-family: inter-regular;
+    }
+
+    .pages {
+        display: flex;
+        column-gap: 28px;
+        align-items: center;
+        margin-right: 19%;
+    }
+
+    .first-page {
+        border: 1px solid #2370f4;
+        padding: 0px 8px;
+        background: #2370f4;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        padding: 7px 8px;
+    }
+
+    .first-page div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: inter-regular;
+    }
+
+    .pages span {
+        font-size: 14px;
+        font-family: roboto-medium;
+        color: rgb(0, 0, 0);
+    }
+
+    .next-page p {
+        font-size: 14x;
+        font-family: roboto-medium;
+        color: #2874f0;
+    }
+
+    .yes-or-no-sec {
+        display: flex;
+        align-items: center;
+        column-gap: 36px;
+        padding: 16px;
+        height: 65.59px;
+        border-top: 10px solid #eee;
+    }
+
+    .yes-or-no-sec p {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: roboto-medium;
+    }
+
+    .buttons {
+        display: flex;
+        column-gap: 8px;
+    }
+
+    .buttons span {
+        font-size: 14px;
+        font-weight: roboto-medium;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn {
+        border: 1px solid #d7d7d7;
+        width: 80.36px;
+        height: 33.59px;
+        padding: 6px 28px;
+    }
+
+    .mi-mobiles-sec {
+        padding: 0px 25px;
+        margin: 25px 0px 20px;
+    }
+
+    .mi-mobiles-sec a {
+        font-size: 11px;
+        font-family: inter-regular;
+        color: #2874f0;
+    }
+
+    .mi-mobiles-sec h2 {
+        font-size: 14px;
+        font-family: roboto-medium;
+        color: rgb(135, 135, 135);
+        margin-bottom: 10px;
+    }
+
+    .redmi-9 p {
+        font-size: 11px;
+        color: #878787;
+        font-family: roboto-medium;
+    }
+
+    .redmi-9 h3 {
+        font-size: 12px;
+        font-family: roboto-medium;
+        color: rgb(135, 135, 135);
+        margin-bottom: 25px;
+    }
+
+    .redmi-price-section a {
+        font-size: 13px;
+    }
+
+    .redmi-price-section span {
+        color: #878787;
+        line-height: 90px;
+    }
+
+    table {
+        width: 605.5px;
+    }
+
+    th {
+        font-size: 11px;
+        font-family: roboto-medium;
+        color: #878787;
+        text-align: left;
+        height: 17px;
+        padding: 0px 0px 0px 5px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td {
+        padding: 0px 0px 0px 5px;
+        height: 17px;
+    }
+
+    tr,
+    td :nth-child(2) {
+        font-size: 11px;
+        font-family: roboto-medium;
+        color: #878787;
+    }
+
+    .question-answer-sec {
+        padding: 17px 0px 15px;
+    }
+
+    .question-answer-sec h2 {
+        padding: 10px 0px 10px 24px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: roboto-medium;
+    }
+
+    .question-answer {
+        padding: 10px 24px;
+        border-top: 1px solid #e0e0e0;
+        line-height: 16px;
+    }
+
+    .question-answer p {
+        font-size: 12px;
+        font-weight: 400;
+        font-family: inter-regular;
+    }
+
+    footer {
+        background: rgb(23, 35, 55);
+    }
+
+    .footer-top {
+        display: flex;
+        column-gap: 9px;
+        margin: 0px 0px 0px 65px;
+        padding: 40px 0px 0px;
+    }
+
+    .footer-top h4 {
+        font-size: 12px;
+        color: #878787;
+        font-family: inter-regular;
+        text-align: left;
+        margin: 0px 0px 6px;
+    }
+
+    .footer-top li {
+        list-style-type: none;
+        font-size: 12px;
+        font-family: inter-regular;
+        color: #fff;
+        line-height: 23.5px;
+        text-align: left;
+        transform: translateY(1px);
+    }
+
+    .list-1,
+    .list-2,
+    .list-3,
+    .list-4,
+    .list-5,
+    .list-6 {
+        margin-top: -5px;
+    }
+
+    .list-1,
+    .list-2,
+    .list-3,
+    .list-4,
+    .list-5,
+    .list-6 ul {
+        transform: translateY(-3px);
+    }
+
+    .list-3 {
+        margin-left: -3px;
+    }
+
+    .list-4 {
+        width: 115.67px;
+        margin-left: -2.5px;
+    }
+
+    .list-5 {
+        padding: 0px 25px;
+        border-left: 1px solid rgb(113, 116, 120);
+        height: 133.8px;
+        line-height: 15px;
+    }
+
+    .list-6 {
+        margin-top: -8px;
+        transform: translateX(5px);
+    }
+
+    .list-5 li {
+        transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+        display: flex;
+        column-gap: 30.1px;
+        margin: 40px 0px 0px;
+        padding: 25px 30px;
+        height: 74px;
+        border-top: 1px solid rgb(99, 98, 98);
+    }
+
+    .footer-bottom-ele {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+    }
+
+    .footer-bottom-ele img {
+        margin-top: -5px;
+        margin-left: 2px;
+    }
+
+    .footer-bottom-ele p {
+        font-size: 14px;
+        font-family: inter-regular;
+        color: #fff;
+        white-space: nowrap;
+    }
+
+    .payment-methods img {
+        margin-top: 7px;
+    }
+
+    .advertise p {
+        margin-left: -1px;
+    }
+
+    .help-center {
+        margin-left: -1px;
+    }
+
+    .copyright {
+        margin-left: 1px;
+    }
+
+    .footer-top ul li+li {
+        margin-top: 1px;
+    }
+
+    .list-5 ul li+li{
+        margin-top: -5px;
+    }
+
+    .list-6 ul li+li {
+        margin-top: -5px;
     }
 
 }
