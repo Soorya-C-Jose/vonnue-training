@@ -462,7 +462,6 @@ body {
     margin-top: 38px;
     column-gap: 18px;
     padding-left: 8px;
-    /* transform: translateX(3px); */
   }
 
   .category {
@@ -521,10 +520,6 @@ body {
   .footer-section {
     display: flex;
     background-image: linear-gradient(90deg, #af2896, #509bf5);
-    /* position: fixed;
-    bottom: 9px;
-    left: 0;
-    right: 0; */
     height: 66px;
     margin: 0px 8px;
     justify-content: space-between;
@@ -639,100 +634,6 @@ body {
 
 }
 
-
-
-/* RESPONSIVE ON 1920PX */
-
-/* @media screen and (min-width:1920px) {
-
-  .btn-and-cookie {
-    height: 92.18%;
-  }
-
-  .language {
-    transform: translateY(1px);
-  }
-
-  .body-section {
-    height: 94.35%;
-  }
-
-  .scroll-ele{
-    padding-left: 20px;
-    column-gap: 28px;
-  }
-
-  .cate-img {
-    width: 151.42px;
-    height: 151.42px;
-  }
-}  */
-
-
-
-/* RESPONSIVE ON 1640PX */
-
-/* @media screen and (min-width:1640px) {
-
-  .footer-section {
-    padding: 12px 24px 7px 15px;
-  }
-
-  .footer-right {
-    margin-top: -3px;
-  }
-
-  .body-section {
-    height: 93.55%;
-  }
-
-  .btn-and-cookie {
-    height: 90.42%;
-  }
-
-  .playlist-and-all{
-   padding-left: 8px;
-  }
-
-  .scroll-ele{
-    padding-left: 15px;
-  }
-
-  .category {
-    width: 210.41px;
-    height: 292.56px;
-  }
-
-  .cate-img {
-    width: 178.39px;
-    height: 178.39px;
-  }
-
-  .category p{
-    transform: translateX(-37px);
-  }
-
-  .top p{
-    transform: translateX(-28px);
-  }
-
-  .rap p{
-    transform: translateX(-50px);
-  }
-
-  .chill p{
-    transform: translateX(-55px);
-  }
-
-  .category span{
-    text-align: left;
-  } 
-}
- */
-
-
-
-
  /* RESPONSIVE ON 1845PX */
 
  @media screen and (min-width:1845px) {
@@ -789,9 +690,6 @@ body {
 
 
  }
-
-
-
 
 
 
