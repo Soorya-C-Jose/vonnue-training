@@ -404,11 +404,11 @@ span {
     display: none;
 }
 
-.question-answer-sec{
+.question-answer-sec {
     display: none;
 }
 
-footer{
+footer {
     display: none;
 }
 
@@ -1830,9 +1830,13 @@ footer{
         font-family: inter-regular;
     }
 
-    /* .mi-mobiles-sec{
-        display: none;
-    } */
+    .mi-mobiles-sec {
+        display: block;
+    }
+
+    footer{
+        display: block;
+    }
 
 }
 
@@ -2052,43 +2056,47 @@ footer{
         margin-top: 2px;
     }
 
+    .mi-mobiles-sec {
+        display: block;
+    }
+
 }
 
-@media screen and (min-width:2560px){
+@media screen and (min-width:2560px) {
 
-    .mi-mobiles-sec{
+    .mi-mobiles-sec {
         display: block;
     }
 
-    .question-answer-sec{
+    .question-answer-sec {
         display: block;
     }
 
-    footer{
+    footer {
         display: block;
     }
 
-    .footer-top{
+    .footer-top {
         column-gap: 110px;
     }
 
-    .list-4{
+    .list-4 {
         width: 268px;
     }
 
-    .list-5{
+    .list-5 {
         margin-top: -7px;
     }
 
-    .list-6{
+    .list-6 {
         transform: translateX(14px);
     }
 
-    .footer-bottom{
+    .footer-bottom {
         column-gap: 233px;
     }
 
-    .payment-methods img{
+    .payment-methods img {
         margin-top: 4px;
     }
 }
