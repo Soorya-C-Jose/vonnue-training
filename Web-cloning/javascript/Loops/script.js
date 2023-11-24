@@ -134,23 +134,23 @@ function generateCertificate() {
 let hasSolvedChallenge = false
 let hasHintsLeft = false
 
-if (hasSolvedChallenge == false && hasHintsLeft == false){
+if (hasSolvedChallenge == false && hasHintsLeft == false) {
     showSolution()
 }
 
-function showSolution (){
-console.log ("Show the Solution")
+function showSolution() {
+    console.log("Show the Solution")
 }
 
 // LOGICAL OR (||)
 
 let likesDocumentaries = true
 let likesStartups = true
-if (likesDocumentaries == true || likesStartups == true){
+if (likesDocumentaries == true || likesStartups == true) {
     recommendMovie()
 }
 
-function recommendMovie (){
+function recommendMovie() {
     console.log("Hey, check out this new film we think you will like")
 }
 
@@ -158,16 +158,248 @@ function recommendMovie (){
 // OBJECTS
 
 let course = {
-    title : "Learn CSS Grid for free",
-    lessons : 16,
-    creator : "Per Harald Borgan",
-    length : 63,
-    level : 2,
-    isFree : true,
-    tags : ["html","css"]
+    title: "Learn CSS Grid for free",
+    lessons: 16,
+    creator: "Per Harald Borgan",
+    length: 63,
+    level: 2,
+    isFree: true,
+    tags: ["html", "css"]
 }
 console.log("course")
-console.log (course.title)
+console.log(course.title)
 
 
 
+
+
+
+////////// PRACTICE ///////////////
+
+
+let person = {
+    name: "Per Harald",
+    age: 34,
+    country: "Norway"
+}
+function logData() {
+    console.log(person.name + "is " + person.age + " years old and lives in " + person.country)
+}
+logData()
+
+
+
+let age = 90
+if (age < 15) {
+    console.log("free")
+} else if (age < 18) {
+    console.log("child discount")
+} else if (age < 27) {
+    console.log("student discount")
+} else if (age < 67) {
+    console.log("full price")
+} else {
+    console.log("senior citizen discount")
+}
+
+//  LARGE COUNTRIES
+
+console.log("The largest countries in the world")
+let largeCountry = ["China", "India", "USA", "Indonesia", "Pakistan"]
+for (let i = 0; i < largeCountry.length; i++) {
+    console.log("-" + largeCountry[i])
+}
+
+
+let largeCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+largeCountries.pop()
+largeCountries.push("pakistan")
+console.log(largeCountries)
+largeCountries.shift()
+largeCountries.unshift("china")
+console.log(largeCountries)
+
+
+let dayOfMonth = 31
+let weekday = "Friday"
+if (dayOfMonth == 31 && weekday == "Friday") {
+    console.log("😱")
+}
+
+
+let hands = ["rock", "paper", "scissor"]
+function getHand() {
+    let randomIndex = Math.floor(Math.random() * 3)
+    return hands[randomIndex]
+}
+console.log(getHand())
+
+
+let fruit = ["apple", "orange", "apple", "apple", "orange"]
+let appleShelf = document.getElementById("apple-shelf")
+let orangeShelf = document.getElementById("orange-shelf")
+function sortFruit() {
+    for (let i = 0; i < fruit.length; i++) {
+        if (fruit[i] === "apple") {
+            appleShelf.textContent += "apple"
+        } else if (fruit[i] === "orange") {
+            orangeShelf.textContent += "orange"
+        }
+    }
+}
+sortFruit()
+
+
+
+// TEMPLATE STRING / LITERALS
+const recipient = "james"
+const sender = "George"
+// const email = "Hey" + recipient + "!How is it going? Cheers Per"
+// const email = `Hey ${recipient} ! How is it going? Cheers Per`
+const email = `Hey ${recipient} ! How is it going ? Cheers ${sender}`
+console.log(email)
+
+
+
+// LOCAL STORAGE
+localStorage.setItem("myCountry", "India")
+let country = localStorage.getItem("myCountry")
+console.log(country)
+
+localStorage.setItem("myName", "Per Harald Borgen")
+let name = localStorage.getItem("myName")
+console.log(name)
+
+let myLeads = `{"name":"John", "birth":"1986-12-14", "city":"New York"}`
+localStorage.setItem("myLeads", (myLeads))
+let item = JSON.parse(localStorage.getItem("myLeads"));
+console.log(item)
+
+
+// ******************************************//
+//Truthy and falsy statements
+
+const credits = 10
+if (credits > 0) {
+    console.log("Let's play")
+} else {
+    console.log("Sorry, you have no credits")
+}
+
+
+// ***********************
+// ANOTHER METHOD FOR INNERHTML
+// 1. create element
+// 2.set text content
+// 3.append to ul
+// const li =document.createElement("li")
+// li.textContent = myLead[i]
+// ulEl.append(li)
+
+
+
+// *******************************
+let welcomeEl = document.getElementById("welcome-el")
+console.log(welcomeEl)
+
+function greetUser(greeting, name) {
+    welcomeEl.textContent = `${greeting} , ${name}`
+}
+greetUser("howdy", "Samuel")
+
+
+
+function add(num1, num2) {
+    return num1 + num2
+}
+console.log(add(3, 4))
+console.log(add(2, 109))
+
+
+
+
+//  ****** Arrays as Parameters *********
+function getFirst(arr) {
+    return arr[0]
+}
+let firstCard = getFirst([10, 11, 21])
+console.log(firstCard)
+
+
+//  *********** practice-chrome extension *****************
+const player = "per"
+const opponent = "Nick"
+const game = "AmazingFighter"
+let points = 0
+let hasWon = false
+points += 100
+hasWon = true
+if (hasWon) {
+    console.log(`${player} got ${points} points and won the ${game} game!`)
+} else {
+    console.log(`the winner is ${opponent} ! ${player} lost the game`)
+}
+
+
+let myCourse = ["learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"]
+function logItems(arr) {
+    for (let i = 0; i < Array.length; i++) {
+        console.log(arr[i])
+    }
+}
+logItems(myCourse)
+
+
+//  let myCredits = localStorage.getItem (myCredits)
+//  console.log(myCredits)
+
+
+
+let data = [
+    {
+        player: "Jane",
+        score: 52
+    },
+    {
+        player: "Mark",
+        score: 41
+    }
+]
+
+const btnEl = document.getElementById("btn-el")
+btnEl.addEventListener("click", function () {
+    console.log(data[0])
+})
+
+
+function generateSentence(desc, arr) {
+    let baseString = `The ${arr.length} ${desc} are `
+    const lastIndex = arr.length - 1
+    for (let i = 0; i < arr.length; i++) {
+        if (i == lastIndex) {
+            baseString += arr[i]
+        } else {
+            baseString += arr[i] + ", "
+        }
+    }
+    return baseString
+}
+const sentence = generateSentence("highest mountains", ["Mount Everest", "k2"])
+console.log(sentence)
+
+
+
+const imgs = [
+    "images1.jpg",
+    "img2.webp",
+    "img3.avif"
+]
+const container = document.getElementById("container")
+function renderImages(){
+    let imgsDOM = ""
+    for (let i = 0; i < imgs.length; i++){
+        imgsDOM+= `<img alt = "Employee in the company" class="team-img" src="${imgs[i]}">`
+    }
+    container.innerHTML = imgsDOM
+}
+renderImages()
