@@ -1,0 +1,15 @@
+    button {
+        background-color: rgb(243, 145, 247);
+        border: none;
+        color: #fff;
+    }
+
+    .btn1 {
+        background-color: yellow;
+        color: #000;
+    }
+
+    .btn2 {
+        background-color: orange;
+        color: #000;
+    }
