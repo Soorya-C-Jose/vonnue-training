@@ -1,0 +1,51 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.amazon-btn {
+    background-color: rgb(255,216,20);
+    border: none;
+    padding: 8px 40px;
+    border-radius: 15px;
+    margin: 10px ;
+    font-family: arial;
+}
+
+.uber-buttons {
+    margin: 10px;
+}
+
+.request-btn {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.schedule-btn {
+    background-color: rgb(230,230,230);
+    color: #000;
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.game-btn , .music-btn , .tech-btn {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Arial;
+    margin: 10px 0px 0px 20px;
+    cursor: pointer;
+}
+
+
+.is-on {
+    background-color: #000;
+    color: #fff;
+}

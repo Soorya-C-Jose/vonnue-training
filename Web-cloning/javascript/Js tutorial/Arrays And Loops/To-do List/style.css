@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px 0px 0px 20px;
+    font-family: Arial;
+}
+
+.todo-input-grid {
+    margin-bottom: 10px;
+}
+
+/* .todo-grid , .todo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.todo-input-grid {
+    margin-bottom: 20px;
+} */
