@@ -1,6 +1,7 @@
 
 import { cart } from '../data/cart.js';
 import { products } from '../data/products.js';
+import { saveToStorage } from './data/cart.js';
 
 let productsHTML = ''
 products.forEach((product) => {
@@ -57,13 +58,13 @@ products.forEach((product) => {
     `;
 })
 
-console.log(productsHTML);
+//console.log(productsHTML);
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 
 function addToCart(productId) {
-    let matchingItem;
+    let matchingItem =null
 
     cart.forEach((cartItem) => {
         if (productId === cartItem.productId) {
@@ -73,12 +74,17 @@ function addToCart(productId) {
 
     if (matchingItem) {
         matchingItem.quantity += 1;
+        cart.push({
+            productId: productId,
+            quantity: matchingItem.quantity
+        });
     } else {
         cart.push({
             productId: productId,
             quantity: 1
         });
     }
+    saveToStorage()
 }
 
 function updateCartQuantity() {
