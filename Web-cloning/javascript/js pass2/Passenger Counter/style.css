@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./25subwayweb2-articleLarge.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+button {
+    border: none;
+    background: darkred;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0px ;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#save-btn {
+    background-color: green;
+}
+
+p {
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
