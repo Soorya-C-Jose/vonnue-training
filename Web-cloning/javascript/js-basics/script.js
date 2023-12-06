@@ -159,11 +159,11 @@
 // console.log(totalpoints)
 
 // PRACTICE
+// console.log("hello")
 
-  
- 
 
-  
+
+
 
 
 
