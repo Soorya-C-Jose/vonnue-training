@@ -4,99 +4,83 @@
 
 
 
-function isPrime(num) {
- if (num <= 1) {
-  return false;
- }
- for(let i = 2; i <= Math.sqrt(num); i++){
-  if(num % i === 0) {
-    return false;
-  }
-  return true;
- }
-     console.log(isPrime())
-   
-    let sequence = []
-    for(let j =1; j <= Math.sqrt(num); j++){
-        if(isPrime= false) 
-      if(num % i == 0){
-        console.log (sequence);
-      }
-    }
-    return isPrime && (num > 1);
-}
-
-console.log(isPrime(11));
-
-
-// function isPrime(num) {
-//   let sequence = []
-//     let prime = true;
-//     for(let i =2; i <= Math.sqrt(num); i++){
-         
-   
-//     for(let j =1; j <= i; j++){
-//       if(i % j == 0){
-//         console.log (i);
-//       }
-//     }
-//     }
-    
-// }
-
-// console.log(isPrime(6));
+// write a function 
 
 
 
+// let count = 0;
+// function isPrime() {
+//   let num = 100
 
-// function isPrime(num) {
-//   let prime = true;
-//   for(let i =2; i <= Math.sqrt(num); i++){
-//       if(num % i == 0) {
-
-//         prime = true
-//           // prime = false;
-//       } else {
-//         prime = false
-//       }
-  
- 
-//   let sequence = []
-//   for(let j =1; j <= Math.sqrt(num); j++){
-//       if(prime = false) 
-//     if(num % i == 0){
-//       console.log (sequence);
-//     }
-//   }
-//   return prime && (num > 1);
-// }
-// }
-// console.log(isPrime(12));
-
-
-// function isPrime(num) {
 //   if (num <= 1) {
 //     return false;
 //   }
-//   for (let i=2; i <=Math.sqrt(num);i++){
-//     if (num % i === 0){
-//       return false;
+//   for (let i = 2; i <= num; i++) {
+
+//     if (num % i === 0) {
+//       count++
+//     }
+//     if (count == 1) {
+//       console.log(i)
+//     } else {
+//       console.log(" the number is  not a prime number")
 //     }
 //   }
-//   return true;
 // }
 
-// function findNthPrime(n) {
-//   let count = 0;
-//   let num = 2;
-//   while  (count < n) {
-//     if (isPrime(num)) {
-//       count ++
-//     }
-//     num ++
-//   }
-//   return num - 1
+// let sequence = []
+// if(count == 1){
+//   sequence.push(i)
 // }
-// console.log(findNthPrime(10));
-// console.log(findNthPrime(100));
+// isPrime()
+
+
+// isPrime(n) return true if n is prime else false
+
+
+
+// function isPrime(n) {
+//  let count = 0;
+//  for(let i = 0; i <= n; i ++){
+//   if (n <= 1){
+//     return false;
+//   } else if (n % i == 0) {
+//     count ++
+//   } else if(count == 1){
+//     true
+//   } else if (count !== 1) {
+//     console.log("the number is not a prime number")
+//   }
+//  }
+// }
+
+
+function isPrime(n) {
+  if(n <= 1){
+    return false;
+  }
+  for(let i = 2; i <= n/2; i++){
+    if(n % i == 0) {
+      return false;
+    } 
+  }
+  return true;
+}
+
+function nthPrime(num) {
+  let count = 0
+  let n = 0
+  while (count < num){
+   n++;
+   if(isPrime(n)) {
+    count ++
+   }
+  }
+  return n 
+}
+
+console.log(isPrime(11));
+console.log(nthPrime(5));
+
+
 
