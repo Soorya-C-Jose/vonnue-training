@@ -355,3 +355,21 @@ console.log(sortedArray)
 let sorted = [33,4,1111,222];
 let sortedArr = sorted.sort();
 console.log(sortedArr)
+
+sorted.sort(function(a,b) {
+    return a-b;
+});
+console.log(sorted)
+sorted.sort((a,b) => b-a);
+console.log(sorted)
+
+let elements = ["ant","bug","cat","dog"]
+elements.sort();
+console.log(elements)
+elements.sort(function(s,t) {
+    let x1 = s.toLowerCase();
+    let y1 = t.toLowerCase();
+    if (x1 < y1) return -1;
+    if(x1 > y1) return 1;
+    return 0
+})
