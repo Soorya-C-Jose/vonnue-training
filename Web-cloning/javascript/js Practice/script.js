@@ -147,3 +147,5 @@ return n
 
 console.log(nthPrime(4));
 console.log (primeOrNot(10))
+
+

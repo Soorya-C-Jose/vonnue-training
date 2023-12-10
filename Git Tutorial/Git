@@ -1,0 +1,34 @@
+1. git add .
+2. git status
+3. git commit -m : ( -m = attaching a message to it)
+4. git log : for version history
+5. git commit --amend  : lets say you just committed and you made a mistake in ypur commit log message.
+6. staged area : (staged changes) all of the changes that we picked using git
+               add that we want to go into the next version.
+7. Working area : under the staged area is the current working area.
+8. git reset : is usefull when you want to undo cmmits that have not been 
+             pushed to a remote repositiory.
+       reset . : all changess for  a folder
+9. git checkout -- (folder name) :  undo all the changes in the working area. 
+     git checkout .          :                          ""
+10. git log --all : to show all the branches   
+11. git log --all --graph : showing you the branching effect in your
+                            version history. 
+12. git checkout : is used to switch between branches in a repositiory.
+13. git ignore : used to ignore the files and directories.    
+14. rm -rf .git : remove a folder and all the content inside that folder.  
+
+
+
+
+
+
+Git aliases : these are a powerfull workflow tool that creates 
+               shortcuts to frequently used git commands.
+Eg: 
+git config --global alias.s "status"(git s)
+git config --global alias.cm "commit -m"(git cm)
+git config --global alias.co (checkout)
+
+Repository : means a folder that is being tracked by git.
+            

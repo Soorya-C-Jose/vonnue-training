@@ -1,0 +1,72 @@
+Online Backup
+Repositories
+* Local : refers to things our computer
+* Remote : refers to the things that are online
+
+Upload to Github : push
+Download from Github : pull
+
+push : git push origin(which repository) main (branch name)
+
+git push origin master --set-upstream : (next time you run git push
+you can just run this command(git push) and git
+will automatically memorize origin and master for you)
+
+git push only pushes commits
+
+--amend :: instead of creating a new commit it's going to overwrite
+the previous commit.
+
+git push origin main -f :: (force push) it means to push this commit to github even if it will
+overwrite.
+
+git clone :: it is used to point to an existing repo and make a clone
+             or copy of that repo at in a new directory, at another
+             location.
+
+Remote tracking branch : we pushed our entire branch upto github
+and now github essentially has a copy of branch
+
+SSH Keys :: simply it is a file that we created on our computer
+then whenever we run git push we're going to pass this to github ,
+and this key is going to give us access.
+
+
+
+
+git init : creates a new repository 
+
+BRANCHING :: work on multiple things at the same time
+
+steps for branching 
+* creating a new branching
+        git branch (branch name) 
+* switching the branch 
+         git checkout (branch name) which branch we want to switch 
+
+
+MERGING 
+    helps us to combine all the branches together.
+
+ * switch to the current working branch (using checkout)
+ * git merge branch name(the other one)
+
+ MERGE CONFLICTS 
+     we're going to create two branches and on each of the branches
+     were going to change the same file on the same line.
+
+* create a branch
+* and change the same file on the same line of two files
+* merge(git merge conflict -m "")
+
+
+FEATURE BRANCH WORKFLOW 
+* A workflow
+* Astep by step process for using Git and Github.
+
+_ create a feature branch
+_ upload feature branch to Github
+_ create a pull request (do code reviews)
+_ merge feature branch into main/master branch
+
+
