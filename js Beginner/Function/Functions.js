@@ -45,6 +45,9 @@ console.log(square(2))
 const sum = (x, y) => x + y;
 console.log(sum(10, 20))
 
+const multiply1 = (x,y) => x*y;
+console.log(multiply1(2,24))
+
 
 /**********INVOKING FUNCTIONS********/
 
@@ -118,6 +121,14 @@ function sum1(x, y, z) {
 const number = [1, 2, 3];
 console.log(sum1(...number));
 console.log(sum1.apply(null, number));
+
+
+function suum (x,y,z) {
+    return x + y + z;
+}
+const num = [1,2,3];
+console.log(suum(...num));
+console.log(suum.apply(null, num))
 
 //destructing function arguments into parameters
 
