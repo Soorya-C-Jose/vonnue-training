@@ -59,16 +59,19 @@ function sameArray() {
 console.log(sameArray())
 
 
-
-let arr1 = [1, 2, 3, 4, 5]
-let arr2 = [6, 7, 8, 9, 10]
-
+let arr1 = [1,2,3,4,5]
+let arr2 = [4,3,2,1,0]
 function mixArray(arr1, arr2, num) {
-    if (num == 0) {
-        return newArray = arr1.concat(arr2)
+ if (num === 0) {
+    return newArr = arr1.concat(arr2)
+ }
+ for (let i = 0; i > arr2.length; i++) {
+    return arr1[i]
+    if(num === 1) {
+        return arr1[i]
     }
-    if (num == 1) {
-    }
+ }
+
 }
 
-console.log(mixArray(arr1, arr2, 1))
+console.log(mixArray(arr1, arr2, 0))
