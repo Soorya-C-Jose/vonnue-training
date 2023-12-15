@@ -41,7 +41,7 @@ function testCase() {
         {
             "x": [10, 20],
             "y": [10, 20, 30],
-            "exp": true
+            "exp": false
         }
     ]
 
