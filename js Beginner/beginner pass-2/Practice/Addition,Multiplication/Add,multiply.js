@@ -63,6 +63,7 @@ function multiplyNumbers(num1, num2) {
     return result
 }
 
+
 function TestCase1() {
     let TestCase1 = [
         {
