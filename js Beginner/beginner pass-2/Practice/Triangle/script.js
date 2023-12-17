@@ -1,16 +1,17 @@
-function findHypotenuse(base,height) {
-    return Math.sqrt((base*base)+(height*height))
-}
-
-
 //Compare function
 
 function compareSides(got,exp) {
- if(got === exp) {
-    return true
- } else {
-    return false
- }
+    if(got === exp) {
+       return true
+    } else {
+       return false
+    }
+   }
+
+
+
+function findHypotenuse(base,height) {
+    return Math.sqrt((base*base)+(height*height))
 }
 
 //Test case
@@ -36,34 +37,87 @@ function TestCase() {
             "base":8,
             "height":6,
             "exp":10
-        },
-        {
-            "base":10,
-            "height": -5,
-            "exp": 11.18
-        },
-        {
-            "base": -8,
-            "height": -2,
-            "exp": 7.74
         }
     ]
 
     for(let i=0; i < TestCase.length;i++) {
         let result = findHypotenuse(TestCase[i].base, TestCase[i].height);
         let got = compareSides(result, TestCase[i].exp)
-        console.log(got)
         if(got) {
-            console.log("TestCase "+[i+1]+" is passed")
+            console.log("Test Case "+[i+1]+" is passed")
         } else {
-            console.log("TestCase "+[i+1]+" is passed")
+            console.log("Test case "+[i+1]+" is failed")
         }
-        console.log(TestCase[i].exp)
     }
 }
 
 TestCase()
 
+
+//******************************************************************/
+
+function rightAngleOrNot(side1, side2){
+//  if(Math.sqrt((side1 * side1) + (side2 * side2))) {
+//     return true;
+//  } else {
+//     return false
+//  }
+// let sum = (side1 * side1) + (side2 * side2) 
+// for(i = 0; i <= sum; i++){
+//     if(sum === (i+1)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+}
+
+
+
+//TestCases
+
+function TestCase1() {
+    let TestCase1 = [
+        {
+            "x": 3,
+            "y": 4,
+            "exp": true
+        },
+        {
+            "x": 3,
+            "y": 9,
+            "exp": true
+        },
+        {
+            "x": 8,
+            "y": 4,
+            "exp": false
+        }
+    ]
+
+    for(let i = 0; i < TestCase1.length; i++) {
+        let result = rightAngleOrNot(TestCase1[i].x, TestCase1[i].y)
+        got = compareSides(result, TestCase1[i].exp)
+       if(got) {
+        console.log("Test Case "+[i+1]+" is passed")
+       } else {
+        console.log("The case "+[i+1]+" is failed")
+       }
+    }
+}
+
+TestCase1()
+
+
+
+
+
+//algorithm
+
+//we have two sides of a triangle
+//we could find that the third side as the same as hypotenuse
+// let store the squares in a variable called value
+//
 
 
 

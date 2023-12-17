@@ -60,8 +60,8 @@ function divideNumbers(num1, num2) {
     let result = num1
     let divisionValue = 0;
     for (let i = 1; result >= num2; i++) {
-        result = subtractNumbers(result,num2)
-        divisionValue =  i ;
+        result = subtractNumbers(result, num2)
+        divisionValue = i;
     }
     return divisionValue;
 }
@@ -82,14 +82,14 @@ function TestCase1() {
             "exp": 50
         },
         {
-            "x":20,
-            "y":10,
+            "x": 20,
+            "y": 10,
             "exp": 0
         }
     ]
 
     for (let i = 0; i < TestCase1.length; i++) {
-          let Result = divideNumbers(TestCase1[i].x,TestCase1[i].y)
+        let Result = divideNumbers(TestCase1[i].x, TestCase1[i].y)
         got = compareNumber(Result, TestCase1[i].exp)
         if (got) {
             console.log("Test case " + (i + 1) + " is passed")
@@ -106,46 +106,52 @@ TestCase1()
 //*************************************************/
 
 
-function modNumbers(num1,num2) {
-
+function modNumbers(num1, num2) {
+    let result = num1;
+    let value = 0;
+    for (let i = 0; result >= num2; i++) {
+        result = subtractNumbers(result, num2)
+        value = i;
+    }
+    return result;
 }
 
 
 //TestCases
 
 function TestCase2() {
-let TestCase2 = [
-    {
-        "x": 10,
-        "y": 3,
-        "exp":1
-    },
-    {
-        "x": 1,
-        "y": 7,
-        "exp":1
-    },
-    {
-     "x": 20,
-     "y":10,
-     "exp": 0   
-    },
-    {
-        "x":28,
-        "y":8,
-        "exp":4
-    }
-]
+    let TestCase2 = [
+        {
+            "x": 10,
+            "y": 3,
+            "exp": 1
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "exp": 1
+        },
+        {
+            "x": 20,
+            "y": 10,
+            "exp": 0
+        },
+        {
+            "x": 28,
+            "y": 8,
+            "exp": 4
+        }
+    ]
 
-for(let i =0; i < TestCase2.length; i++ ){
-    let Result = modNumbers(TestCase2[i].x, TestCase2[i].y)
-    got = compareNumber(Result, TestCase2[i].exp)
-    if(got) {
-        console.log("Test case "+[i+1]+" is passed")
-    } else {
-        console.log("Test case "+[i+1]+" is failed")
+    for (let i = 0; i < TestCase2.length; i++) {
+        let Result = modNumbers(TestCase2[i].x, TestCase2[i].y)
+        got = compareNumber(Result, TestCase2[i].exp)
+        if (got) {
+            console.log("Test case " + [i + 1] + " is passed")
+        } else {
+            console.log("Test case " + [i + 1] + " is failed")
+        }
     }
-}
 }
 
 TestCase2()
