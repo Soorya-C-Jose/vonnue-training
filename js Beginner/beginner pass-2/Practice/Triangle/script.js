@@ -20,7 +20,7 @@ function TestCase() {
         {
             "base": 3,
             "height": 4,
-            "exp": 8
+            "exp": 5
         },
         {
             "base": 5,
@@ -57,22 +57,16 @@ TestCase()
 //******************************************************************/
 
 function rightAngleOrNot(side1, side2){
-//  if(Math.sqrt((side1 * side1) + (side2 * side2))) {
-//     return true;
-//  } else {
-//     return false
-//  }
-// let sum = (side1 * side1) + (side2 * side2) 
-// for(i = 0; i <= sum; i++){
-//     if(sum === (i+1)) {
-//         return true
-//     } else {
-//         return false
-//     }
-// }
+let value = ((side1 * side1) + (side2 * side2))
+for( i = 0; i < value ; i++) {
+    if(i*i == value){
+        return true
+    }
+    
 }
-
-
+return false
+}
+console.log(rightAngleOrNot(3,4))
 
 //TestCases
 
@@ -86,12 +80,12 @@ function TestCase1() {
         {
             "x": 3,
             "y": 9,
-            "exp": true
+            "exp": false
         },
         {
             "x": 8,
             "y": 4,
-            "exp": false
+            "exp":false
         }
     ]
 
@@ -108,16 +102,6 @@ function TestCase1() {
 
 TestCase1()
 
-
-
-
-
-//algorithm
-
-//we have two sides of a triangle
-//we could find that the third side as the same as hypotenuse
-// let store the squares in a variable called value
-//
 
 
 
