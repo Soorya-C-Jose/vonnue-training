@@ -66,7 +66,7 @@ for( i = 0; i < value ; i++) {
 }
 return false
 }
-console.log(rightAngleOrNot(3,4))
+// console.log(rightAngleOrNot(3,4))
 
 //TestCases
 
@@ -86,6 +86,16 @@ function TestCase1() {
             "x": 8,
             "y": 4,
             "exp":false
+        },
+        {
+            "x": 5,
+            "y": 12,
+            "exp": true
+        },
+        {
+            "x":6,
+            "y":8,
+            "exp": true
         }
     ]
 

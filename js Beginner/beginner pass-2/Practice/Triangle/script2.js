@@ -1,22 +1,28 @@
 
+
 function compareSides(got,exp) {
     if(got === exp) {
        return true
     } else {
        return false
     }
-   }
-
    
+}
 
 function findHypotenuse(base,height) {
-    let hypot = 0;
-    // return hypot += ((base * base) + (height * height))
-//   return sum = ((base * base) + (height * height))
-//   return hypotenuse = (sum *sum)
-//  return Math.sqrt ((base*base) + (height*height))
-Math.hypot(base * height)
+    let result = ((base * base) + (height * height)) 
+    console.log(result)
+    let hypotenuse = (result)
+    // console.log(hypotenuse)
+//     if(( * result) === result) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
 }
+
+findHypotenuse(8,6)
 
 //Test case
 function TestCase() {
@@ -24,23 +30,23 @@ function TestCase() {
         {
             "base": 3,
             "height": 4,
-            "exp": 9
+            "exp": 25
         },
         {
             "base": 5,
-            "height": 12,
-            "exp":13
+            "height": 2,
+            "exp":29
             
         },
         {
-            "base": 15,
-            "height": 8,
-            "exp":17
+            "base": 3,
+            "height": 2,
+            "exp":13
         },
         {
             "base":8,
             "height":6,
-            "exp":10
+            "exp":100
         }
     ]
 
