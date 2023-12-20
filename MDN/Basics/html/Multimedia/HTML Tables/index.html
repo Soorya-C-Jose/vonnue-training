@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- <h1>Dogs Table</h1> -->
+    <h1>Student Time Table</h1>
     <table>
-        <tr>
+        <caption>Florence's weekly lesson time table</caption>
+        <!-- <tr>
             <td>&nbsp;</td>
             <td>Knocky</td>
             <td>Flor</td>
@@ -24,10 +29,141 @@
         </tr>
         <tr>
             <td>Age</td>
+            <td>16</td>
+            <td>9</td>
+            <td>10</td>
+            <td>5</td>
         </tr>
+        <tr>
+            <td>Owner</td>
+            <td>Mother-in-law</td>
+            <td>Me</td>
+            <td>Me</td>
+            <td>Sister-in-law</td>
+        </tr>
+        <tr>
+            <td>Eating Habits</td>
+            <td>Eats everyone's leftovers</td>
+            <td>Nibbles at food</td>
+            <td>Hearty eater</td>
+            <td>Will eat till he explods</td>
+        </tr> -->
+
+
+        <!-- STYLING WITHOUT COLUMNS-->
+
+
+        <!-- <tr>
+            <th>Data 1</th>
+            <th style="background-color: yellow;">Data2</th>
+        </tr>
+        <tr>
+            <td>Calcutta</td>
+            <td style="background-color: aquamarine;">Orange</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td style="background-color: burlywood;">Jazz</td>
+        </tr> -->
+
+
+
+        <!-- STYLING WITH COL -->
+
+
+        <!-- 
+        <colgroup>
+            <col />
+        
+            <col style="background-color: yellow" />
+        </colgroup>
+        <tr>
+            <th>Data1</th>
+            <th>Data2</th>
+        </tr>
+        <tr>
+            <td>Calcutta</td>
+            <td>Orange</td>
+        </tr>
+        <tr>
+            <td>Robots</td>
+            <td>Jazz</td>
+        </tr> -->
+
+
+        <!-- SCHOOL TIME TABLE -->
+
+        <colgroup>
+            <!-- <col />
+            <col />
+            <col style="background-color: #97DB9A;" />
+            <col />
+            <col style="background-color: #97DB9A;" />
+            <col style="background-color: rgb(220,196,142); border: 4px solid #c1437a ;" />
+            <col />
+            <col />  -->
+
+            <col span="2">
+            <col style="background-color: #97DB9A;">
+            <col style="width: 42px;">
+            <col style="background-color: #97DB9A;">
+            <col style="background-color:#DCC48E; border:4px solid #C1437A ;">
+            <col span="2" style="width: 42px;">
+        </colgroup>
+
+        <tr>
+            <th>&nbsp;</th>
+            <th>Mon</th>
+            <th>Tues</th>
+            <th>Web</th>
+            <th>Thurs</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        <tr>
+            <td><b>Ist period</b></td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><b>2nd period</b></td>
+            <td>English</td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><b>3rd period</b></td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>&nbsp;</td>
+            <td>German</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td><b>4th period</b></td>
+            <td>&nbsp;</td>
+            <td>English</td>
+            <td>&nbsp;</td>
+            <td>English</td>
+            <td>Dutch</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+
     </table>
+
 </body>
+
 </html>
-
-
-
