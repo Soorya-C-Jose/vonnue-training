@@ -336,7 +336,6 @@ const summ = new Function('a','b','return a + B');
 console.log(sum(12, 6))
 
 
-
 /************FUNCTIONAL PROGRAMMING***********/
 //processing array with functions
 

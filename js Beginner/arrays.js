@@ -329,7 +329,7 @@ console.log(cpy)
 /**************Array searching and sorting methods ************** */
 //indexof()
 let index = [0,1,2,1,7,8,4,3]
- let index1 = index.indexOf(7) 
+let index1 = index.indexOf(7)
 console.log(index1)
 let index2 = index.lastIndexOf(1)
 console.log(index2)
@@ -350,7 +350,6 @@ console.log(inc4)
 let sortArray = ["banana","cherry","apple"]
 let sortedArray = sortArray.sort();
 console.log(sortedArray)
-
 
 let sorted = [33,4,1111,222];
 let sortedArr = sorted.sort();

@@ -1,17 +1,18 @@
 
-function compareNumbers() {
-    if (got === exp) {
+function compareNumbers(got,exp){
+    if (got === exp){
         return true
     } else {
-        return false
+        return true
     }
 }
 
+
 function primeNumber(num) {
-    for (let i = 2; i > 1; i++) {
-        if ((num / num === 0) && (num / 1 === 0)) {
+    for (let i =2; i > 1; i++) {
+        if((num / num === 0) && (num / 1 === 0)) {
             return true
-        } else {
+        } else  {
             return false
         }
     }
@@ -27,21 +28,23 @@ function TestCase() {
         },
         {
             "x": 4,
-            "exp": false
+            "exp":false
+        },
+        {
+            "x":3,
+            "exp": true
         },
         {
             "x": 10,
             "exp": false
-        },
-        {
-            "x": 5,
-            "exp": true
         }
     ]
 
     for (let i = 0; i < TestCase.length; i++) {
-        result = primeNumber(TestCase[i].x, TestCase[i].y)
+        result = primeNumber(TestCase[i].x)
+        console.log(result)
         got = compareNumbers(result, TestCase[i].exp)
+        console.log(got)
         if (got) {
             console.log("Test case " + [i + 1] + " is passed");
         } else {

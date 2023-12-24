@@ -7,11 +7,16 @@ function compareSides(got,exp) {
        return false
     }
    }
+   
 
-
-
-function findHypotenuse(base,height) {
-    return Math.sqrt((base*base)+(height*height))
+function findHypotenuse(base, height) {
+    let value = ((base * base) + (height * height));
+    for(let i = 0; i < value; i++){
+        if( i * i === value) {
+            return i
+        }
+    }
+    return false
 }
 
 //Test case
