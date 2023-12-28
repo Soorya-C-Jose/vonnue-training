@@ -9,6 +9,68 @@ console.log(hasPerson("hasOwnProperty"));
 console.log(getAge("toString"));
 
 
+//object basics
+const person1 = {
+    name: ["Bob", "Smith"],
+    age: 32,
+    // bio: function () {
+    //     console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`)
+    // },
+    bio() {
+        console.log(`${this.name[0]} ${this.name[1]} is ${this.age}  years old.`)
+    },
+    // introduceSelf: function () {
+    //     console.log(`Hi! i'm ${this.name[0]}`)
+    // },
+
+    introduceSelf() {
+        console.log(`Hi! I'm ${this.name[0]}.`)
+    },
+}
+console.log(person1["age"])
+person1.bio()
+person1.introduceSelf()
+
+
+//Bracket notation
+const person2 = {
+    name: ["Bob", "Smith"],
+    age: 32,
+};
+function logProperty(propertyName) {
+    console.log(person2[propertyName]);
+}
+logProperty("name")
+logProperty("age")
+
+
+//constructors
+function createPerson(name) {
+    const obj = {};
+    obj.name = name;
+    obj.introduceSelf = function () {
+        console.log(`Hi! I'm ${this.name}.`)
+    };
+    return obj
+}
+
+const salva = createPerson("salva");
+salva.name;
+salva.introduceSelf();
+const frankie = createPerson("Frankie")
+frankie.name;
+frankie.introduceSelf();
+
+
+//prototype chain
+const myObject = {
+    city: "Madrid",
+    greet() {
+        console.log(`Greeting from ${this.city}`)
+    }
+}
+
+
 //assign()
 const target = { a: 1, b: 2 };
 const source = { b: 4, c: 5 };
@@ -83,3 +145,21 @@ const myObj = Object.create(
 );
 myObj.foo = "bar";
 console.log(Object.entries(myObj))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
