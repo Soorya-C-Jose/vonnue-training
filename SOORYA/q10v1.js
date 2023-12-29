@@ -6,47 +6,40 @@ function compare(got, exp) {
     }
 }
 
-function sumOfNumbers(n) {
-    let sumOf = 0;
-    if (n < 0) {
+function countVowels(String) {
+     let vowelString = ['a', 'e', 'i', 'o', 'u']
+    if(String === vowelString[0]) {
         return -1
     }
-    for (i = 1; i <= n; i++) {
+    
+    let n = vowelString
+    for (let i = n; i <= String.length; i++) {
         console.log(i)
-        sumOf = (sumOf + i)
     }
-    return sumOf
-}
-console.log(sumOfNumbers(-8))
 
-//testcase
+}
+console.log(countVowels('why'))
+
+//TestCases
 function TestCase() {
     let TestCase = [
         {
-            "x": 5,
-            "exp": 15
+            "x": "welcome",
+            "exp": 3
         },
         {
-            "x": 3,
-            "exp": 6
+            "x": "sandwich",
+            "exp": 2
         },
         {
-            "x": 10,
-            "exp": 55
-        },
-        {
-            "x": 8,
-            "exp": 36
-        },
-        {
-            "x": -3,
+            "x": "why",
             "exp": -1
         }
     ]
 
     for (let i = 0; i < TestCase.length; i++) {
-        let Result = sumOfNumbers(TestCase[i].x);
-        let got = compare(Result, TestCase[i].exp)
+        let Result = countVowels(TestCase[i].x);
+        let got = compare(Result, TestCase[i].exp);
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {

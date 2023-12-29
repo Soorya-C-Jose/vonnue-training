@@ -56,3 +56,47 @@ function TestCase() {
 }
 TestCase()
 
+
+
+
+/***************************************************/
+
+function checkLetter() {
+
+}
+
+
+//Testcase for counting vowels
+
+
+function TestCase2() {
+    let TestCase2 = [
+        {
+            "x": "rainbow",
+            "exp": 3
+        },
+        {
+            "x": "wonderland",
+            "exp": 3
+        },
+        {
+            "x": "dry",
+            "exp": 0
+        },
+        {
+            "x": "impossible",
+            "exp": 4
+        }
+    ]
+
+    for(let i = 0; i <TestCase2.length; i++) {
+        let result = checkLetter(TestCase2[i].x);
+        let got = compare(result, TestCase2[i].exp);
+        if(got) {
+            console.log("Test Case "+[i+1]+" is passed");
+        } else {
+            console.log("Test Case "+[i+1]+" is failed")
+        }
+    } 
+}
+TestCase2()
