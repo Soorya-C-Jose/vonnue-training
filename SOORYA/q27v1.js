@@ -6,37 +6,38 @@ function compare(got, exp) {
     }
 }
 
-function positiveNumber(n) {
-    do {
-        if (n > 0) {
+function palindromeOrNot(string) {
+    let length = string.length;
+    for (let i = length - 1; i > 0; i--) {
+        if (string[i] === string[length - 1 - i]) {
             return true
         } else {
             return false
         }
     }
-    while (n > 0)
 }
-console.log(positiveNumber(10))
 
-function tcs() {
-    let tcs = [
+console.log(palindromeOrNot("foo"))
+
+function TestCase() {
+    let TestCase = [
         {
-            "x": 10,
+            "string": "level",
             "exp": true
         },
         {
-            "x": 100,
+            "string": "malayalam",
             "exp": true
         },
         {
-            "x": 20,
+            "string": "mountain",
             "exp": false
         }
     ]
 
-    for (let i = 0; i < tcs.length; i++) {
-        let Result = positiveNumber(tcs[i].x);
-        let got = compare(Result, tcs[i].exp);
+    for (let i = 0; i < TestCase.length; i++) {
+        let Result = palindromeOrNot(TestCase[i].string)
+        let got = compare(Result, TestCase[i].exp)
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {
@@ -44,4 +45,7 @@ function tcs() {
         }
     }
 }
-tcs()
+
+TestCase()
+
+

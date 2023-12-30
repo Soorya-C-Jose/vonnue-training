@@ -21,19 +21,37 @@ function commonDivisor(num1, num2) {
     // }
 
 
-    let i = 1;
-    divisor = 0;
-    while (i <= num1) {
-        i++ ;
-        if (num1 % i === 0 && num2 % i === 0) {
+    //     let i = 1;
+    //     divisor = 0;
+    //     while (i <= num1) {
+    //         i++ ;
+    //         if (num1 % i === 0 && num2 % i === 0) {
+    //             divisor = i
+    //             //return divisor
+    //             console.log(divisor)
+    //         } else {
+    //             return -1
+    //         }
+    //     }
+    // }
+
+
+    let i = 0;
+    let divisor;
+    while (i < num1) {
+        i++
+        if ((num1 / i === 0) && (num2 / i === 0)) {
             divisor = i
-            return divisor
-        } else {
-            return -1
+            i++
+            if (divisor >= num1) {
+                return divisor;
+                // console.log(i)
+            }
         }
+        //console.log(divisor)
     }
 }
-
+console.log(commonDivisor(8, 12))
 // let i = 1;
 // let divisor = 0;
 //  while (i <= num1) {

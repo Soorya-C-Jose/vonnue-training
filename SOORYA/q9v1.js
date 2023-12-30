@@ -6,22 +6,21 @@ function compare(got, exp) {
     }
 }
 
-
 function findFact(n) {
-    let fact = 1;
-    for (i = 1; i <= n; i++){
+    let fact = 0;
+    if (n <= 0) {
+        return -1
+    }
+    for (let i = n; i >= 1; i--) {
         console.log(i)
         fact = (fact * i)
-        console.log(fact)
-        return fact
+        // console.log(fact)
     }
-
-    console.log(findFact(4))
-
+    //return fact
+    //console.log(fact)
 }
 
-
-//console.log(findFact(4))
+console.log(findFact(4))
 
 
 //testcases
@@ -38,6 +37,10 @@ function TestCase() {
         {
             "n": 4,
             "exp": 24
+        },
+        {
+            "n": -2,
+            "exp": -1
         }
     ]
 

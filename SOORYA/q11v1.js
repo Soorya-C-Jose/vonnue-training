@@ -25,7 +25,7 @@ function smallestInt(n) {
 
     let integer;
     let i = 1;
-    while (i <= n) {
+    while (i > 0 && i <= n) {
         i++;
         console.log(i)
         if (integer / i === 0) {
