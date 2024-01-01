@@ -29,7 +29,7 @@ function tcs() {
             "exp": true
         },
         {
-            "x": 20,
+            "x": -20,
             "exp": false
         }
     ]

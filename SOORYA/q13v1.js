@@ -7,23 +7,26 @@ function compare(got, exp) {
 }
 
 function findFibonacci(num) {
-    //     let fibArr = []
-    // let i = num
-    //   while (i <= num) {
-    //     i++;
-
-    //  fibArr[i] = fibArr[i - 1] + fibArr[i - 2]
-    //  console.log(i)
-    //   return fibArr;
-
-    let fibArr = []
+        let fibArr = []
     let i = 1
-    let sum;
-    while (i <= num) {
-        i++
-        sum = (i + i)
-        console.log(sum)
-        fibArr = [fibArr + i]
+      while (i <= num) {
+        i++;
+
+     fibArr[i] = fibArr[i - 1] + fibArr[i - 2]
+     console.log(i)
+      return fibArr;
+
+    // let fibArr = []
+    // let i = 1
+    // let sum;
+    // while (i <= num) {
+    //     i++
+    //     sum = (i + i)
+    //     console.log(sum)
+    //     fibArr[i] = [fibArr + i]
+    //     if(num <= 0) {
+    //         return -1
+    //     }
     }
 }
 
@@ -50,7 +53,12 @@ function TestCase() {
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = findFibonacci(TestCase[i].num);
-        let got = compare(Result, TestCase[i].exp)
+        let got = compare(Result, TestCase[i].exp);
+        if(got) {
+            console.log("Test Case "+[i+1]+" is passed")
+        } else {
+            console.log("Test Case "+[i+1]+" is failed")
+        }
     }
 }
 

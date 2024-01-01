@@ -9,12 +9,10 @@ function compare(got, exp) {
 function multiplicationTable(n) {
     let multiplication = [];
     for (let i = 1; i <= 10; i++) {
-        multiplication[i] = (n * i)
+        multiplication[i - 1] = (n * i)
     }
     return multiplication
 }
-
-console.log(multiplicationTable(10))
 
 
 //TestCase
@@ -34,15 +32,15 @@ function TestCase() {
         }
     ]
 
-    for(let i = 0; i < TestCase.length; i++) {
+    for (let i = 0; i < TestCase.length; i++) {
         let Result = multiplicationTable(TestCase[i].n);
-        let got = compare(Result, TestCase[i].exp);
-        if(got) {
-            console.log("Test Case "+[i+1]+" is passed.")
+        let got = compare(Result[i], TestCase[i].exp[i]);
+        if (got) {
+            console.log("Test Case " + [i + 1] + " is passed")
         } else {
-            console.log("Test Case "+[i+1]+" is failed")
+            console.log("Test Case " + [i + 1] + " is failed")
         }
-    } 
+    }
 }
 
 TestCase()

@@ -6,20 +6,23 @@ function compare(got, exp) {
     }
 }
 
+
 function findFact(n) {
     let fact = n;
-    if (n <= 0) {
-        return -1
-    }
-    for (let i = n - 1; i > 0; i--) {
-        fact = fact * i
-    }
-    return fact
+    let i = n - 1;
+    do {
+        i--
+        fact = fact * i;
+        if (n <= 0) {
+            return -1
+        }
+        return fact
+    } while (i > 0)
 }
 
 //testcases
-function TestCase() {
-    let TestCase = [
+function tcs() {
+    let tcs = [
         {
             "n": 5,
             "exp": 120
@@ -37,10 +40,9 @@ function TestCase() {
             "exp": -1
         }
     ]
-
-    for (let i = 0; i < TestCase.length; i++) {
-        let Result = findFact(TestCase[i].n);
-        let got = compare(Result, TestCase[i].exp);
+    for (let i = 0; i < tcs.length; i++) {
+        let Result = findFact(tcs[i].n);
+        let got = compare(Result, tcs[i].exp);
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed");
         } else {
@@ -48,4 +50,5 @@ function TestCase() {
         }
     }
 }
-TestCase()
+
+tcs()

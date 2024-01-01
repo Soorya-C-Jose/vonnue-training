@@ -6,19 +6,32 @@ function compare(got, exp) {
     }
 }
 
-function countVowels(String) {
-     let vowelString = ['a', 'e', 'i', 'o', 'u']
-    if(String === vowelString[0]) {
-        return -1
-    }
-    
-    let n = vowelString
-    for (let i = n; i <= String.length; i++) {
+function countVowels(string) {
+    //let vowelString = ['a', 'e', 'i', 'o', 'u']
+    let i;
+    let count = 1;
+    for (i = 0; i <= string.length; i++) {
         console.log(i)
+        if (string[i] === vowelString[i]) {
+            console.log(string[i])
+            count++
+            return count
+        } else {
+            return -1
+        }
+
+
+        // if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u') {
+        //     count ++
+        //     return count = string[i]
+        // } else {
+        //    // return -1
+        // }
     }
 
+
 }
-console.log(countVowels('why'))
+console.log(countVowels('woo'))
 
 //TestCases
 function TestCase() {
