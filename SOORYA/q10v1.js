@@ -20,7 +20,6 @@ function countVowels(string) {
             return -1
         }
 
-
         // if (string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u') {
         //     count ++
         //     return count = string[i]
