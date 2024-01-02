@@ -7,14 +7,18 @@ function compareInput(got, exp) {
 }
 
 function checkLetter(letter) {
-    let vowels = ['a', 'e', 'i', 'o', 'u']
+    let vowels = ['a','e','i','o','u']
     for (let i = 0; i < vowels.length; i++) {
-        if (i === vowels()) {
+        if (letter === vowels[i]) {
             return true
         } else {
             return false
         }
     }
+// if(letter === vowels[i]) {
+//     return true
+// }
+
 }
 console.log(checkLetter('a'))
 
@@ -22,31 +26,32 @@ console.log(checkLetter('a'))
 function TestCase() {
     let TestCase = [
         {
-            "x": a,
-            "exp": vowel
+            "x": "a",
+            "exp": true
         },
         {
-            "x": w,
-            "exp": consonant
+            "x": "w",
+            "exp": false
         },
         {
-            "x": r,
-            "exp": consonant
+            "x": "r",
+            "exp": false
         },
         {
-            "x": o,
-            "exp": vowel
+            "x": "o",
+            "exp": true
         },
         {
-            "x": s,
-            "exp": consonant
+            "x": "s",
+            "exp": false
         }
     ]
 
     for (let i = 0; i < TestCase.length; i++) {
         let result = checkLetter(TestCase[i].x)
+        console.log(result)
         let got = compareInput(result, TestCase[i].exp)
-        console.log(TestCase[i].exp)
+        //console.log(TestCase[i].exp)
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {
@@ -69,34 +74,34 @@ function checkLetter() {
 //Testcase for counting vowels
 
 
-function TestCase2() {
-    let TestCase2 = [
-        {
-            "x": "rainbow",
-            "exp": 3
-        },
-        {
-            "x": "wonderland",
-            "exp": 3
-        },
-        {
-            "x": "dry",
-            "exp": 0
-        },
-        {
-            "x": "impossible",
-            "exp": 4
-        }
-    ]
+// function TestCase2() {
+//     let TestCase2 = [
+//         {
+//             "x": "rainbow",
+//             "exp": 3
+//         },
+//         {
+//             "x": "wonderland",
+//             "exp": 3
+//         },
+//         {
+//             "x": "dry",
+//             "exp": 0
+//         },
+//         {
+//             "x": "impossible",
+//             "exp": 4
+//         }
+//     ]
 
-    for(let i = 0; i <TestCase2.length; i++) {
-        let result = checkLetter(TestCase2[i].x);
-        let got = compare(result, TestCase2[i].exp);
-        if(got) {
-            console.log("Test Case "+[i+1]+" is passed");
-        } else {
-            console.log("Test Case "+[i+1]+" is failed")
-        }
-    } 
-}
-TestCase2()
+//     for(let i = 0; i <TestCase2.length; i++) {
+//         let result = checkLetter(TestCase2[i].x);
+//         let got = compare(result, TestCase2[i].exp);
+//         if(got) {
+//             console.log("Test Case "+[i+1]+" is passed");
+//         } else {
+//             console.log("Test Case "+[i+1]+" is failed")
+//         }
+//     } 
+// }
+// TestCase2()

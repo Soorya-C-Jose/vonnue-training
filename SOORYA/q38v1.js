@@ -1,39 +1,35 @@
-function compare(got, exp) {
-    if(got === exp) {
+function comapre(got, exp) {
+    if (got === exp) {
         return true
     } else {
         return false
     }
 }
 
+function addProperty() {
 
-function mergeObj(obj1, obj2) {
-    
 }
 
-//confused about this question
-
-//TestCase
-
+//Test case
 function TestCase() {
     let TestCase = [
         {
             "obj1": {
-                "name": "George",
+                "name": "peter",
             },
-            "obj2": {
-                "place": "Ernakulam"
+            "property": {
+                "place": "England"
             },
             "exp": {
-                "name": "George",
-                "place": "Ernakulam"
+                "name": "peter",
+                "place": "England"
             }
         },
         {
             "obj1": {
                 "fruit": "apple",
             },
-            "obj2": {
+            "proprty": {
                 "colour": "red"
             },
             "exp": {
@@ -44,7 +40,7 @@ function TestCase() {
     ]
 
     for(let i = 0; i < TestCase.length; i++) {
-        let Result = mergeObj(TestCase[i].obj1, TestCase[i].obj2) 
+        let Result = addProperty(TestCase[i].obj1,TestCase[i].property);
         let got = compare(Result, TestCase[i].exp)
         if(got) {
             console.log("Test Case "+[i+1]+" is passed")
@@ -53,7 +49,4 @@ function TestCase() {
         }
     }
 }
-
 TestCase()
-
-

@@ -10,14 +10,14 @@ function compare(got, exp) {
 function findFact(n) {
     let fact = n;
     let i = n - 1;
+    if (n <= 0) {
+        return -1
+    }
     do {
         i--
-        fact = fact * i;
-        if (n <= 0) {
-            return -1
-        }
-        return fact
+        fact += (fact * i)
     } while (i > 0)
+    return fact
 }
 
 //testcases

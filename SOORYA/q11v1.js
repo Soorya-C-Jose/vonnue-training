@@ -10,32 +10,20 @@ function compare(got, exp) {
 //cannot understand the question properly
 //have confution
 
-function smallestInt(n) {
-
-    // let integer;
-    // console.log(integer)
-    // for (let i = 1; i <= n; i++) {
-    //     console.log(i)
-    //         if (integer / i === 0) {
-    //            return integer
-    //         } else {
-    //             return -1
-    //         }
-    // }
-
+function smallestInt(num) {
     let integer;
-    let i = 1;
-    while (i > 0 && i <= n) {
-        i++;
-        console.log(i)
-        if (integer / i === 0) {
-            return integer
-        }
-        else {
-            return -1
+    let i = 1
+    if (integer >= 1 && integer <= num) {
+        while (i <= num) {
+            i++
+            integer++
+            if (integer % i === 0) {
+                return integer
+            } else {
+                return -1
+            }
         }
     }
-
 }
 
 //console.log(smallestInt(5))
@@ -45,11 +33,11 @@ function testcase() {
     let testcase = [
         {
             "n": 5,
-            "exp": 60
+            //"exp": 
         },
         {
-            "n": 6,
-            "exp": 60
+            "n": 10,
+            // "exp": ,
         }
     ]
 
@@ -64,4 +52,4 @@ function testcase() {
     }
 }
 
-testcase()
+// testcase()

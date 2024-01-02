@@ -8,33 +8,53 @@ function compare(got, exp) {
 
 function commonDivisor(num1, num2) {
 
-    let divisor ;
+    // let divisor ;
+    // let i = 1;
+    // while( i <= num1) {
+    //     i++
+    //     if(num1 % i === 0 && num2 % i === 0 ) {
+    //         //console.log(i)
+    //         divisor = i
+    //        // console.log(divisor)
+    //         if(divisor >= 1 && (divisor === num1 || divisor === num2)) {
+    //             return divisor
+    //         }
+    //     }
+    //     return -1
+    // }
+
+
+
+    let divisor;
     let i = 1;
-    while( i <= num1) {
+    while (i <= num1) {
         i++
-        if(num1 % i === 0 && num2 % i === 0 ) {
-            divisor = i
-            if(divisor >= 1 && (divisor === num1 || divisor === num2)) {
-                return divisor
-            }
+        if (num1 % i !== 0 && num2 % i !== 0) {
+            return -1
         }
-        return -1
+        if (num1 % i === 0 && num2 % i === 0) {
+           // console.log(i)
+            divisor = i;
+        }
+      //  console.log(divisor)
+        //return divisor
+        //console.log(i)
     }
 
-   
-// console.log(commonDivisor(8, 12))
-// let i = 1;
-// let divisor = 0;
-//  while (i <= num1) {
-//     i++;
-//     if (num1 % i === 0 && num2 % i === 0) {
-//         divisor = i;
-//         return divisor
-//         console.log(divisor)
-//       } else {
-//         return -1
-//       }
-//     }
+
+    console.log(commonDivisor(8, 3))
+    // let i = 1;
+    // let divisor = 0;
+    //  while (i <= num1) {
+    //     i++;
+    //     if (num1 % i === 0 && num2 % i === 0) {
+    //         divisor = i;
+    //         return divisor
+    //         console.log(divisor)
+    //       } else {
+    //         return -1
+    //       }
+    //     }
 }
 
 

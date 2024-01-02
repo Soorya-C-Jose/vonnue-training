@@ -7,26 +7,26 @@ function compare(got, exp) {
 }
 
 function findFibonacci(num) {
-        let fibArr = []
-    let i = 1
-      while (i <= num) {
-        i++;
-
-     fibArr[i] = fibArr[i - 1] + fibArr[i - 2]
-     console.log(i)
-      return fibArr;
-
-    // let fibArr = []
+    //     let fibArr = []
     // let i = 1
-    // let sum;
-    // while (i <= num) {
-    //     i++
-    //     sum = (i + i)
-    //     console.log(sum)
-    //     fibArr[i] = [fibArr + i]
-    //     if(num <= 0) {
-    //         return -1
-    //     }
+    //   while (i <= num) {
+    //     i++;
+
+    //  fibArr[i] = fibArr[i - 1] + fibArr[i - 2]
+    //  console.log(i)
+    //   return fibArr;
+
+    let fibArr = []
+    let i = 1
+    let sum;
+    while (i <= num) {
+        i++
+        sum = (i + i)
+        console.log(sum)
+        fibArr[i] = [fibArr + i]
+        if(num <= 0) {
+            return -1
+        }
     }
 }
 

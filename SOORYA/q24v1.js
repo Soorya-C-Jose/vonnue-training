@@ -1,15 +1,14 @@
 function findIndex(arr, element) {
     let length = arr.length;
+    if (arr.length <= 0) {
+        return -1
+    }
     for (let i = 0; i < length; i++) {
-        if (arr[i] === element[i]) {
-            console.log(arr[i])
+        if (arr[i] === element) {
             return i
         }
     }
-    // console.log(index)
 }
-
-console.log(findIndex([2, 3, 4], 4))
 
 function TestCase() {
     let TestCase = [
@@ -27,6 +26,10 @@ function TestCase() {
             "x": [4, 2, 1, 7],
             "y": 7,
             "exp": 3
+        },
+        {
+            "x": [],
+            "exp": -1
         }
     ]
 

@@ -14,23 +14,19 @@
 function reverseElement(arr) {
     let length = arr.length;
     let reversed = [];
-    for (let i = length - 1; i >= 0; i--) {
-         reversed[i] = arr[i] 
-        //console.log(arr[i])
-        console.log(reversed[i])
-       // eleRev = reversed[i - 1]
+    if (arr.length <= 0) {
+        return -1
     }
-
-    //    for (let i = length - 1; i >= 0; i--) {
-    //     reversed += arr[i];
-    //     [reversed[i]] = [reversed]
-    //     // console.log(reversed)
-    // }
-    // return reversed
+    for (let i = length - 1; i >= 0; i--) {
+        reversed[i] = arr[i]
+        // eleRev = reversed[i - 1]
+    }
+    return reversed
 }
+console.log(reverseElement())
+
 
 //Testcases
-
 function tcs() {
     let tcs = [
         {
@@ -40,14 +36,16 @@ function tcs() {
         {
             "x": [2, 4, 5, 6],
             "exp": [6, 5, 4, 2]
+        },
+        {
+            "x": [],
+            "exp": -1
         }
     ]
 
     for (let i = 0; i < tcs.length; i++) {
         let result = reverseElement(tcs[i].x);
-        // console.log(result)
-        //console.log(tcs[i].exp)
-        if (result === tcs[i].exp) {
+        if (result[i] === tcs[i].exp[i]) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {
             console.log("Test Case " + [i + 1] + " is failed")

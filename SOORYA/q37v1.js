@@ -1,11 +1,10 @@
-function car(car) {
-    let obj = {
-    name : "tesla",
-    brand : "i10",
-    model :"2002",
-    }
-    return obj
+function car() {
+    let car = [
+        {
+            "make": "maruthi",
+            "model": "alto",
+            "year": 1990,
+        }
+    ]
 }
-
-car()
-console.log(car)
+console.log(car.model)
