@@ -23,38 +23,31 @@ function commonDivisor(num1, num2) {
     //     return -1
     // }
 
-
-
-    let divisor;
-    let i = 1;
-    while (i <= num1) {
-        i++
-        if (num1 % i !== 0 && num2 % i !== 0) {
-            return -1
-        }
-        if (num1 % i === 0 && num2 % i === 0) {
-           // console.log(i)
-            divisor = i;
-        }
-      //  console.log(divisor)
-        //return divisor
-        //console.log(i)
-    }
-
-
-    console.log(commonDivisor(8, 3))
+    // let divisor;
     // let i = 1;
-    // let divisor = 0;
-    //  while (i <= num1) {
-    //     i++;
+    // while (i <= num1) {
+    //     i++
+    //     if (num1 % i !== 0 && num2 % i !== 0) {
+    //         return -1
+    //     }
     //     if (num1 % i === 0 && num2 % i === 0) {
     //         divisor = i;
-    //         return divisor
-    //         console.log(divisor)
-    //       } else {
-    //         return -1
-    //       }
     //     }
+    //     console.log(divisor)
+    // }
+
+    let i = 1;
+    let divisor = 0;
+     while (i <= num1) {
+        i++;
+        if (num1 % i === 0 && num2 % i === 0) {
+            divisor = i;
+            return divisor
+            console.log(divisor)
+          } else {
+            return -1
+          }
+        }
 }
 
 
@@ -84,6 +77,7 @@ function TestCase() {
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = commonDivisor(TestCase[i].x, TestCase[i].y);
+        console.log(Result)
         let got = compare(Result, TestCase[i].exp)
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed");

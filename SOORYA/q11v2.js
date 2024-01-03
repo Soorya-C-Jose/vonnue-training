@@ -13,15 +13,16 @@ function smallInteger(num) {
 
 
     for(let i = 1; i <= num; i++) {
-        for(let int = 1 ; int < 100; int++){
+        for(let int = 1 ; (int % i === 0) ; int++){
             if(int % i === 0) {
-                return int
-                // console.log(int)
+                int
+                // console.log(i)
             } 
         }
+        return int
     }
 }
-//console.log(smallInteger(1))
+console.log(smallInteger(1))
 function tcs() {
     let tcs = [
         {

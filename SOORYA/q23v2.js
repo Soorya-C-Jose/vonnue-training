@@ -22,15 +22,18 @@ function compare(got, exp) {
 
 function arrayReverse(arr) {
     let reversed = []
+    let ans = []
     let length = arr.length;
     if (arr.length <= 0) {
         return 0
     }
-    for (let i = length - 1; i >= 0; i--) {
-        reversed += arr[i]
-       console.log(reversed)
+    for (i = length - 1; i >= 0; i--) {
+        reversed = arr[i]
+        console.log(ans.push(reversed))
+        // ans[i] = reversed[i]
+        // console.log(ans)
     }
-    return reversed
+    return reversed 
 }
 
 function TestCase() {
@@ -51,7 +54,7 @@ function TestCase() {
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = arrayReverse(TestCase[i].arr);
-        let got = compare(Result, TestCase[i].exp);
+        let got = compare(Result[i], TestCase[i].exp[i]);
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {
