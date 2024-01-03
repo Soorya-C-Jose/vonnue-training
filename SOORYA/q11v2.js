@@ -22,7 +22,7 @@ function smallInteger(num) {
         return int
     }
 }
-console.log(smallInteger(1))
+// console.log(smallInteger(1))
 function tcs() {
     let tcs = [
         {

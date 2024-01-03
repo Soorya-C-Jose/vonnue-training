@@ -1,6 +1,5 @@
 function evenOrOdd(num) {
-//(num % 2 === 0) 
- return num % 2 === 0 ? "even" : "odd"
+    return num % 2 === 0 ? "even" : "odd"
 }
 
 console.log(evenOrOdd(13))
@@ -8,7 +7,7 @@ console.log(evenOrOdd(13))
 function TestCase() {
     let TestCase = [
         {
-            "num":10,
+            "num": 10,
             "exp": "even"
         },
         {
@@ -17,12 +16,12 @@ function TestCase() {
         }
     ]
 
-    for(let i = 0; i < TestCase.length; i++) {
+    for (let i = 0; i < TestCase.length; i++) {
         let Result = evenOrOdd(TestCase[i].num)
-        if(Result === TestCase[i].exp) {
-            console.log("Test Case "+[i+1]+" is passed")
+        if (Result === TestCase[i].exp) {
+            console.log("Test Case " + [i + 1] + " is passed")
         } else {
-            console.log("Test Case "+[i+1]+" is failed")
+            console.log("Test Case " + [i + 1] + " is failed")
         }
     }
 }

@@ -8,16 +8,15 @@ function compare(got, exp) {
 
 function sumOfNumbers(n) {
     let sumOf = 0;
-    if (n < 0) {
+    if (n <= 0) {
         return -1
     }
     for (i = 1; i <= n; i++) {
-        console.log(i)
         sumOf = (sumOf + i)
     }
     return sumOf
 }
-console.log(sumOfNumbers(-8))
+console.log(sumOfNumbers(5))
 
 //testcase
 function TestCase() {

@@ -23,7 +23,7 @@ function reverseElement(arr) {
     }
     return reversed
 }
-console.log(reverseElement())
+console.log(reverseElement([1,2,3]))
 
 
 //Testcases

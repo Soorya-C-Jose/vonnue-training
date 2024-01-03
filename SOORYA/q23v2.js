@@ -1,40 +1,27 @@
 
-// function compare(arr, exp) {
-//     if (arr.length === exp.length) {
-//         for (let i = 0; i < arr.length; i++) {
-//             if (arr[i] !== exp[i])
-//                 return false
-//         }
-//         return true
-//     }
-//     return false
-// }
-
-function compare(got, exp) {
-    if (got === exp) {
-        return true
-    } else {
-        return false
+function compareArray(Result, exp) {
+    length = exp.length
+    for (let i = length - 1; i >= 0; i++) {
+        if (Result[i] !== exp[i]) {
+            return false
+        } else {
+            return true
+        }
     }
 }
 
-
-
 function arrayReverse(arr) {
     let reversed = []
-    let ans = []
     let length = arr.length;
     if (arr.length <= 0) {
         return 0
     }
     for (i = length - 1; i >= 0; i--) {
-        reversed = arr[i]
-        console.log(ans.push(reversed))
-        // ans[i] = reversed[i]
-        // console.log(ans)
+        reversed[i] = i
     }
-    return reversed 
+    return reversed
 }
+console.log([1, 2, 3])
 
 function TestCase() {
     let TestCase = [
@@ -54,7 +41,7 @@ function TestCase() {
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = arrayReverse(TestCase[i].arr);
-        let got = compare(Result[i], TestCase[i].exp[i]);
+        let got = compareArray(Result, TestCase[i].exp);
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {

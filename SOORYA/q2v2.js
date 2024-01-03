@@ -1,44 +1,43 @@
-function checkVowel(letter) {
-    if (typeof (letter) !== String) {
-        return 0
-    }
-    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    //length = vowels.length
-    for (let i = 0; i <= vowels.length; i++) {
-        console.log(i)
-        if (letter === vowels[i]) {
-            return true
-        } else {
-            return false
-        }
+function checkVowel(x) {
+    // if (typeof (x) !== String) {
+    //     return 0
+    // }
+
+    if (x === 'a' || x === 'e' || x === 'i' || x === 'o' || x === 'u' || x === 'A' || x === 'E' || x === 'I' || x === 'O' || x === 'U') {
+        return "Vowel"
+    } else {
+        return "Consonant"
     }
 }
-console.log(checkVowel('u'))
 
+// console.log(checkVowel('i'))
+
+//TestCase
 function TestCase() {
     let TestCase = [
         {
             "x": "s",
-            "exp": false
+            "exp": "consonant"
         },
         {
             "x": 'e',
-            "exp": true
+            "exp": "Vowel"
         },
         {
-            "x": "A",
-            "exp": true
+            "x": 'A',
+            "exp": "Vowel"
         },
-        {
-            "x": '10',
-            "exp": 0
-        },
+        // {
+        //     "x": '10',
+        //     "exp": 0
+        // },
 
     ]
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = checkVowel(TestCase[i].exp);
-        //console.log(Result)
+        console.log(Result)
+        console.log(TestCase[i].exp)
         if (Result === TestCase[i].exp) {
             console.log("Test Case " + [i + 1] + " is passed")
         } else {

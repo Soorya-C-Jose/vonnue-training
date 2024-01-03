@@ -7,49 +7,21 @@ function compare(got, exp) {
 }
 
 function commonDivisor(num1, num2) {
-
-    // let divisor ;
-    // let i = 1;
-    // while( i <= num1) {
-    //     i++
-    //     if(num1 % i === 0 && num2 % i === 0 ) {
-    //         //console.log(i)
-    //         divisor = i
-    //        // console.log(divisor)
-    //         if(divisor >= 1 && (divisor === num1 || divisor === num2)) {
-    //             return divisor
-    //         }
-    //     }
-    //     return -1
-    // }
-
-    // let divisor;
-    // let i = 1;
-    // while (i <= num1) {
-    //     i++
-    //     if (num1 % i !== 0 && num2 % i !== 0) {
-    //         return -1
-    //     }
-    //     if (num1 % i === 0 && num2 % i === 0) {
-    //         divisor = i;
-    //     }
-    //     console.log(divisor)
-    // }
-
     let i = 1;
     let divisor = 0;
-     while (i <= num1) {
-        i++;
+    if (num1 <= 0 || num2 <= 0) {
+        return -1
+    }
+    while (i <= num2) {
         if (num1 % i === 0 && num2 % i === 0) {
-            divisor = i;
-            return divisor
-            console.log(divisor)
-          } else {
-            return -1
-          }
+            divisor = i
+        } else {
+            divisor = divisor
         }
+        i += 1
+    }
+    return divisor
 }
-
 
 function TestCase() {
     let TestCase = [
@@ -69,7 +41,7 @@ function TestCase() {
             "exp": 6
         },
         {
-            "x": 3,
+            "x": -3,
             "y": 8,
             "exp": -1
         }
@@ -77,7 +49,6 @@ function TestCase() {
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = commonDivisor(TestCase[i].x, TestCase[i].y);
-        console.log(Result)
         let got = compare(Result, TestCase[i].exp)
         if (got) {
             console.log("Test Case " + [i + 1] + " is passed");
