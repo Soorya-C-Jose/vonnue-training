@@ -14,6 +14,9 @@ function compareGrade(got, exp) {
 //score = 0 - 9 grade is F
 
 function grade(Score) {
+    if (typeof (Score) !== "number") {
+        return "invalid"
+    }
     if (Score <= 50 && Score >= 40) {
         return "A"
     } else if (Score <= 39 && Score >= 30) {
@@ -52,12 +55,15 @@ function TestCase() {
         {
             "x": 2,
             "exp": "F"
+        },
+        {
+            "x": "str",
+            "exp": "invalid"
         }
     ]
 
     for (let i = 0; i < TestCase.length; i++) {
         let Result = grade(TestCase[i].x)
-        console.log(Result)
         let got = compareGrade(Result, TestCase[i].exp)
         if (got) {
             console.log("Test case " + [i + 1] + " is passed")

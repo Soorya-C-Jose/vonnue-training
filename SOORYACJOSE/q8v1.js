@@ -7,6 +7,9 @@ function compare(got, exp) {
 }
 
 function multiplicationTable(n) {
+    if(typeof(n) !== 'number'){
+        return "invalid"
+    }
     let multiplication = [];
     for (let i = 1; i <= 10; i++) {
         multiplication[i - 1] = (n * i)
@@ -29,6 +32,10 @@ function TestCase() {
         {
             "n": 10,
             "exp": [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+        },
+        {
+            "n": [],
+            "exp": "invalid"
         }
     ]
 

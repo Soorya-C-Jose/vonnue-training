@@ -13,11 +13,12 @@ function sumElements(arr) {
         return 0
     }
     let sum = 0;
-    for (let i = 0; i < length; i++) {
+    for ( i = 0; i < length; i++) {
         sum += arr[i]
     }
     return sum
 }
+console.log(typeof ([1, 2, 3]))
 
 
 //Testcases
@@ -34,6 +35,10 @@ function TestCase() {
         {
             "x": [],
             "exp": 0
+        },
+        {
+            "x": [2, "arr", 6, 10],
+            "exp": "invalid"
         }
     ]
 

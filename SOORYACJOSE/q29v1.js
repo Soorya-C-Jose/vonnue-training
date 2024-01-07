@@ -1,4 +1,7 @@
 function numberOfWords(string) {
+    if(typeof(string) !== 'string') {
+        return "invalid"
+    }
     let length = string.length;
     let spaces = " ";
     let counter = 1
@@ -20,6 +23,10 @@ function TestCase() {
         {
             "x": "objects are collection of values",
             "exp": 5
+        },
+        {
+            "x": 1434,
+            "exp": "invalid"
         }
     ]
 

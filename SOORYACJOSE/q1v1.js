@@ -9,6 +9,9 @@ function compareNumber(got, exp) {
 }
 
 function checkNumber(num) {
+    if(typeof(num) !== 'number') {
+        return "invalid"
+    }
     if (num < 0) {
         return false
     } else if (num > 0) {
@@ -33,6 +36,10 @@ function TestCase() {
         {
             "num": 0,
             "exp": 0
+        },
+        {
+            "num": "str",
+            "exp": "invalid"
         }
     ]
 

@@ -7,13 +7,13 @@ function compare(got, exp) {
 }
 
 function checkLeapYear(leapYear) {
-    if ((leapYear % 4 === 0 &&  leapYear % 100 !== 0) || (leapYear % 4 === 0 && leapYear % 400 === 0)) {
+    if (typeof leapYear !== 'number') return 'invalid'
+    if ((leapYear % 4 === 0)
         return true
     } else {
         return false
     }
 }
-console.log(checkLeapYear(2000))
 
 function TestCase() {
     let TestCase = [
@@ -32,6 +32,10 @@ function TestCase() {
         {
             "year": 2023,
             "exp": false
+        },
+        {
+            "year": "year",
+            "exp": "invalid"
         }
     ]
 

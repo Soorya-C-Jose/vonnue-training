@@ -7,6 +7,9 @@ function compare(got, exp) {
 }
 
 function findFact(n) {
+    if (typeof (n) !== 'number') {
+        return "invalid"
+    }
     let fact = n;
     if (n <= 0) {
         return -1
@@ -35,6 +38,10 @@ function TestCase() {
         {
             "n": -2,
             "exp": -1
+        },
+        {
+            "n": "fact",
+            "exp": "invalid"
         }
     ]
 
