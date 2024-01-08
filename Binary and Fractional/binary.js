@@ -3,20 +3,31 @@ function subtractNumbers(number) {
 }
 
 function convertToBinary(number) {
-    for(let i = number; i > 0; i-2 ) {
-        
+
+    let result = ''
+    let binaryNum = ''
+    if (number === 0) {
+        return '*'
     }
 
-
-    //initializes the value of i = number
-    // i -2 until the value become 1 or 0
-    // set the counter (how many times the i value decremented ie, in which step the i value become 1 or 0)
-    //then replace the value of i with the counter value
-    //then mod the new i value 
-    // and then reverse the remainder values
-
+    while (number !== 0) {
+        if (number % 2 === 0) {
+            result += '*'
+        }
+        else {
+            result += '+'
+        }
+        number = (number / 2)
+        if (number > .5) {
+            return result
+        }
+    }
+    for (let i = result.length - 1; i >= 0; i--) {
+        binaryNum += result[i]
+    }
+    return result;
 }
-console.log(convertToBinary(10))
+console.log(convertToBinary(11))
 
 //TestCases
 function TestCase() {
@@ -31,13 +42,16 @@ function TestCase() {
         },
         {
             "num": 5,
-            "exp": "*+*+"
+            "exp": "+*+"
         },
+        {
+            "num": 1,
+            "exp": '+'
+        }
     ]
-    for (let i = 0; i < TestCase[i].length; i++) {
+    for (let i = 0; i < TestCase.length; i++) {
         let result = convertToBinary(TestCase[i].num);
         if (result === TestCase[i].exp) {
-            console.log(result)
             console.log("Test Case " + [i + 1] + " is passed")
         } else {
             console.log("Test Case " + [i + 1] + " is failed")
