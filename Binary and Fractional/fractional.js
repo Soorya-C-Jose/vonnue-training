@@ -10,7 +10,6 @@ function findFraction(number) {
 
     for (let i = 0; i < number; i++) {
         fraction = subtractNumbers(number, i)
-        // fraction = (number - i)
     }
     return fraction
 }

@@ -1,9 +1,17 @@
-function findFraction(number) {
-    let fraction;
-    for (let i = 1; i < number; i++) {
-        fraction = (number - i)
+function subtractNum(num1, num2) {
+    return num1 - num2
+}
+console.log(subtractNum(4, 3))
+
+function findFraction(numarator, denominator) {
+    let fraction = numarator
+    division = 0
+    for (let i = 1; fraction >= denominator; i++) {
+        result = subtractNum(fraction, denominator)
+        division = i
     }
-    return fraction
+    return division
 }
 
-console.log(findFraction('28 / 2'))
+console.log(findFraction(10, 2))
+
