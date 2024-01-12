@@ -82,3 +82,10 @@ let add = (a, b) => {
 };
 console.log(add(4, 2))
 
+
+
+
+//        e into logical blocks.
+
+// Even a single function can often be divided into logical blocks. In the example below, the initialization of variables, the main loop and returning the result are split vertically:
+
