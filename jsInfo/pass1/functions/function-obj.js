@@ -39,25 +39,81 @@ console.log(many.length)
 
 
 // handlers.length
-function ask(question, ...handlers) {
-    let isYes = confirm(question);
-    for (let handler of handlers) {
-        if (handler.length == 0) {
-            if (isYes) handler();
-        } else {
-            handler(isYes)
-        }
-    }
+// function ask(question, ...handlers) {
+//     let isYes = confirm(question);
+//     for (let handler of handlers) {
+//         if (handler.length == 0) {
+//             if (isYes) handler();
+//         } else {
+//             handler(isYes)
+//         }
+//     }
+// }
+// ask("Question?", () => console.log('You said yes'), result => console.log(result))
+
+
+//custom ppty
+function sayHi() {
+    console.log("Hi");
+    sayHi.counter++;
 }
-ask("Question?", () => console.log('You said yes'), result => console.log(result))
+sayHi.counter = 0;
+sayHi()
+sayHi()
+console.log(`Called ${sayHi.counter} times`)
+
+function makeCounter() {
+    function counter() {
+        return counter.count++;
+    };
+    counter.count = 0;
+    return counter
+}
+let counter = makeCounter();
+console.log(counter());
+console.log(counter())
+
+
+//Named function expressions(NFE)
+let sayHai = function func(who) {
+    if (who) {
+        console.log(`Hello, ${who}`);
+    } else {
+        func("Guest");
+    }
+};
+sayHai()
+//func()
+
+// let sayHai = function func(who) {
+//     if(who) {
+//         console.log(`Hello, ${who}`);
+//     }else {
+//         func("Guest");
+//     }
+// };
+// let welcome = sayHai;
+// sayHai = null;
+// welcome();
 
 
 
+/******************new function*****************/
+let sum = new Function('a', 'b', 'return a + b')
+console.log(sum(1,2))
+
+let sayGood = new Function('console.log(("Hello"))')
+sayGood()
 
 
-// he user gives a positive answer.
-// A function with arguments, which is called in either case and returns an answer.
-// To call handler the right way, we examine the handler.length property.
+//closure
+function getFunc() {
+    let value = "test";
+    let func = function() {
+        console.log(value);
+    }
+    return func
+}
+getFunc()()
 
-// The idea is that we have a simple, no-arguments handler syntax for positive cases (most frequent variant), but are able to support universal handlers as well:
 
